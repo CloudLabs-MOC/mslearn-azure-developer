@@ -1,4 +1,4 @@
-# Lab 2: Azure authentication and authorization
+# Lab 2 - Module 1: Azure authentication and authorization
 
 ## Lab Scenario
 
