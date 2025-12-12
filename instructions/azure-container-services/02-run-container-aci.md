@@ -20,22 +20,22 @@ In this exercise, you will create and deploy a container instance in Azure Conta
 1. Run the following command to create a DNS name used to expose your container to the Internet.  
    Your DNS name must be unique. Run this command from Cloud Shell to create a variable that holds a unique name.
 
-```bash
-DNS_NAME_LABEL=aci-example-<inject key="DeploymentID" enableCopy="false"/>
-```
+    ```bash
+    DNS_NAME_LABEL=aci-example-<inject key="DeploymentID" enableCopy="false"/>
+    ```
 
 1. Run the following command to create a container instance.  
    It takes a few minutes for the operation to complete.
 
-```bash
-az container create --resource-group ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>   --name mycontainer<inject key="DeploymentID" enableCopy="false"/>   --image mcr.microsoft.com/azuredocs/aci-helloworld   --ports 80   --dns-name-label $DNS_NAME_LABEL   --location <inject key="Region" enableCopy="false"/>   --os-type Linux   --cpu 1   --memory 1.5
-```
+    ```bash
+    az container create --resource-group ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>   --name mycontainer<inject key="DeploymentID" enableCopy="false"/>   --image mcr.microsoft.com/azuredocs/aci-helloworld   --ports 80   --dns-name-label $DNS_NAME_LABEL   --location <inject key="Region" enableCopy="false"/>   --os-type Linux   --cpu 1   --memory 1.5
+    ```
 
-![](./media/lab5-e2-1.png)
+    ![](./media/lab5-e2-1.png)
 
-> **Note:**  
-> The **$DNS_NAME_LABEL** variable specifies the DNS name for your container.  
-> The image **mcr.microsoft.com/azuredocs/aci-helloworld** runs a basic Node.js web application.
+    > **Note:**  
+    > The **$DNS_NAME_LABEL** variable specifies the DNS name for your container.  
+    > The image **mcr.microsoft.com/azuredocs/aci-helloworld** runs a basic Node.js web application.
 
 <validation step="2b5eee32-b290-4c07-ae35-fccf6d8d65c8" />
 
@@ -47,26 +47,26 @@ In this exercise, you verify that the container is running by checking its provi
 
 1. Run the following command to check the provisioning status of the container.
 
-```bash
-az container show --resource-group ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>   --name mycontainer<inject key="DeploymentID" enableCopy="false"/>   --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}"   --out table
-```
+    ```bash
+    az container show --resource-group ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>   --name mycontainer<inject key="DeploymentID" enableCopy="false"/>   --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}"   --out table
+    ```
 
-![](./media/lab5-e2-2.png)
+    ![](./media/lab5-e2-2.png)
 
 1. Review the output showing the container’s FQDN and provisioning state.
 
-```
-FQDN                                    ProvisioningState
---------------------------------------  -------------------
-aci-wt.eastus.azurecontainer.io         Succeeded
-```
+    ```
+    FQDN                                    ProvisioningState
+    --------------------------------------  -------------------
+    aci-wt.eastus.azurecontainer.io         Succeeded
+    ```
 
-> **Note:**  
-> If the provisioning state is **Creating**, wait a few moments and run the command again until it shows **Succeeded**.
+    > **Note:**  
+    > If the provisioning state is **Creating**, wait a few moments and run the command again until it shows **Succeeded**.
 
 1. From a browser, navigate to the container’s FQDN to verify the application is running.
 
-![](./media/lab5-e2-3.png)
+    ![](./media/lab5-e2-3.png)
 
 ---
 

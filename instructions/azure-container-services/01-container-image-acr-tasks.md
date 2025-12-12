@@ -38,11 +38,11 @@ In this task, you will create an Azure Container Registry instance that will sto
 
 1. Create an Azure Container Registry:
 
-```bash
-az acr create --resource-group ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>   --name mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --sku Basic
-```
+    ```bash
+    az acr create --resource-group ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>   --name mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --sku Basic
+    ```
 
-![](./media/lab5-12-4.png)
+    ![](./media/lab5-12-4.png)
 
 > **Note:** This command creates a *Basic* registry, a cost-optimized option suitable for learning and development scenarios.
 
@@ -56,18 +56,18 @@ In this task, you will build a container image from a Dockerfile and push it to 
 
 1. Create a Dockerfile:
 
-```bash
-echo FROM mcr.microsoft.com/hello-world > Dockerfile
-```
+    ```bash
+    echo FROM mcr.microsoft.com/hello-world > Dockerfile
+    ```
 
 1. Build and push the image:
 
-```bash
-az acr build --image sample/hello-world:v1   --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --file Dockerfile .
-```
+    ```bash
+    az acr build --image sample/hello-world:v1   --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --file Dockerfile .
+    ```
 
-![](./media/lab5-12-5.png)
-![](./media/lab5-12-6.png)
+    ![](./media/lab5-12-5.png)
+    ![](./media/lab5-12-6.png)
 
 ---
 
@@ -77,19 +77,19 @@ In this task, you will verify that the image was successfully pushed to your reg
 
 1. List repositories in the registry:
 
-```bash
-az acr repository list --name mycontainerregistry<inject key="DeploymentID" enableCopy="false"/> --output table
-```
+    ```bash
+    az acr repository list --name mycontainerregistry<inject key="DeploymentID" enableCopy="false"/> --output table
+    ```
 
-![](./media/lab5-12-7.png)
+    ![](./media/lab5-12-7.png)
 
 1. List tags for the repository:
 
-```bash
-az acr repository show-tags --name mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --repository sample/hello-world --output table
-```
+    ```bash
+    az acr repository show-tags --name mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --repository sample/hello-world --output table
+    ```
 
-![](./media/lab5-12-8.png)
+    ![](./media/lab5-12-8.png)
 
 ---
 
@@ -97,11 +97,11 @@ az acr repository show-tags --name mycontainerregistry<inject key="DeploymentID"
 
 In this task, you will run the container image directly from Azure Container Registry to validate successful execution.
 
-```bash
-az acr run --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --cmd '$Registry/sample/hello-world:v1' /dev/null
-```
+    ```bash
+    az acr run --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --cmd '$Registry/sample/hello-world:v1' /dev/null
+    ```
 
-![](./media/lab5-12-9.png)
+    ![](./media/lab5-12-9.png)
 
 ---
 

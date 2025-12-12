@@ -30,7 +30,7 @@ In this exercise, you will create an Azure Container Apps environment that provi
    az containerapp env create   --name my-container-env<inject key="DeploymentID" enableCopy="false"/>   --resource-group ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>   --location <inject key="Region" enableCopy="false"/>
    ```
 
-![](./media/lab5-e3-1.png)
+    ![](./media/lab5-e3-1.png)
 
 ---
 
@@ -44,11 +44,11 @@ In this exercise, you deploy a containerized application to the Container Apps e
    az containerapp create   --name my-container-app<inject key="DeploymentID" enableCopy="false"/>   --resource-group ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>   --environment my-container-env<inject key="DeploymentID" enableCopy="false"/>   --image mcr.microsoft.com/azuredocs/containerapps-helloworld:latest   --target-port 80   --ingress external   --query properties.configuration.ingress.fqdn
    ```
 
-![](./media/lab5-e3-2.png)
+    ![](./media/lab5-e3-2.png)
 
-> **Note:**  
-> Setting **--ingress** to **external** exposes the container app to public requests.  
-> The command returns the fully qualified domain name (FQDN) used to access the application.
+    > **Note:**  
+    > Setting **--ingress** to **external** exposes the container app to public requests.  
+    > The command returns the fully qualified domain name (FQDN) used to access the application.
 
    ```
    Container app created. Access your app at <url>
@@ -56,7 +56,7 @@ In this exercise, you deploy a containerized application to the Container Apps e
 
 1. Select the returned URL to verify that the container app is running.
 
-![](./media/lab5-e3-3.png)
+    ![](./media/lab5-e3-3.png)
 
 <validation step="31b12d09-bb81-4d99-bad5-4533168f612a" />
 
