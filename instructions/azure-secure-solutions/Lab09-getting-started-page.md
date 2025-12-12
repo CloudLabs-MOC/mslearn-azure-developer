@@ -1,9 +1,7 @@
-Lab 09: Secure Solutions in Azure
+## Lab 09: Secure Solutions in Azure
 
 Welcome to **Lab 09: Secure Solutions in Azure**.  
 This Getting Started page provides everything you need before beginning the exercises, including environment access instructions, navigation tips, and support details.
-
----
 
 ## Lab Overview
 
