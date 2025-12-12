@@ -86,3 +86,7 @@ In this lab, you completed the following tasks:
 - Created an Azure App Service configured for container deployment  
 - Configured the container settings using an image from Microsoft Container Registry  
 - Deployed and validated the containerized application  
+
+## You have successfully completed the lab. Click on Next >>
+
+![](./media/G10.png)
