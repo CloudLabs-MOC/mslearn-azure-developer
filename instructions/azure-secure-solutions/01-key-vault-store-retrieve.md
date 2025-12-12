@@ -12,7 +12,7 @@ In this lab, you will perform:
 - Create a .NET console app to store and retrieve secrets
 - Sign into Azure and run the app to create a new secret
 
-## Estimated Timing: 30 minutes
+## Estimated Timing: 30 Minutes
 
 ## Task 1: Create Azure Key Vault resources and add a secret
 
@@ -28,7 +28,7 @@ In this task you will create a Key Vault to store secrets in Azure using Azure C
 
     ![](./media/A03.png)
 
-    > **Note**: If you have previously created a cloud shell that uses a *PowerShell* environment, switch it to ***Bash***.
+    > **Note:** If you have previously created a cloud shell that uses a *PowerShell* environment, switch it to ***Bash***.
 
 1. In the cloud shell toolbar, in the **Settings (1)** menu, select **Go to Classic version (2)** (this is required to use the code editor).
 
@@ -43,7 +43,7 @@ In this task you will create a Key Vault to store secrets in Azure using Azure C
  
     ```
 
-    ![](./media/neededvar.png)
+    ![](./media/lab9-12-1.png)
 
 1. Run the following command to create an Azure Key Vault resource. This can take a few minutes to run.
 
@@ -54,7 +54,7 @@ In this task you will create a Key Vault to store secrets in Azure using Azure C
 
     ![](./media/kvdone.png)
 
-    >**Note**:  Note down the name of Key Vault you created. You need it later in the exercise.
+    >**Note:** Note down the name of Key Vault you created. You need it later in the exercise.
 
 <validation step="f9c5f427-4ea7-4d62-91b7-7cc85096f2a3" />
 
@@ -419,7 +419,7 @@ In this task, you will sign into Azure from Cloud Shell and authenticate your se
 
     ![](./media/listfinal.png)
 
-1. Enter **quit** when you are finished with the application.
+1. Enter **quit** when you are finished with the application and close the cloud shell.
 
 ## Summary
 

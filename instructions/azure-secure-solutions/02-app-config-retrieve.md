@@ -12,7 +12,7 @@ In this lab, you will perform:
 - Create a .NET console app to retrieve configuration information
 - Sign into Azure and run the app  
 
-## Estimated Timing: 15 minutes
+## Estimated Timing: 15 Minutes
 
 ## Task: 1 Create an Azure App Configuration resource and add configuration information
 
@@ -28,7 +28,7 @@ In this task, you will create an Azure App Configuration resource using the Azur
 
     ![](./media/A03.png)
 
-    > **Note**: If you have previously created a cloud shell that uses a *PowerShell* environment, switch it to ***Bash***.
+    > **Note:** If you have previously created a cloud shell that uses a *PowerShell* environment, switch it to ***Bash***.
 
 1. In the cloud shell toolbar, in the **Settings (1)** menu, select **Go to Classic version (2)** (this is required to use the code editor).
 
@@ -42,7 +42,9 @@ In this task, you will create an Azure App Configuration resource using the Azur
     appConfigName=appconfig<inject key="DeploymentID" enableCopy="false"/>
     ```
 
-    >**Note**: Note down the App configuration name you have created. You need it later in the exercise. 
+     ![](./media/lab9-12-2.png)
+
+     >**Note:** Note down the App configuration name you have created. You need it later in the exercise. 
 
 1. Run the following command to create an Azure App Configuration resource. This can take a few minutes to run.
 
@@ -53,7 +55,7 @@ In this task, you will create an Azure App Configuration resource using the Azur
         --sku Free
     ```
 
-    ![](./media/appconfig.png)
+    ![](./media/lab9-12-3.png)
 
     >**NOTE:** If there is an issue creating the AppConfig Resource due to quota restrictions using the **Free** SKU value, please use **Developer** instead.
     
@@ -232,6 +234,10 @@ In this task, you will sign into Azure from Cloud Shell and authenticate your se
 1. On the **Are you trying to sign in to Microsoft Azure CLI?** page, select **Continue** to authorize the sign-in request.
 
      ![](./media/clisign.png)
+
+1. Back in Cloud Shell, when the subscription selection appears, type **1** and press **Enter** to continue.
+
+     ![](./media/lab9-12-4.png)
 
 1. Run the following command to start the console app. The app will display the **connectionString** value you assigned to the **Dev:conStr** setting earlier in the exercise.
 
