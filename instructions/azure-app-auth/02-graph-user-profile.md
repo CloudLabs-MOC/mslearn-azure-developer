@@ -1,4 +1,4 @@
-### Lab 02 - Module 2: Retrieve user profile information with the Microsoft Graph SDK
+# Lab 02 - Module 2: Retrieve user profile information with the Microsoft Graph SDK
 
 ## Lab Scenario
 
