@@ -65,7 +65,7 @@ Your virtual machine (VM) and lab guide are available within your browser.
 
 ### Virtual Machine Access
 
-![VM Screenshot](media/17-7-25-g1.png)
+![VM Screenshot](media/GS1.png)
 
 ### Lab Guide Access
 
@@ -92,17 +92,21 @@ The lab guide appears on the right side of the interface for reference during ex
 ## Getting Started with Azure Portal
 
 1. Click the **Azure Portal** icon:  
+
    ![](media/G6.png)
 
 2. Enter your username:  
    `<inject key="AzureAdUserEmail"></inject>`  
+
    ![](media/G7.png)
 
 3. Enter your password:  
    `<inject key="AzureAdUserPassword"></inject>`  
+
    ![](media/G8.png)
 
 4. When prompted with **Stay signed in?**, select **No**:  
+
    ![](media/G9.png)
 
 ---
