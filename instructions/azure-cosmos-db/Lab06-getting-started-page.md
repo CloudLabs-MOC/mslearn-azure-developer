@@ -81,7 +81,7 @@ You will see your VM loading on the left side of the screen:
 ### Lab Guide Access  
 The lab guide appears on the right panel and will be your reference throughout the exercises.
 
-![VM Screenshot](media/17-7-25-g1.png)
+![VM Screenshot](media/GS6.png)
 
 ---
 
@@ -113,7 +113,7 @@ You can Start, Stop, or Restart your virtual machine at any time via the **Resou
 
 To zoom in/out of the environment view, use the **A↕ 100%** button near the timer:
 
-![Zoom](media/17-7-25-g4.png)
+![Zoom](media/ZZ01.png)
 
 ---
 
@@ -128,14 +128,17 @@ Follow these steps to begin working in Azure:
 2. Enter your credentials:
 
    - **Email/Username:** `<inject key="AzureAdUserEmail"></inject>`  
+
      ![](media/G7.png)
 
 3. Enter your password:
 
    - **Password:** `<inject key="AzureAdUserPassword"></inject>`  
+
      ![](media/G8.png)
 
 4. If prompted to **Stay signed in**, select **No**.  
+
      ![](media/G9.png)
 
 ---
