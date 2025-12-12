@@ -21,7 +21,7 @@ In this lab, you will perform:
 
 ### Task 1: Create Azure Queue storage resources
 
-In this section of the exercise you create the needed resources in Azure with the Azure CLI.
+In this task, you will create the Azure storage resources required for Azure Queue Storage by provisioning a new storage account using the Azure CLI.
 
 1. In your browser navigate to the Azure portal 
 
@@ -49,7 +49,7 @@ In this section of the exercise you create the needed resources in Azure with th
     storAcctName=storactname<inject key="DeploymentID" enableCopy="false"/>
     ```
 
-1. You will need the name assigned to the storage account later in this exercise. Run the following command and record output.
+1. You will need the name assigned to the storage account later in this exercise. Run the following command and **record output**.
 
     ```
     echo $storAcctName
@@ -72,7 +72,7 @@ In this section of the exercise you create the needed resources in Azure with th
 
 ### Task 2: Assign a role to your Microsoft Entra user name
 
-To allow your app to send and receive messages, assign your Microsoft Entra user to the **Storage Queue Data Contributor** role. This gives your user account permission to create queues, and send/receive messages using Azure RBAC. Perform the following steps in the cloud shell.
+In this task, you will assign Storage Queue Data Contributor role, to create queues and send or receive messages.
 
 1. Run the following command to retrieve the **userPrincipalName** from your account. This represents who the role will be assigned to.
 
@@ -101,7 +101,7 @@ To allow your app to send and receive messages, assign your Microsoft Entra user
 
 ### Task 3: Create a .NET console app to send and receive messages
 
-Now that the needed resources are deployed to Azure the next step is to set up the console application. The following steps are performed in the cloud shell.
+In this task, you will create a new .NET console application that will be used to send, receive, update, and delete messages in Azure Queue Storage.
 
 >**Tip:** Resize the cloud shell to display more information, and code, by dragging the top border. You can also use the minimize and maximize buttons to switch between the cloud shell and the main portal interface.
 
@@ -128,6 +128,8 @@ Now that the needed resources are deployed to Azure the next step is to set up t
     ```
 
 ### Task 4: Add the starter code for the project
+
+In this task, you will open the project in the Cloud Shell editor and add the starter code that sets up the structure of your queue-based application.
 
 1. Run the following command in the cloud shell to begin editing the application.
 
@@ -171,7 +173,7 @@ Now that the needed resources are deployed to Azure the next step is to set up t
 
 ### Task 5: Add code to create a queue client and create a queue
 
-Now it's time to add code to create the queue storage client and create a queue.
+In this task, you will create the queue client and provision a new queue in your storage account, establishing the core resource your application will interact with.
 
 1. Locate the **// ADD CODE TO CREATE A QUEUE CLIENT AND CREATE A QUEUE** comment and add the following code directly after the comment. Be sure to review the code and comments.
 
@@ -203,6 +205,8 @@ Now it's time to add code to create the queue storage client and create a queue.
 
 ### Task 6: Add code to send and list messages in a queue
 
+In this task, you send messages to the Azure Queue and list them using peek operations, allowing you to verify that messages were successfully added without removing them.
+
 1. Locate the **// ADD CODE TO SEND AND LIST MESSAGES** comment and add the following code directly after the comment. Be sure to review the code and comments.
 
     ```csharp
@@ -233,6 +237,8 @@ Now it's time to add code to create the queue storage client and create a queue.
 
 ### Task 7: Add code to update a message and list the results
 
+In this task, you update an existing queue message and then list all messages again to confirm the change, helping you understand how message modification works in Azure Queue Storage.
+
 1. Locate the **// ADD CODE TO UPDATE A MESSAGE AND LIST MESSAGES** comment and add the following code directly after the comment. Be sure to review the code and comments.
 
     ```csharp
@@ -258,6 +264,8 @@ Now it's time to add code to create the queue storage client and create a queue.
 1. Press **ctrl+s** to save the file, then continue with the exercise.
 
 ### Task 8: Add code to delete messages and the queue
+
+In this task, you delete the messages from the queue and then remove the entire queue itself, ensuring all resources created by the app are properly cleaned up.
 
 1. Locate the **// ADD CODE TO DELETE MESSAGES AND THE QUEUE** comment and add the following code directly after the comment. Be sure to review the code and comments.
 
@@ -287,6 +295,8 @@ Now it's time to add code to create the queue storage client and create a queue.
 1. Press **ctrl+s** to save the file, then **ctrl+q** to exit the editor.
 
 ### Task 9: Sign into Azure and run the app
+
+In this task, you authenticate with Azure and run the console application, allowing you to observe message creation, updates, and deletion directly in the Azure portal as the app executes.
 
 1. In the cloud shell command-line pane, enter the following command to sign into Azure.
 
@@ -337,3 +347,21 @@ Now it's time to add code to create the queue storage client and create a queue.
 1. Select the queue the application creates **(3)** and you can view the sent messages and monitor what the application is doing.
 
      ![](./media/lab7-e3-27.png)
+
+## Summary
+
+In this lab, you:
+
+- Created the required Azure Queue Storage resources using the Azure CLI
+
+- Assigned yourself the Storage Queue Data Contributor role to enable queue operations
+
+- Built and configured a .NET console application to interact with Azure Queue Storage
+
+- Sent and listed messages using the Azure.Storage.Queues SDK
+
+- Updated an existing message and verified the changes
+
+- Deleted messages and removed the queue to clean up your environment
+
+## You have successfully completed the lab.

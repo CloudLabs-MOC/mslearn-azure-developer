@@ -262,8 +262,6 @@ In this task, you will authenticate with Azure in Cloud Shell and run the consol
 
     **<font color="red">You must sign into Azure - even though the cloud shell session is already authenticated.</font>**
 
-    > **Note:** In most scenarios, just using *az login* will be sufficient. However, if you have subscriptions in multiple tenants, you may need to specify the tenant by using the *--tenant* parameter. See [Sign into Azure interactively using Azure CLI](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively) for details.
-
 1. After running the az login command, select the **authentication link (1)** shown in the Cloud Shell output and **copy the displayed code (2)**.
 
      ![](./media/lab7-12-13.png)

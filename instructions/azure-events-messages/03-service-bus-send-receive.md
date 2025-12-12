@@ -20,7 +20,7 @@ In this lab, you will perform:
 
 ### Task 1: Create Azure Event Hubs resources
 
-In this section of the exercise you create the needed resources in Azure with the Azure CLI.
+In this task, you will set up the initial Azure resources required for the Service Bus solution by configuring Cloud Shell and creating the variables that will be used throughout the exercise.
 
 1. In your browser navigate to the Azure portal 
 
@@ -60,6 +60,8 @@ In this section of the exercise you create the needed resources in Azure with th
 
 ### Task 2: Create an Azure Service Bus namespace and queue
 
+In this task, you will create the Service Bus messaging environment by deploying a namespace and adding a queue where your app will send and receive messages.
+
 1. Create a Service Bus messaging namespace. The following command creates a namespace using the variable you created earlier. The operation takes a few minutes to complete.
 
     ```bash
@@ -85,7 +87,7 @@ In this section of the exercise you create the needed resources in Azure with th
 
 ### Task 3: Assign a role to your Microsoft Entra user name
 
-To allow your app to send and receive messages, assign your Microsoft Entra user to the **Azure Service Bus Data Owner** role at the Service Bus namespace level. This gives your user account permission to manage and access queues and topics using Azure RBAC. Perform the following steps in the cloud shell.
+In this task, you will assign the Azure Service Bus Data Owner role so app can send and receive messages from the queue using Azure RBAC permissions.
 
 1. Run the following command to retrieve the **userPrincipalName** from your account. This represents who the role will be assigned to.
 
@@ -114,7 +116,7 @@ To allow your app to send and receive messages, assign your Microsoft Entra user
 
 ### Task 4: Create a .NET console app to send and receive messages
 
-Now that the needed resources are deployed to Azure the next step is to set up the console application. The following steps are performed in the cloud shell.
+In this task, you will create a new .NET console application in Cloud Shell and prepare it to interact with your Azure Service Bus resources.
 
 >**Tip:** Resize the cloud shell to display more information, and code, by dragging the top border. You can also use the minimize and maximize buttons to switch between the cloud shell and the main portal interface.
 
@@ -139,6 +141,8 @@ Now that the needed resources are deployed to Azure the next step is to set up t
     ```
 
 ### Task 5: Add the starter code for the project
+
+In this task, you open the project in the Cloud Shell code editor and add the starter template, setting up the base structure needed for sending and receiving Service Bus messages.
 
 1. Run the following command in the cloud shell to begin editing the application.
 
@@ -181,7 +185,7 @@ Now that the needed resources are deployed to Azure the next step is to set up t
 
 ### Task 6: Add code to send messages to queue
 
-Now it's time to add code to create the Service Bus client and send a batch of messages to the queue.
+In this task, you will create the Service Bus client and implement the code required to send a batch of messages to the queue, preparing your app to publish messages programmatically.
 
 1. Locate the **// ADD CODE TO CREATE A SERVICE BUS CLIENT** comment and add the following code directly after the comment. Be sure to review the code and comments.
 
@@ -244,6 +248,8 @@ Now it's time to add code to create the Service Bus client and send a batch of m
 1. Press **ctrl+s** to save the file, then continue with the exercise.
 
 ### Task 7: Add code to process messages in the queue
+
+In this task, you will add the logic to receive and process messages from the Service Bus queue, allowing your console app to read, display, and complete messages as they arrive.
 
 1. Locate the **// ADD CODE TO PROCESS MESSAGES FROM THE QUEUE** comment and add the following code directly after the comment. Be sure to review the code and comments.
 
@@ -316,6 +322,8 @@ Now it's time to add code to create the Service Bus client and send a batch of m
 
 ### Task 8: Sign into Azure and run the app
 
+In this task, you will sign into Azure and run the console application to send and receive messages, verifying the full end-to-end workflow of your Service Bus messaging solution.
+
 1. In the cloud shell command-line pane, enter the following command to sign into Azure.
 
     ```
@@ -371,3 +379,23 @@ Now it's time to add code to create the Service Bus client and send a batch of m
 1. Return to the portal after the application has completed processing the messages. Select **Peek from start** again and notice there are no messages in the queue.
 
      ![](./media/lab7-e3-14.png)
+
+## Summary
+
+In this lab, you:
+
+- Created Azure Service Bus resources using the Azure CLI
+
+- Provisioned a Service Bus namespace and queue
+
+- Assigned the Azure Service Bus Data Owner role to your Microsoft Entra account
+
+- Built and configured a .NET console application to interact with Service Bus
+
+- Added starter code and implemented message-sending logic
+
+- Added message-processing logic to retrieve and complete messages
+
+- Signed into Azure and successfully ran the application to validate end-to-end messaging
+
+## You have successfully completed the lab.

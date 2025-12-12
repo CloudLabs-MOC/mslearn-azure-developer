@@ -19,7 +19,7 @@ In this lab, you will perform:
 
 ### Task 1: Create Azure Event Hubs resources
 
-In this section of the exercise you create the needed resources in Azure with the Azure CLI.
+In this task, you initialize your Cloud Shell environment and define variables that will be used to create Azure Event Hubs resources throughout the lab.
 
 1. In your browser navigate to the Azure portal 
 
@@ -50,7 +50,7 @@ In this section of the exercise you create the needed resources in Azure with th
 
 ### Task 2: Create an Azure Event Hubs namespace and event hub
 
-An Azure Event Hubs namespace is a logical container for event hub resources within Azure. It provides a unique scoping container where you can create one or more event hubs, which are used to ingest, process, and store large volumes of event data. The following instructions are performed in the cloud shell. 
+In this task, you create an Event Hubs namespace as the container for your messaging resources and deploy a new event hub inside it using the Azure CLI.
 
 1. Run the following command to create an Event Hubs namespace.
 
@@ -73,7 +73,7 @@ An Azure Event Hubs namespace is a logical container for event hub resources wit
 
 ### Task 3: Assign a role to your Microsoft Entra user name
 
-To allow your app to send and receive messages, assign your Microsoft Entra user to the **Azure Event Hubs Data Owner** role at the Event Hubs namespace level. This gives your user account permission to manage and access queues and topics using Azure RBAC. Perform the following steps in the cloud shell.
+In this task, you grant your user the required Azure Event Hubs Data Owner role so you can send and receive events from the Event Hubs namespace.
 
 1. Run the following command to retrieve the **userPrincipalName** from your account. This represents who the role will be assigned to.
 
@@ -101,7 +101,7 @@ To allow your app to send and receive messages, assign your Microsoft Entra user
 
 ### Task 4: Send and retrieve events with a .NET console application
 
-Now that the needed resources are deployed to Azure the next step is to set up the console application. The following steps are performed in the cloud shell.
+In this task, you create a .NET console app and install the required SDK packages so you can send events to your Event Hub and read them back.
 
 >**Tip:** Resize the cloud shell to display more information, and code, by dragging the top border. You can also use the minimize and maximize buttons to switch between the cloud shell and the main portal interface.
 
@@ -131,13 +131,15 @@ Now it's time to replace the template code in the **Program.cs** file using the 
 
 ### Task 5: Add the starter code for the project
 
+In this task, you open the project in the Cloud Shell editor and replace the default template with starter code that initializes your Event Hub connection.
+
 1. Run the following command in the cloud shell to begin editing the application **(1)**.
 
     ```
     code Program.cs
     ```
 
-1. Replace any existing contents with the following code. Be sure to review the comments in the code, and replace **YOUR_EVENT_HUB_NAMESPACE** with your event hub namespace.
+1. Replace any existing contents with the following code. Be sure to review the comments in the code, and replace **YOUR_EVENT_HUB_NAMESPACE (2)** with your event hub namespace.
 
     ```csharp
     using Azure.Messaging.EventHubs;
@@ -169,13 +171,13 @@ Now it's time to replace the template code in the **Program.cs** file using the 
     
     ```
 
-    ![](./media/lab7-e2--4.png)
+    ![](./media/lab7-e2-4.1.png)
 
 1. Press **ctrl+s** to save your changes.
 
 ### Task 6: Add code to complete the application
 
-In this section you add code to create the producer and consumer clients to send and receive events.
+In this task, you add the producer and consumer logic that sends events to the Event Hub and retrieves them for processing.
 
 1. Locate the **// CREATE A PRODUCER CLIENT AND SEND EVENTS** comment and add the following code directly after the comment. Be sure to review the comments in the code.
 
@@ -273,6 +275,8 @@ In this section you add code to create the producer and consumer clients to send
 
 ### Task 7: Sign into Azure and run the app
 
+In this task, you authenticate with Azure and execute your .NET console application to send and retrieve events from Event Hubs.
+
 1. In the cloud shell command-line pane, enter the following command to sign into Azure.
 
     ```
@@ -324,5 +328,20 @@ In this section you add code to create the producer and consumer clients to send
 
      ![](./media/lab7-e2-8.png)
 
-The application always sends three events to the hub, but it retrieves all events in the hub. If you run the application multiple times an increasing number of events are retrieved. The random numbers used for event creation help you identify different events.
+## Summary
 
+In this lab, you:
+
+- Created Azure Event Hubs resources using the Azure CLI
+
+- Provisioned an Event Hubs namespace and event hub
+
+- Assigned yourself the Azure Event Hubs Data Owner role for RBAC-based access
+
+- Built a .NET console application to send and receive events
+
+- Added starter code and completed the producer/consumer logic
+
+- Signed in to Azure and successfully ran the application to publish and read events
+
+## You have successfully completed the lab.
