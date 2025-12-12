@@ -337,4 +337,3 @@ Now it's time to add code to create the queue storage client and create a queue.
 1. Select the queue the application creates **(3)** and you can view the sent messages and monitor what the application is doing.
 
      ![](./media/lab7-e3-27.png)
-

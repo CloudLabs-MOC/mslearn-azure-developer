@@ -91,7 +91,7 @@ In this task, you will deploy a message endpoint using a prebuilt web app that w
 
      ![](./media/lab7-12-3.png)
 
-    > **Note:** This command may take a few minutes to complete.
+    > **Note:** This command may take a 2-3 minutes to complete.
 
 1. Open a new tab in your browser and navigate to the URL generated at the end of the previous script to ensure the web app is running. You should see the site with no messages currently displayed.
 
@@ -124,7 +124,7 @@ In this task, you will subscribe the web app endpoint to your Event Grid topic s
 
 1. View your web app again, and notice that a subscription validation event has been sent to it. Select the eye icon to expand the event data. Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The web app includes code to validate the subscription.
 
-     ![](./media/lab7-12-7.png)
+     ![](./media/Lab7-12-01.png)
 
 ### Task 4: Send an event with a .NET console application
 
