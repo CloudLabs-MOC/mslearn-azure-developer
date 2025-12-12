@@ -1,6 +1,6 @@
 # Getting Started with Lab 03: Monitor an Application with Autoinstrumentation
 
-### Estimated Duration: 20 Minutes
+### Estimated Duration: 20-30 Minutes
 
 ## Overview
 
