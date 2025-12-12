@@ -1,13 +1,12 @@
-# Lab 02: Implement Interactive Authentication & Microsoft Graph Integration
+# Getting Started with Lab 02: Implement Interactive Authentication & Microsoft Graph Integration
 
-Welcome to **Lab 02**, which contains two modules focusing on authentication and Microsoft Graph integration using .NET.  
-This Getting Started page provides the required environment setup, access instructions, navigation guidance, and support information.
+### Estimated Duration: 30 Minutes
 
----
+## Overview
 
-## Lab Overview
+Welcome to **Lab 02**, where you will learn how to perform interactive authentication using MSAL.NET and integrate Microsoft Graph to retrieve user profile information. This Getting Started page guides you through environment access, setup requirements, navigation tips, and support information before beginning your exercises.
 
-This lab includes the following two modules:
+## This lab contains **Two modules**:
 
 ### Module 1 — Interactive Authentication with MSAL.NET
 You will:
@@ -18,17 +17,75 @@ You will:
 
 ### Module 2 — Retrieve User Profile with Microsoft Graph SDK
 You will:
-- Register a Microsoft Graph-enabled application  
+- Register a Microsoft Graph–enabled application  
 - Create a .NET console app with interactive authentication  
 - Use `GraphServiceClient` to retrieve user profile information  
 
-**Estimated Duration:** Approximately 30 minutes
+---
+
+## Lab Objectives
+
+By completing this lab, you will learn to:
+
+- Configure and register applications in Microsoft Entra ID  
+- Implement interactive authentication in .NET  
+- Acquire Graph API access tokens using MSAL.NET  
+- Integrate the Microsoft Graph SDK  
+- Retrieve real user profile information programmatically  
+
+---
+
+## Pre-requisites
+
+Participants should have:
+
+- **Basic C# / .NET Knowledge:** Ability to create console apps and install NuGet packages.  
+- **Microsoft Entra ID Awareness:** Understand app registration and permissions basics.  
+- **Authentication Concepts:** Familiarity with OAuth 2.0 & delegated permissions.  
+- **Microsoft Graph Fundamentals:** Understanding of API permissions like `User.Read`.  
+- **Azure Portal Navigation Skills:** Ability to navigate Entra ID and resource settings.  
+
+---
+
+## Architecture
+
+This lab uses a lightweight authentication and Microsoft Graph integration architecture.
+
+**Architecture Flow:**
+
+1. The .NET console application initializes MSAL's `PublicClientApplication`.  
+2. The user authenticates interactively using Microsoft Entra ID.  
+3. MSAL obtains a delegated access token with permissions such as `User.Read`.  
+4. The application initializes the `GraphServiceClient` using the acquired token.  
+5. Microsoft Graph processes the request and returns user profile details.
+
+**Key Components in Flow:**  
+Client App → MSAL.NET → Microsoft Entra ID → Access Token → Microsoft Graph API → Response to Application  
+
+---
+
+## Explanation of Components
+
+1. **MSAL.NET (Microsoft Authentication Library)**  
+   Handles token acquisition using interactive authentication.
+
+2. **Microsoft Entra ID (Azure AD)**  
+   Provides identity and access management, issuing tokens for Graph API.
+
+3. **Microsoft Graph API**  
+   Unified endpoint (`graph.microsoft.com`) used to retrieve Microsoft 365 user data.
+
+4. **GraphServiceClient (.NET SDK)**  
+   Strongly typed SDK for making Microsoft Graph calls easily.
+
+5. **.NET Console Application**  
+   The client app where authentication and API calls are executed.
 
 ---
 
 ## Accessing Your Lab Environment
 
-Your virtual machine and lab guide will load directly in your browser.
+Your virtual machine (VM) and lab guide are available directly in your browser.
 
 ### Virtual Machine Access
 You will see your VM loading on the left side of the interface:
@@ -104,8 +161,6 @@ CloudLabs provides **24/7 dedicated support** to all learners.
 - Email: cloudlabs-support@spektrasystems.com  
 - Live Chat: https://cloudlabs.ai/labs-support  
 
-For any VM, login, or Azure environment issues, feel free to reach out at any time.
-
 ---
 
 ## Move to the Next Page
@@ -114,5 +169,6 @@ Select **Next** at the bottom-right corner to begin **Module 1**.
 
 ![](media/G10.png)
 
+---
 
 ## Happy Learning!
