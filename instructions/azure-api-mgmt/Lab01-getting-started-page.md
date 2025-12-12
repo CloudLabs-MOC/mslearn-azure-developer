@@ -85,7 +85,7 @@ The lab guide appears on the right side of the interface for reference during ex
 
 ## Adjusting Zoom
 
-![Zoom](media/17-7-25-g4.png)
+![Zoom](media/ZZ01.png)
 
 ---
 
