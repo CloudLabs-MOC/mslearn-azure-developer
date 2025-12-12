@@ -88,12 +88,12 @@ Client App → MSAL.NET → Microsoft Entra ID → Access Token → Microsoft Gr
 Your virtual machine (VM) and lab guide are available directly in your browser.
 
 ### Virtual Machine Access
-You will see your VM loading on the left side of the interface:
-
-![VM Screenshot](media/17-7-25-g1.png)
+Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
 
 ### Lab Guide Access
 The lab guide appears on the right panel and will assist you throughout the exercises.
+
+![VM Screenshot](media/GS2.png)
 
 ---
 
