@@ -81,7 +81,7 @@ You will see your VM loading on the left side of the screen:
 ### Lab Guide Access  
 The lab guide appears on the right panel and will be your reference throughout the exercises.
 
-![VM Screenshot](media/GS6.png)
+   ![VM Screenshot](media/GS6.png)
 
 ---
 
@@ -89,7 +89,7 @@ The lab guide appears on the right panel and will be your reference throughout t
 
 Navigate to the **Environment** tab to view credentials and resources:
 
-![Environment](media/G2.png)
+   ![Environment](media/G2.png)
 
 ---
 
@@ -97,7 +97,7 @@ Navigate to the **Environment** tab to view credentials and resources:
 
 To open the lab guide in a separate window, click **Split Window**:
 
-![Split View](media/G3.png)
+   ![Split View](media/G3.png)
 
 ---
 
@@ -105,7 +105,7 @@ To open the lab guide in a separate window, click **Split Window**:
 
 You can Start, Stop, or Restart your virtual machine at any time via the **Resources** tab:
 
-![VM Manage](media/G4.png)
+   ![VM Manage](media/G4.png)
 
 ---
 
@@ -113,7 +113,7 @@ You can Start, Stop, or Restart your virtual machine at any time via the **Resou
 
 To zoom in/out of the environment view, use the **A↕ 100%** button near the timer:
 
-![Zoom](media/ZZ01.png)
+   ![Zoom](media/ZZ01.png)
 
 ---
 
