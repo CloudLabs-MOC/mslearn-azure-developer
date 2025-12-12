@@ -9,7 +9,7 @@ In this lab, you will learn how to create an Azure API Management instance, impo
 
 ## Lab Objectives
 
-By completing this lab, you will learn to:
+### By completing this lab, you will learn to:
 
 - Create an Azure API Management (APIM) instance  
 - Import an API using an OpenAPI specification  
@@ -18,7 +18,7 @@ By completing this lab, you will learn to:
 
 ## Pre-requisites
 
-Participants should have:
+### Participants should have:
 
 - **Azure Account Access:** Access to the lab-provided Azure environment.  
 - **Basic API Understanding:** Familiarity with REST APIs and OpenAPI concepts.  
