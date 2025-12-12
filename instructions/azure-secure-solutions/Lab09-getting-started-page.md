@@ -1,23 +1,75 @@
-## Lab 09: Secure Solutions in Azure
+# Getting Started with Lab 09: Secure Solutions in Azure
+
+### Estimated Duration: 45–60 Minutes
+
+## Overview
 
 Welcome to **Lab 09: Secure Solutions in Azure**.  
-This Getting Started page provides everything you need before beginning the exercises, including environment access instructions, navigation tips, and support details.
+In this lab, you will secure applications using Azure Key Vault and Azure App Configuration. This Getting Started page provides essential environment setup steps, navigation instructions, and support details.
 
-## Lab Overview
+---
 
-In this lab, you will complete two modules:
+## Lab Objectives
 
-### **Module 1: Create and Retrieve Secrets from Azure Key Vault**
+By completing this lab, you will learn to:
+
+### Module 1 — Create and Retrieve Secrets from Azure Key Vault
 - Create an Azure Key Vault  
 - Store and retrieve secrets using Azure CLI  
-- Build a .NET console app to interact with Key Vault  
+- Build a .NET console application that interacts with Key Vault  
 
-### **Module 2: Retrieve Configuration Settings from Azure App Configuration**
+### Module 2 — Retrieve Configuration Settings from Azure App Configuration
 - Create an App Configuration resource  
 - Add configuration data  
-- Build a .NET console app to retrieve settings  
+- Build a .NET console application to retrieve settings  
 
-**Estimated Duration:** 45–60 Minutes  
+---
+
+## Pre-requisites
+
+Participants should have:
+
+- **Basic C# / .NET Skills:** Ability to build console applications and install NuGet packages.  
+- **Azure Portal Familiarity:** Ability to navigate Key Vault, App Configuration, and Resource Groups.  
+- **Security Concepts:** Basic understanding of secrets, configuration management, and secure storage.  
+- **CLI Knowledge:** Ability to run Azure CLI commands in Cloud Shell or local terminal.  
+- **Browser Access:** A modern browser to interact with CloudLabs and Azure Portal.  
+
+---
+
+## Architecture
+
+This lab demonstrates secure application configuration using Azure Key Vault and App Configuration.
+
+**Architecture Flow:**
+
+1. A secret is stored in **Azure Key Vault** and retrieved via the .NET application.  
+2. Application settings are stored in **Azure App Configuration**.  
+3. The .NET application fetches configuration values securely at runtime.  
+4. Azure services provide managed identity access and secure retrieval.  
+
+**Key Components in Flow:**  
+Developer → .NET App → Managed Identity → Key Vault → App Configuration → Secure Output
+
+---
+
+## Explanation of Components
+
+1. **Azure Key Vault**  
+   Securely stores secrets, keys, and certificates with controlled access.
+
+2. **Azure App Configuration**  
+   Centralized service for storing app configuration settings and feature flags.
+
+3. **Managed Identity**  
+   Provides secure identity for applications without storing credentials.
+
+4. **Azure CLI**  
+   Used to create resources and manage Key Vault secrets and configuration settings.
+
+5. **.NET Console Application**  
+   Demonstrates secure secret and configuration retrieval programmatically.
+
 
 ---
 

@@ -5,6 +5,8 @@ This Getting Started page provides everything you need before beginning the exer
 
 ---
 
+### Estimated Duration: 30-45 Minutes
+
 ## Lab Overview
 
 In this lab, you will:
@@ -14,8 +16,6 @@ In this lab, you will:
 - Create Azure resources using Cloud Shell  
 - Deploy your function to Azure  
 - Execute the deployed function  
-
-**Estimated Duration:** 30 minutes
 
 ---
 
