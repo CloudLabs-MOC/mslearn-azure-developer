@@ -27,32 +27,32 @@ In this lab, you will perform:
 
 5. On the **Basics** tab, configure the following settings:
 
-| Setting | Action |
-|--|--|
-| **Subscription** | Retain the default value. |
-| **Resource group** | Choose an existing resource group (MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>).  |
-| **Name** | Enter a unique name webapp-<inject key="DeploymentID" enableCopy="false"/>.|
-| Slider under **Name** | Turn it off (if visible). |
-| **Publish** | Select **Code**. |
-| **Runtime stack** | Select **.NET 8 (LTS)**. |
-| **Operating system** | Select **Windows**. |
-| **Region** | Retain the default selection or choose a region near you. |
-| **Windows Plan** | Retain the default selection. |
-| **Pricing plan** | Select **F1**. |
+   | Setting | Action |
+   |--|--|
+   | **Subscription** | Retain the default value. |
+   | **Resource group** | Choose an existing resource group (MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>).  |
+   | **Name** | Enter a unique name webapp-<inject key="DeploymentID" enableCopy="false"/>.|
+   | Slider under **Name** | Turn it off (if visible). |
+   | **Publish** | Select **Code**. |
+   | **Runtime stack** | Select **.NET 8 (LTS)**. |
+   | **Operating system** | Select **Windows**. |
+   | **Region** | Retain the default selection or choose a region near you. |
+   | **Windows Plan** | Retain the default selection. |
+   | **Pricing plan** | Select **F1**. |
 
-   ![](./media/C3.png)
+     ![](./media/C3.png)
 
 6. Navigate to the **Monitor + secure** tab and configure:
 
-| Setting | Action |
-|--|--|
-| **Enable Application Insights** | Select **Yes**. |
-| **Application Insights** | Select **Create new**, enter `autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/>`, and select **OK**. |
-| **Workspace** | Select **create new** Enter `Workspace-<inject key="DeploymentID" enableCopy="false"/>` if the field is not already populated and locked. |
+   | Setting | Action |
+   |--|--|
+   | **Enable Application Insights** | Select **Yes**. |
+   | **Application Insights** | Select **Create new**, enter `autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/>`, and select **OK**. |
+   | **Workspace** | Select **create new** Enter `Workspace-<inject key="DeploymentID" enableCopy="false"/>` if the field is not already populated and locked. |
 
-   ![](./media/C17.png)
+    ![](./media/C17.png)
 
-   ![](./media/C19.png)
+    ![](./media/C19.png)
 
    > **Note:** If the **Enable Application Insights** is disabled use diffent regions 
        like West US, North Europe, East US, Southeast Asia.
@@ -93,7 +93,7 @@ In this lab, you will perform:
 
    ![](./media/A02.png)
 
-   If prompted to choose storage, select **No storage account required**, choose your subscription, and select **Apply**.
+1. If prompted to choose storage, select **No storage account required**, choose your subscription, and select **Apply**.
 
    ![](./media/A03.png)
 
@@ -140,16 +140,16 @@ In this lab, you will perform:
 
 1. Run the following command to deploy the application, using the correct App Service name and resource group:
 
-- Replace the placeholders with the names shown below:  
+   - Replace the placeholders with the names shown below:  
 
-   - **Web App Name:** webapp-<inject key="DeploymentID" enableCopy="false"/>
-   - **Resource Group Name:** MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>
+      - **Web App Name:** webapp-<inject key="DeploymentID" enableCopy="false"/>
+       - **Resource Group Name:** MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>
 
-      ```
-      az webapp deploy --name YOUR-WEB-APP-NAME \
-         --resource-group YOUR-RESOURCE-GROUP \
-         --src-path ./app.zip
-      ```
+         ```
+         az webapp deploy --name YOUR-WEB-APP-NAME \
+            --resource-group YOUR-RESOURCE-GROUP \
+            --src-path ./app.zip
+         ```
 
 2. Once the deployment is complete, open the application from the **Overview (1)** page copy the **Default domain (2)** link and open it in new tab .
 

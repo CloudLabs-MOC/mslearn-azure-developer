@@ -125,7 +125,7 @@ Start, stop, or restart your virtual machine at any time using the **Resources**
 
 To adjust the zoom level of the lab environment, use the **A↕ 100%** button located near the timer:
 
-![Zoom](media/17-7-25-g4.png)
+![Zoom](media/ZZ01.png)
 
 ---
 

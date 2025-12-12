@@ -1,20 +1,69 @@
-#  Lab 5: Azure Container Services
+# Getting Started with Lab 5: Azure Container Services
+
+### Estimated Duration: 50 Minutes
+
+## Overview
 
 Welcome to **Lab 5: Azure Container Services**.  
-This Getting Started page provides everything you need before beginning the exercises, including environment access instructions, navigation tips, and support details.
+In this lab, you will work with multiple Azure container platforms to build, deploy, and verify containerized applications. This Getting Started page provides all required instructions to navigate your lab environment, access Azure, and begin the exercises.
 
 ---
 
-## Lab Overview
+## Lab Objectives
 
-In this lab, you will:
+By the end of this lab, you will be able to:
 
-- Build and push a container image to Azure Container Registry  
-- Deploy containers to Azure Container Instances  
-- Deploy a containerized app to Azure Container Apps  
-- Verify deployment results across all services  
+- Build and push a container image to Azure Container Registry (ACR)  
+- Deploy containers to Azure Container Instances (ACI)  
+- Deploy a containerized application to Azure Container Apps  
+- Verify deployment status and application behavior across all services  
 
-**Estimated Duration:** 50 minutes
+---
+
+## Pre-requisites
+
+Participants should have:
+
+- **Basic Understanding of Containers:** Familiarity with Docker images and containerized workloads.  
+- **Azure Portal Skills:** Ability to navigate Azure services like ACR, ACI, and Container Apps.  
+- **Container Deployment Concepts:** Awareness of registries, images, and runtime environments.  
+- **Command-Line Experience:** Basic usage of Azure CLI or terminal commands.  
+- **Browser Access:** A modern web browser to interact with CloudLabs and Azure Portal.  
+
+---
+
+## Architecture
+
+This lab demonstrates a multi-service container deployment workflow across Azure.
+
+**Architecture Flow:**
+
+1. A container image is built locally and pushed to **Azure Container Registry (ACR)**.  
+2. The image is deployed to **Azure Container Instances (ACI)** for quick execution.  
+3. The same image is used to deploy a scalable microservice on **Azure Container Apps**.  
+4. Each service exposes endpoints for testing and validation.  
+
+**Key Components in Flow:**  
+Developer → ACR → ACI → Container Apps → Public Endpoints → Application Verification
+
+---
+
+## Explanation of Components
+
+1. **Azure Container Registry (ACR)**  
+   A private image registry for storing and managing Docker container images.
+
+2. **Azure Container Instances (ACI)**  
+   Provides serverless container execution without managing virtual machines.
+
+3. **Azure Container Apps**  
+   A fully managed environment for running microservices and event-driven containers.
+
+4. **Docker / Container CLI**  
+   Used to build and push images to ACR.
+
+5. **Azure CLI**  
+   Command-line tool used to authenticate, manage container resources, and automate workflows.
 
 ---
 
@@ -22,12 +71,12 @@ In this lab, you will:
 
 Your virtual machine and lab guide are available directly in your browser.
 
-### Virtual Machine Access  
+### Virtual Machine Access
 You will see your VM loading on the left side of the screen:
 
 ![VM Screenshot](media/17-7-25-g1.png)
 
-### Lab Guide Access  
+### Lab Guide Access
 The lab guide appears on the right panel and will be your reference throughout the exercises.
 
 ---
@@ -70,23 +119,20 @@ Follow these steps to begin working in Azure:
 
 1. On your VM desktop, click the **Azure Portal** icon:
 
-     ![](media/G6.png)
+   ![](media/G6.png)
 
 2. Enter your credentials:
 
-   - **Email/Username:** `<inject key="AzureAdUserEmail"></inject>`
-
+   - **Email/Username:** `<inject key="AzureAdUserEmail"></inject>`  
      ![](media/G7.png)
 
 3. Enter your password:
 
-   - **Password:** `<inject key="AzureAdUserPassword"></inject>`
-
+   - **Password:** `<inject key="AzureAdUserPassword"></inject>`  
      ![](media/G8.png)
 
-4. If prompted to **Stay signed in**, select **No**.
-
-     ![](media/G9.png)
+4. If prompted to **Stay signed in**, select **No**.  
+   ![](media/G9.png)
 
 ---
 
@@ -94,7 +140,7 @@ Follow these steps to begin working in Azure:
 
 CloudLabs offers **24/7 support** for all learners.
 
-**Learner Support:**
+**Learner Support:**  
 - Email: cloudlabs-support@spektrasystems.com  
 - Live Chat: https://cloudlabs.ai/labs-support  
 
@@ -106,6 +152,8 @@ If you face login, VM, or Azure issues, reach out anytime.
 
 Click **Next** at the bottom-right corner to begin the first exercise.
 
-   ![](media/G10.png)
+![](media/G10.png)
+
+---
 
 ## Happy Learning!

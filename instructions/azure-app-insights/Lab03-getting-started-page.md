@@ -80,7 +80,7 @@ You will see your VM loading on the left side of the lab environment:
 ### Lab Guide Access
 The lab guide appears on the right-hand panel.
 
-![VM Screenshot](media/SG02.png)
+![VM Screenshot](media/GS3.png)
 
 ---
 
