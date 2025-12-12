@@ -3,8 +3,6 @@
 Welcome to **Lab 10: Create Blob Storage Resources with the .NET Client Library**.  
 This Getting Started page provides everything you need before beginning the exercises, including environment access instructions, navigation tips, and support details.
 
----
-
 ## Lab Overview
 
 In this lab, you will:
@@ -15,7 +13,7 @@ In this lab, you will:
 - Create a container, upload a blob, list blobs, and download a blob programmatically  
 - Verify results using the Azure portal  
 
-**Estimated Duration:** 30 minutes
+**Estimated Duration:** 30 Minutes
 
 ---
 
@@ -26,9 +24,10 @@ Your virtual machine and lab guide are available directly in your browser.
 ### Virtual Machine Access  
 You will see your VM loading on the left side of the screen:
 
-![VM Screenshot](media/17-7-25-g1.png)
+![VM Screenshot](media/lab10-vm.png)
 
 ### Lab Guide Access  
+
 The lab guide appears on the right panel and will be your reference throughout the exercises.
 
 ---
@@ -61,7 +60,7 @@ You can Start, Stop, or Restart your virtual machine at any time via the **Resou
 
 To zoom in/out of the environment view, use the **A↕ 100%** button near the timer:
 
-![Zoom](media/17-7-25-g4.png)
+![Zoom](media/zoom.png)
 
 ---
 
@@ -70,13 +69,16 @@ To zoom in/out of the environment view, use the **A↕ 100%** button near the ti
 Follow these steps to begin working in Azure:
 
 1. On your VM desktop, click the **Azure Portal** icon:  
+   
    ![](media/G6.png)
 
 2. Enter your credentials:  
+   
    - **Email/Username:** `<inject key="AzureAdUserEmail"></inject>`  
      ![](media/G7.png)
 
 3. Enter your password:  
+   
    - **Password:** `<inject key="AzureAdUserPassword"></inject>`  
      ![](media/G8.png)
 

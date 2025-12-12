@@ -17,7 +17,7 @@ In this lab, you will complete two modules:
 - Add configuration data  
 - Build a .NET console app to retrieve settings  
 
-**Estimated Duration:** 45–60 minutes  
+**Estimated Duration:** 45–60 Minutes  
 
 ---
 
@@ -26,9 +26,10 @@ In this lab, you will complete two modules:
 Your virtual machine and lab guide are available directly in your browser.
 
 ### Virtual Machine Access  
+
 You will see your VM loading on the left side of the screen:
 
-![VM Screenshot](media/17-7-25-g1.png)
+![VM Screenshot](media/lab9-vm.png)
 
 ### Lab Guide Access  
 The lab guide appears on the right panel and will be your reference throughout the exercises.
@@ -63,7 +64,7 @@ You can Start, Stop, or Restart your virtual machine at any time via the **Resou
 
 To zoom in/out of the environment view, use the **A↕ 100%** button near the timer:
 
-![Zoom](media/17-7-25-g4.png)
+![Zoom](media/zoom.png)
 
 ---
 

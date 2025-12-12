@@ -67,7 +67,7 @@ In this task, you will create an Azure Storage account using Azure CLI by defini
     echo $accountName
     ```
 
-    >**Note**:  Note down the name of Storage Account you created. You need it later in the exercise.
+    >**Note:**  Note down the name of Storage Account you created. You need it later in the exercise.
 
     ![](./media/lab10-12-2.png)
 
