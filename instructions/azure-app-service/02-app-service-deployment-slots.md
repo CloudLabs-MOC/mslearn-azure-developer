@@ -53,13 +53,12 @@ In this section you download the sample app, set variables to simplify commands,
 
 1. Run the following commands to navigate into the project directory and deploy the web app to Azure.
 
-
     ```bash
     cd html-docs-hello-world
     az webapp up -g $resourceGroup -n $appName --sku P0V3 --html
     ```
 
-> After the deployment completes, follow the steps below to access your web app:
+    > After the deployment completes, follow the steps below to access your web app:
 
 
 2. Search for your **mywebapp** by entering its name in the Azure portal search bar.  
