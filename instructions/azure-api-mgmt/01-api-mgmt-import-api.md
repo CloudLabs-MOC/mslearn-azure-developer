@@ -7,12 +7,10 @@ In this exercise, you create an Azure API Management instance, import an OpenAPI
 ## Lab Objectives
 In this lab, you will perform:
 
-- Create an Azure API Management (APIM) instance
-- Import an API
-- Configure backend settings
-- Test the API
+- Exercise 1: Create an API Management instance
+- Exercise 2: Import a Backend API
+- Exercise 3: Test the APIs
 
-## Estimated Timing: 20 minutes
 # Exercise 1: Create an API Management instance
 
 In this section of the exercise, you create a resource group and an Azure Storage account. You also record the endpoint and access key for the account.
@@ -37,10 +35,10 @@ In this section of the exercise, you create a resource group and an Azure Storag
     |`myResourceGroup` | **ApiService-<inject key="DeploymentID" enableCopy="false"/>** |
 
     ```bash
-    myApiName=<myapiname>
-    myLocation=<myLocation>
-    myEmail=<myEmail>
-    myResourceGroup=<myResourceGroup>
+    myApiName=myApi-<inject key="DeploymentID" enableCopy="false"/>
+    myLocation=<inject key="Region" enableCopy="false"/>
+    myEmail=odl-user-<inject key="DeploymentID" enableCopy="false"/>@cloudlabsai
+    myResourceGroup=ApiService-<inject key="DeploymentID" enableCopy="false"/>
     ```
      ![](./media/A010.png)
 
