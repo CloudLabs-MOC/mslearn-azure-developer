@@ -28,7 +28,7 @@ In this lab, you will learn how to create an Azure API Management instance, impo
 
 ## Architecture
 
-![](media/Lab01-AD.png)
+   ![](media/Lab01-AD.png)
 
 **Architecture Flow:**
 
@@ -92,23 +92,25 @@ The lab guide appears on the right side of the interface for reference during ex
 
 ## Getting Started with Azure Portal
 
-1. Click the **Azure Portal** icon:  
+1.  On your virtual machine, click on the **Azure Portal** icon as shown below:
 
-   ![](media/G6.png)
+    ![](media/G6.png)
 
-2. Enter your username:  
-   `<inject key="Username"></inject>`  
+2. You will see the **Sign in to the Microsoft Azure** tab. Here, enter your credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-   ![](media/G7.png)
+      ![](media/G7.png)
 
-3. Enter your password:  
-   `<inject key="Temporary Access Pass"></inject>`  
+3. Next, provide your password:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-   ![](media/G8.png)
+     ![](media/G8.png)
 
 4. When prompted with **Stay signed in?**, select **No**:  
 
-   ![](media/G9.png)
+    ![](media/G9.png)
 
 ---
 
