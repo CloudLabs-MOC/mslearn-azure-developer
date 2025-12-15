@@ -7,6 +7,7 @@ In this exercise, you register an application in Microsoft Entra ID and build a 
 ## Lab Objectives
 In this lab, you will perform:
 
+Exercise 1: Implement interactive authentication with MSAL.NET
 - Task 1: Register a new application
 - Task 2: Create a .NET console app to acquire a token
 - Task 3: Configure the console application
@@ -20,18 +21,6 @@ In this lab, you will perform:
 ### Task 1: Register a new application
 
 In this task, you will create a new app registration in Microsoft Entra ID and record the IDs needed for authentication.
-
-1. In the lab VM, click on the **Azure Portal icon** as shown below:
-
-    ![](./media/lab2-12-0.png)
-
-    - On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter your credentials:
-      
-        * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-    
-    - Next, provide your password:
-
-        * **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
 1. In the portal, search for **App registrations (1)** and select **App registrations (2)**. 
 
