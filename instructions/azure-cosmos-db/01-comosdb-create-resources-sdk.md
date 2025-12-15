@@ -363,6 +363,7 @@ The code provides the overall structure of the app. Review the comments in the c
 
    ![](./media/E13.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="6035a827-10fe-4abe-9c5f-af88966b9ba3" />
 
 ---

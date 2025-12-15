@@ -37,6 +37,7 @@ In this exercise, you will create and deploy a container instance in Azure Conta
     > The **$DNS_NAME_LABEL** variable specifies the DNS name for your container.  
     > The image **mcr.microsoft.com/azuredocs/aci-helloworld** runs a basic Node.js web application.
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="2b5eee32-b290-4c07-ae35-fccf6d8d65c8" />
 
 ---

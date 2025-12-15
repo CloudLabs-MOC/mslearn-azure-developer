@@ -46,6 +46,7 @@ In this task, you will create an Azure Container Registry instance that will sto
 
 > **Note:** This command creates a *Basic* registry, a cost-optimized option suitable for learning and development scenarios.
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="dd962eb8-d886-4bb8-a640-e9bf11f0668a" />
 
 ---
