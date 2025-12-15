@@ -28,10 +28,11 @@ In this lab, you will learn how to create an Azure API Management instance, impo
 
 ## Architecture
 
-This lab follows a simple API Management architecture where APIM serves as a gateway to expose and manage backend APIs securely.
+![](media/Lab01-AD.png)
 
 **Architecture Flow:**
 
+This lab follows a simple API Management architecture where APIM serves as a gateway to expose and manage backend APIs securely.
 1. A client sends a request to the APIM endpoint.  
 2. APIM processes the request, applies policies, logs telemetry, and forwards the request.  
 3. The backend API (Petstore OpenAPI) responds.  
