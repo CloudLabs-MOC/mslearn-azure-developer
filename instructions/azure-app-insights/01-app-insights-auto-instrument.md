@@ -20,8 +20,8 @@ In this lab, you will perform:
 
    ![](./media/C1.png)
 
-2. In the **Search the Marketplace** bar, enter **web app** and press **Enter**.
-3. In the Web App tile, select the **Create** dropdown and then select **Web App**.
+2. In the **Search the Marketplace** bar, enter **web app (1)** and press **Enter**.
+3. In the Web App tile, select the **Create (2)** dropdown and then select **Web App (3)**.
 
    ![](./media/C2.png)
 
@@ -30,8 +30,8 @@ In this lab, you will perform:
    | Setting | Action |
    |--|--|
    | **Subscription** | Retain the default value. |
-   | **Resource group** | Choose an existing resource group (MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>).  |
-   | **Name** | Enter a unique name webapp-<inject key="DeploymentID" enableCopy="false"/>.|
+   | **Resource group** | Choose an existing resource group (**MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>**).  |
+   | **Name** | **webapp-<inject key="DeploymentID" enableCopy="false"/>**.|
    | Slider under **Name** | Turn it off (if visible). |
    | **Publish** | Select **Code**. |
    | **Runtime stack** | Select **.NET 8 (LTS)**. |
@@ -47,15 +47,15 @@ In this lab, you will perform:
    | Setting | Action |
    |--|--|
    | **Enable Application Insights** | Select **Yes**. |
-   | **Application Insights** | Select **Create new**, enter `autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/>`, and select **OK**. |
-   | **Workspace** | Select **create new** Enter `Workspace-<inject key="DeploymentID" enableCopy="false"/>` if the field is not already populated and locked. |
+   | **Application Insights** | Select **Create new**, enter **autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/>** and select **OK**. |
+   | **Workspace** | Select **create new** Enter **Workspace-<inject key="DeploymentID" enableCopy="false"/>** if the field is not already populated and locked. |
 
     ![](./media/C17.png)
 
     ![](./media/C19.png)
 
    > **Note:** If the **Enable Application Insights** is disabled use diffent regions 
-       like West US, North Europe, East US, Southeast Asia.
+      like West US, North Europe, East US, Southeast Asia.
 
 7. Select **Review + create** → Review your configuration → Select **Create**.
 
