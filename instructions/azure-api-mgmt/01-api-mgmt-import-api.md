@@ -58,7 +58,7 @@ In this section of the exercise, you create a resource group and an Azure Storag
 
      ![](./media/A005.png)
 
-2. Once the API **myApi-<inject key="Deployment-ID" enableCopy="false"/>** page opens, under **APIs (1)** from the left panel select **APIs (2)**. And select **OpenAPI** (3)
+2. Once the API **myApi-<inject key="Deployment-ID" enableCopy="false"/>** page opens, under **APIs (1)** from the left panel select **APIs (2)**. And select **OpenAPI** from Create from definition (3)
 
     ![](./media/A007.png)
 
@@ -83,8 +83,6 @@ In this section of the exercise, you create a resource group and an Azure Storag
 3. Select **Send (4)**. Response should be **200 OK (5)**.
 
     ![](./media/A11.png)
-
-    > **Note:** Modify **status** parameter to test different outputs.
 
 ---
 # Summary
