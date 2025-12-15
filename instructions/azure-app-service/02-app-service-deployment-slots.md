@@ -59,7 +59,7 @@ In this section you download the sample app, set variables to simplify commands,
     az webapp up -g $resourceGroup -n $appName --sku P0V3 --html
     ```
 
-    > After the deployment completes, follow the steps below to access your web app:
+> After the deployment completes, follow the steps below to access your web app:
 
 
 2. Search for your **mywebapp** by entering its name in the Azure portal search bar.  

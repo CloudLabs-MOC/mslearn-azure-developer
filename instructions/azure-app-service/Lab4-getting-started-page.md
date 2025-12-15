@@ -51,7 +51,7 @@ Participants should have:
 
 ## Architecture
 
-
+  ![](media/Lab04-AD1.png)
 
 This lab demonstrates how containerized applications and deployment slots function within Azure App Service.
 
@@ -143,13 +143,13 @@ Follow these steps to begin working with Azure resources:
 
 1. You will see the **Sign in to the Microsoft Azure** tab. Here, enter your credentials:
  
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username:**<inject key="AzureAdUserEmail"></inject>
  
        ![Enter Your Username](./media/G7.png)
  
 1. Next, provide your password:
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Password:**<inject key="AzureAdUserPassword"></inject>
 
      ![](media/G8.png)
 
