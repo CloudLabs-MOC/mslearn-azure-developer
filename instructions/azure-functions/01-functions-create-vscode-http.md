@@ -134,7 +134,7 @@ In this task, you will create an Azure Function App, select the necessary config
 
    > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
-<validaation step= "7870d4b0-9860-425e-9838-1a9025c8e736" />
+<validaation step="7870d4b0-9860-425e-9838-1a9025c8e736" />
 
 # Exercise 4: Deploy the function to Azure
 
