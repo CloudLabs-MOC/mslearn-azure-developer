@@ -9,31 +9,37 @@ In this lab, you will perform:
 
 - **Exercise 1:** Create your local Azure Functions project  
 - **Exercise 2:** Run the function locally  
-- **Exercise 3:** Deploy the function using Azure Cloud Shell  
-- **Exercise 4:** Execute the function in Azure   
-
-## Estimated timing: 30 minutes
+- **Exercise 3:** Deploy and create resources using Azure
+- **Exercise 4:** Execute the function in Azure
 
 # Exercise 1: Create your local function project
 
 ## Task 1: Create a new Function App project
 
 1. Open **Visual Studio Code**.  
-2. Install **C# Dev Kit** and **Azure Functions** extensions.
+2. Install **C# Dev Kit** and **Azure Functions** extensions in the Visual Studio Code as show below.
 
     ![](./media/01/F1.png)
    
     ![](./media/01/F2.png)
 
-4. Open the Terminal and run the command below:
+4. Open the **Terminal (1)** and select **New Terminal (2)** and run the below command :
+
+    ![](./media/01/F11.png)
 
     ```
     choco upgrade azure-functions-core-tools
     ```
-> **Note:** The upgrade process might take 5–10 minutes to complete, depending on your system and network speed.
+    > **Note:** The upgrade process might take 5–10 minutes to complete, depending on your system and network speed.
 
-5. Press **F1** → Run **Azure Functions: Create New Project...**  
-6. Select an empty folder.  
+5. Once command is executed successfully ,Press **fn key and F1**, Run **Azure Functions: Create New Project...**  
+
+    ![](./media/01/F3.png)
+
+6. When pop-up comes to select folder navigate to **This PC (1)** and select Local Disk(C) Create an empty folder and name it as Lab-08-<inject key="DeploymentID" enableCopy="false"/> under C:\ as show below .
+
+    ![](./media/01/F2.png)
+
 7. Provide the following values during setup:
 
     | Prompt | Action |
@@ -74,73 +80,59 @@ Visual Studio Code integrates with Azure Functions Core tools to let you run thi
 
     ![](./media/01/F7.png)
 
-- Select the notification bell icon to view the notification. Information about the function execution is shown in **Terminal** panel.
+1. Select the notification bell icon to view the notification. Information about the function execution is shown in **Terminal** panel.
 
 6. Press **Shift + F5** to stop Core Tools and disconnect the debugger.
 
-After verifying that the function runs correctly on your local computer, it's time to use Visual Studio Code to publish the project directly to Azure.
+8. After verifying that the function runs correctly on your local computer, it's time to use Visual Studio Code to publish the project directly to Azure.
 
 ---
 
-# Exercise 3: Deploy and create resources using Azure Cloud Shell
+# Exercise 3: Deploy and create resources using Azure 
 
-All Azure‑side creation will be executed via **Cloud Shell (Bash)**.
+## Task 1: Create a function app
 
----
+In this task, you will create an Azure Function App, select the necessary configurations for its operating system, runtime stack, and storage account, and then deploy it for use with serverless computing tasks.
 
-## Task 1: Open Cloud Shell
+1. In the Azure portal, use the **Search resources, services, and docs** text box to search for **Function App (1)**, and then, in the list of results, select **Function App (2)**.
 
-1. Open Cloud Shell using the **[\>_]** button at the top of the Azure portal, and choose a **Bash** environment.  
+    ![](./media/01/F15.png)
 
-    ![](./media/01/A01.png)
+1. On the **Function App** blade, select **+ Create**.
 
-   ![](./media/01/A02.png)
+1. On the **Create Function App** blade, select **Consumption (1)** and click on **Select (2)**.
 
-   If prompted to choose storage, select **No storage account required**, choose your subscription, and select **Apply**.
+    ![](./media/01/F16.png)
 
-   ![](./media/01/A03.png)
+1. On the **Create Function App** blade, on the **Basics** tab, perform the following actions, and then select **Next: Storage (9)**:
 
-   > **Note**: If Cloud Shell is currently set to **PowerShell**, switch to **Bash**.
+    | Setting | Action |
+    | -- | -- |
+    | **Subscription**  | Retain the default value **(1)** |
+    | **Resource group** drop-down list       | Select **Serverless-<inject key="DeploymentID" enableCopy="false"/> (2)**|
+    | **Function App name** text box   | Enter **myfunctionapp<inject key="DeploymentID" enableCopy="false"/> (3)** |
+    | **Secure unique default hostname** | **Disabled (4)** |
+    | **Operating System** | Select **Linux (5)** |    
+    | **Runtime stack** drop-down list | Select **.NET (6)** |
+    | **Version** drop-down list | Select **8 (LTS),  isolated worker model (7)** |
+    | **Region** drop-down list | Select the **West US (8)** region |
 
-      ![](./media/01/C23.png)
+    > **Note :** If deployment fails due to Rigion issue kinding return back to Basic Tab and change the Region to Central US / West US / North Central US / East US and perform all the steps of Task 1 again.
 
-## Task 2: Create Azure Resources in Cloud Shell
 
-In this task, you will create the required Azure resources for deploying your Function App.  
+    ![](./media/01/F17.png)
 
-1. You first define environment variables that store the names and locations for all resources used in this lab.  
-These values will be reused by the commands that follow.
- 
-    ```bash
-    RESOURCE_GROUP=Serverless-<inject key="DeploymentID" enableCopy="false"/>
-    LOCATION=<inject key="Region" enableCopy="false"/>
-    FUNCTIONAPP_NAME=myfunctionapp<inject key="DeploymentID" enableCopy="false"/>
-    STORAGE_NAME=funcstor<inject key="DeploymentID" enableCopy="false"/>
-    PLAN_NAME=funcplan<inject key="DeploymentID" enableCopy="false"/>
-    ```
+1. On the **Storage** tab, select **Create new (1)**, enter the name **funcstor<inject key="DeploymentID" enableCopy="false"/> (2)**, and click **OK (3)**. Then select **Review + create (4)**.
 
-2. Create a Storage Account required by the Function App to store logs and runtime metadata.
+    ![](./media/01/F12.png)
 
-    ```bash
-    az storage account create \
-    --name $STORAGE_NAME \
-    --location $LOCATION \
-    --resource-group $RESOURCE_GROUP \
-    --sku Standard_LRS
-    ```
-3. Create a Linux-based Function App using the .NET isolated runtime on a serverless consumption plan.
+1. On the **Review + create** tab, review the options that you selected during the previous steps.
 
-    ```bash
-    az functionapp create \
-    --resource-group $RESOURCE_GROUP \
-    --consumption-plan-location $LOCATION \
-    --runtime dotnet-isolated \
-    --functions-version 4 \
-    --name $FUNCTIONAPP_NAME \
-    --storage-account $STORAGE_NAME \
-    --os-type Linux
-    ```
-    ![](./media/01/F10.png)
+1. Select **Create** to create the function app by using your specified configuration.
+
+   ![](./media/01/F18.png)
+
+   > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 <validaation step= "7870d4b0-9860-425e-9838-1a9025c8e736" />
 
@@ -156,41 +148,23 @@ These values will be reused by the commands that follow.
 
 1. Select the function app you created. When prompted about overwriting previous deployments, select **Deploy** to deploy your function code to the new function app resource.
 
+    ![](./media/01/F19.png)
+
 1. After deployment completes, select **View Output** to view the details of the deployment results. If you miss the notification, select the notification bell icon in the lower right corner to see it again.
 
     ![Screenshot of the View Output button.](./media/01/function-view-output.png)
 
-
 ---
-## Troubleshooting Deployment
-
-1. If deployment fails, navigate back to the Azure cloud shell run:
-
-    ### Restart the Function App
-
-    ```bash
-    az functionapp restart \
-    --name myfunctionapp<inject key="DeploymentID" enableCopy="false"/> \
-    --resource-group Serverless-<inject key="DeploymentID" enableCopy="false"/>
-    ```
-
-    ### View live logs
-
-    ```bash
-    az functionapp log tail \
-    --name myfunctionapp<inject key="DeploymentID" enableCopy="false"/> \
-    --resource-group Serverless-<inject key="DeploymentID" enableCopy="false"/>
-    ```
-
-- Once all commands run successfully in Azure Cloud Shell, return to VS Code and perform Task 1 again.
 
 # Exercise 5: Execute the function in Azure
 
 1. Back in the **Resources** area in the side bar, expand your subscription, your new function app, and **Functions**. **Right-click** the **HttpExample** function and choose **Execute Function Now...**.
 
-    ![Screenshot of the Execute Function Now option.](./media/01/execute-function-remote.png)
+    ![Screenshot of the Execute Function Now option.](./media/01/F13.png)
 
 1. In **Enter request body** you see the request message body value of `{ "name": "Azure" }`. Press **Enter** to send this request message to your function.
+
+    ![](./media/01/F200.png)
 
 1. When the function executes in Azure and returns a response, a notification is raised in Visual Studio Code. select the notification bell icon to view the notification.
 
