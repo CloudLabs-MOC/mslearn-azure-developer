@@ -137,13 +137,15 @@ Follow these steps to begin working in Azure:
 
    ![](media/G6.png)
 
-2. Enter your credentials:
-   - **Email/Username:**<inject key="AzureAdUserEmail"></inject>
+2. You will see the **Sign in to the Microsoft Azure** tab. Here, enter your credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-     ![](media/G7.png)
+      ![](media/G7.png)
 
-3. Enter your password:
-   - **Password:**<inject key="AzureAdUserPassword"></inject>
+3. Next, provide your password:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
      ![](media/G8.png)
 
