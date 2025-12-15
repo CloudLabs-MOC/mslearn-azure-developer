@@ -51,6 +51,8 @@ Participants should have:
 
 ## Architecture
 
+
+
 This lab demonstrates how containerized applications and deployment slots function within Azure App Service.
 
 **Architecture Flow:**
@@ -60,9 +62,6 @@ This lab demonstrates how containerized applications and deployment slots functi
 3. A staging slot is created to host updated code without affecting production.  
 4. Changes are validated in the staging slot.  
 5. A **slot swap** promotes the staging version to production with zero downtime.
-
-**Key Components in Flow:**  
-Client → Azure App Service (Production Slot) → Container Runtime → Staging Slot → Slot Swap → Updated Production App
 
 ---
 
@@ -142,13 +141,15 @@ Follow these steps to begin working with Azure resources:
 
    ![](media/G6.png)
 
-2. Sign in using the credentials provided in your lab environment:
-   - **Email/Username:** `<inject key="AzureAdUserEmail"></inject>`  
-
-     ![](media/G7.png)
-
-3. Enter your password:
-   - **Password:** `<inject key="AzureAdUserPassword"></inject>`  
+1. You will see the **Sign in to the Microsoft Azure** tab. Here, enter your credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+       ![Enter Your Username](./media/G7.png)
+ 
+1. Next, provide your password:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
      ![](media/G8.png)
 

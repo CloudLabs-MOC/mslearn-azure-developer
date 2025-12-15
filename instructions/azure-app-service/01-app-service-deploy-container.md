@@ -77,6 +77,7 @@ In this lab, you will perform:
 
     > **Note:** It may take a few minutes for the container to fully load.
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="74d7f8c8-43e6-4abf-a577-cbb980fe9ab2" />
 
 # Summary
