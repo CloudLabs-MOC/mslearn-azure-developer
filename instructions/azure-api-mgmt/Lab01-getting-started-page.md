@@ -96,12 +96,12 @@ The lab guide appears on the right side of the interface for reference during ex
    ![](media/G6.png)
 
 2. Enter your username:  
-   `<inject key="AzureAdUserEmail"></inject>`  
+   `<inject key="Username"></inject>`  
 
    ![](media/G7.png)
 
 3. Enter your password:  
-   `<inject key="AzureAdUserPassword"></inject>`  
+   `<inject key="Temporary Access Pass"></inject>`  
 
    ![](media/G8.png)
 
