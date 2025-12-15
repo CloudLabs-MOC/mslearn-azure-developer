@@ -33,7 +33,7 @@ In this lab, you will perform:
 3. Create variables to store the resource group name and a unique Cosmos DB account name.
 
     ```bash
-    resourceGroup=myResourceGroup
+    resourceGroup=CosmosDB-<inject key="DeploymentID" enableCopy="false"/>
     accountName=cosmosexercise$RANDOM
     ```
 
@@ -43,13 +43,14 @@ In this lab, you will perform:
     az cosmosdb create --name $accountName --resource-group $resourceGroup
     ```
 
-5. Retrieve the Cosmos DB account endpoint.
+5. Copy the **Azure Cosmos DB account endpoint** displayed in the output and paste it into a text editor (such as Notepad), as it will be required in the upcoming steps.
 
     ```bash
     az cosmosdb show --name $accountName --resource-group $resourceGroup   --query "documentEndpoint" --output tsv
     ```
 
-6. Retrieve the primary access key for the Cosmos DB account.
+6. Retrieve the **primary access key** for the Azure Cosmos DB account, as it will be used in the upcoming steps.
+
 
     ```bash
     az cosmosdb keys list --name $accountName --resource-group $resourceGroup   --query "primaryMasterKey" --output tsv
@@ -95,7 +96,7 @@ In this lab, you will perform:
     code .env
     ```
 
-2. Add the Cosmos DB endpoint and account key.
+2. Add the **Azure Cosmos DB account endpoint** and **account key** that were copied in the previous tasks to the application configuration.
 
     ```text
     DOCUMENT_ENDPOINT="YOUR_DOCUMENT_ENDPOINT"

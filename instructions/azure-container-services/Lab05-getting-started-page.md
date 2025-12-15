@@ -1,6 +1,6 @@
 # Getting Started with Lab 5: Azure Container Services
 
-### Estimated Duration: 50 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview
 

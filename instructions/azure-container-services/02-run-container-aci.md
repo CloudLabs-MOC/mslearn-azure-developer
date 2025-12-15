@@ -11,7 +11,7 @@ In this lab, you will perform:
 - **Exercise 1:** Create and deploy a container in Azure Container Instances  
 - **Exercise 2:** Verify the container is running  
 
-## Estimated Timing: 15 Minutes
+## Estimated Timing: 20 Minutes
 
 ## Exercise 1: Create and deploy a container
 

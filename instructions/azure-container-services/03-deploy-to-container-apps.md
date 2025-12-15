@@ -11,7 +11,7 @@ In this lab, you will perform:
 - **Exercise 1:** Create an Azure Container Apps environment  
 - **Exercise 2:** Deploy a container app to the environment  
 
-## Estimated Timing: 15 Minutes
+## Estimated Timing: 20 Minutes
 
 ## Exercise 1: Create an Azure Container Apps environment
 
