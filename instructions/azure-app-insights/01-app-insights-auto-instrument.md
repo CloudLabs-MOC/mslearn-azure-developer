@@ -42,13 +42,13 @@ In this lab, you will perform:
 
      ![](./media/C3.png)
 
-6. Navigate to the **Monitor + secure** tab and configure:
+6. Navigate to the **Monitor + secure** tab and configure and click on **OK (5)**:
 
    | Setting | Action |
    |--|--|
    | **Enable Application Insights** | Select **Yes**. |
-   | **Application Insights** | Select **Create new**, enter **autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/>** and select **OK**. |
-   | **Workspace** | Select **create new** Enter **Workspace-<inject key="DeploymentID" enableCopy="false"/>** if the field is not already populated and locked. |
+   | **Application Insights** | Select **Create new**, enter **autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/> (1)**. |
+   | **Workspace** | Select **create new (2)** Enter **Workspace-<inject key="DeploymentID" enableCopy="false"/> (3)** and click on **OK (4)**. |
 
     ![](./media/C17.png)
 
@@ -72,10 +72,15 @@ In this lab, you will perform:
 
 ### Task 1: Enable autoinstrumentation for the web app
 
-1. In the left navigation menu, expand **Monitoring** and select **Application Insights**.
-2. Locate the **Instrument your application** section and select **.NET Core**.
-3. Under **Collection level**, select **Recommended**.
-4. Select **Apply** and confirm the changes.
+1. In the left navigation menu, expand **Monitoring (1)** and select **Application Insights (2)**.
+2. Locate the **Instrument your application** section and select **.NET Core (3)**.
+3. Under **Collection level**, select **Recommended (4)**.
+4. Select **Apply (5)** and confirm the changes.
+
+   - If a popup appears prompting **Apply Monitoring Settings**, select **Yes**.
+
+      ![](./media/C5.png)
+
 5. In the left navigation menu, select **Overview**.
 
    ![](./media/C22.png)
@@ -118,9 +123,7 @@ In this lab, you will perform:
    ```
    dotnet build
    ```
-
 ---
-
 ### Task 2: Publish and package the application
 
 1. Publish the application into a **publish** directory:
@@ -147,8 +150,8 @@ In this lab, you will perform:
        - **Resource Group Name:** MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>
 
          ```
-         az webapp deploy --name YOUR-WEB-APP-NAME \
-            --resource-group YOUR-RESOURCE-GROUP \
+         az webapp deploy --name webapp-<inject key="DeploymentID" enableCopy="false"/> \
+            --resource-group MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/> \
             --src-path ./app.zip
          ```
 
