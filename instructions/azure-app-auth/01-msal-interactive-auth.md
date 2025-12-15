@@ -14,7 +14,7 @@ Exercise 1: Implement interactive authentication with MSAL.NET
 - Task 4: Add the starter code for the project
 - Task 5: Run the application
 
-## Estimated Timing: 20 Minutes
+## Estimated Timing: 25 Minutes
 
 ### Exercise 1: Implement interactive authentication with MSAL.NET
 

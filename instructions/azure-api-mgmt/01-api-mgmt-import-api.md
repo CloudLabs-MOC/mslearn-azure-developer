@@ -50,6 +50,7 @@ In this section of the exercise, you create a resource group and an Azure Storag
     > **Note:** The operation should complete within approximately five minutes.
 ---
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="025b0fde-7447-43a3-ba91-95512da20179" />
 
 # Exercise 2: Import a Backend API

@@ -1,6 +1,6 @@
 # Getting Started with Lab 02: Implement Interactive Authentication & Microsoft Graph Integration
 
-### Estimated Duration: 30-45 Minutes
+### Estimated Duration: 50-60 Minutes
 
 ## Overview
 
