@@ -40,16 +40,25 @@ Participants should have:
 
 This lab demonstrates the complete lifecycle of serverless development using Azure Functions and Visual Studio Code.
 
-**Architecture Flow:**
+ ![](./media/01/Lab08dig.png)
 
-1. A new Azure Function project is created locally in Visual Studio Code.  
-2. The function is executed and tested locally using the built-in debugger and Azure Functions Core Tools.  
-3. Required Azure resources (**Function App & Storage Account**) are **created in the Azure Portal**.  
-4. The function project is deployed to Azure directly from Visual Studio Code.  
-5. The deployed function is executed and monitored in Azure.
+### Architecture Flow
 
-**Key Components in Flow:**  
-Developer → Visual Studio Code → Azure Functions Core Tools → **Azure Portal** → Azure Function App → Function Execution
+1. **Local Development (Exercise 1)**  
+   The developer creates a new Azure Function project in Visual Studio Code using the HTTP trigger template.
+
+2. **Local Execution (Exercise 2)**  
+   The function is executed locally using Azure Functions Core Tools to validate functionality before deployment.
+
+3. **Azure Resource Provisioning (Exercise 3)**  
+   An Azure Function App and associated Storage Account are created in Azure using the Consumption plan.
+
+4. **Deployment (Exercise 4)**  
+   The function code is published from Visual Studio Code to the Azure Function App.
+
+5. **Cloud Execution (Exercise 5)**  
+   The deployed function is executed in Azure via an HTTP request, and results are validated through Visual Studio Code and the Azure Portal.
+
 
 ---
 
@@ -114,7 +123,7 @@ You can Start, Stop, or Restart your virtual machine at any time via the **Resou
 
 To zoom in/out of the environment view, use the **A↕ 100%** button near the timer:
 
-![Zoom](media/01/17-7-25-g4.png)
+![Zoom](media/01/ZZ01.png)
 
 ---
 
