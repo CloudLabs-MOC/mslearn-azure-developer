@@ -49,7 +49,7 @@ Participants should have:
 
 ## Architecture
 
-![VM Screenshot](media/Lab02-AD.png)
+   ![VM Screenshot](media/Lab02-AD.png)
 
 **Architecture Flow:**
 
