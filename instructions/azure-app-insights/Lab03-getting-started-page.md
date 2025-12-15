@@ -36,7 +36,7 @@ Participants should have:
 
 ## Architecture
 
-![](media/Lab03-dig.png)
+![](media/Lab03-dig01.png)
 
 **Architecture Flow:**
 
