@@ -13,7 +13,7 @@ In this lab, you will perform:
 - Task 4: Add the starter code for the project
 - Task 5: Run the application
 
-## Estimated Timing: 25 Minutes
+## Estimated Timing: 5 Minutes
 
 ### Task 1: Register a new application
 

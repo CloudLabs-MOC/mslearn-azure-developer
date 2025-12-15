@@ -49,18 +49,17 @@ Participants should have:
 
 ## Architecture
 
-This lab uses a lightweight authentication and Microsoft Graph integration architecture.
+![VM Screenshot](media/Lab02-AD.png)
 
 **Architecture Flow:**
+
+This lab uses a lightweight authentication and Microsoft Graph integration architecture.
 
 1. The .NET console application initializes MSAL's `PublicClientApplication`.  
 2. The user authenticates interactively using Microsoft Entra ID.  
 3. MSAL obtains a delegated access token with permissions such as `User.Read`.  
 4. The application initializes the `GraphServiceClient` using the acquired token.  
 5. Microsoft Graph processes the request and returns user profile details.
-
-**Key Components in Flow:**  
-Client App → MSAL.NET → Microsoft Entra ID → Access Token → Microsoft Graph API → Response to Application  
 
 ---
 
