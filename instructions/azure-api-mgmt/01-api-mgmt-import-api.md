@@ -25,14 +25,7 @@ In this section of the exercise, you create a resource group and an Azure Storag
 
     ![](./media/A03.png)
 
-4. Now create variables using the code below. Copy it into Notepad, update the values accordingly, and then run it in the Bash terminal:
-
-    | Settings | Values |
-    | -- | -- |
-    | `myApiName` | **myApi-<inject key="DeploymentID" enableCopy="false"/>** |
-    | `myLocation`|  **<inject key="Region" enableCopy="false"/>** |
-    | `myEmail` | **odl-user-<inject key="DeploymentID" enableCopy="false"/>@cloudlabsai.com** |
-    |`myResourceGroup` | **ApiService-<inject key="DeploymentID" enableCopy="false"/>** |
+4. Now create variables using the code below. Copy the code and then run it in the Bash terminal:
 
     ```bash
     myApiName=myApi-<inject key="DeploymentID" enableCopy="false"/>
@@ -61,7 +54,7 @@ In this section of the exercise, you create a resource group and an Azure Storag
 
 # Exercise 2: Import a Backend API
 
-1. Search for **API Management services** in Azure Portal and select your instance **myApi-<inject key="Deployment-ID" enableCopy="false"/>**.
+1. Search for **API Management services** in Azure Portal and select your instance **myApi-<inject key="DeploymentID" enableCopy="false"/>**.
 
      ![](./media/A005.png)
 
