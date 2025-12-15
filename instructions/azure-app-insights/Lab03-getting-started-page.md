@@ -1,6 +1,6 @@
 # Getting Started with Lab 03: Monitor an Application with Autoinstrumentation
 
-### Estimated Duration: 20-30 Minutes
+### Estimated Duration: 30-40 Minutes
 
 ## Overview
 
@@ -36,9 +36,11 @@ Participants should have:
 
 ## Architecture
 
-This lab demonstrates monitoring using Azure Application Insights with autoinstrumentation.
+![](media/Lab03-dig.png)
 
 **Architecture Flow:**
+
+This lab demonstrates monitoring using Azure Application Insights with autoinstrumentation.
 
 1. A Blazor application is deployed to an Azure Web App.  
 2. Autoinstrumentation is enabled at the App Service level with no code modifications.  

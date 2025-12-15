@@ -11,7 +11,6 @@ In this lab, you will perform:
 + Exercise 3: Create a new Blazor app and deploy it to the web app resource  
 + Exercise 4: View application activity in Application Insights  
 
-## Estimated timing: 20 minutes
 # Exercise 1: Create resources in Azure
 
 ### Task 1: Create a Web App with Application Insights enabled
