@@ -12,7 +12,6 @@ In this lab, you will perform:
 - Make a change to the sample app and deploy it to the staging slot.
 - Swap the staging and default production slots to move the changes to the production slot.
 
-## Estimated timing: 30 minutes
 
 # Exercise 1: Download and deploy the sample app
 

@@ -11,8 +11,6 @@ In this lab, you will perform:
 - Create an Azure App Service resource and deploy a containerized app
 - View the results
 
-## Estimated timing: 15 minutes
-
 # Exercise 1: Create a web app resource
 
 ## Task 1: Create the Web App

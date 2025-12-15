@@ -1,6 +1,6 @@
 # Getting Started with Lab 04: Deploying and Managing Applications on Azure App Service
 
-### Estimated Total Duration: 45 Minutes
+### Estimated Total Duration: 45-60 Minutes
 
 ## Overview
 

@@ -119,7 +119,7 @@ In this task, you will create an Azure Function App, select the necessary config
 
     > **Note :** If deployment fails due to Rigion issue kinding return back to Basic Tab and change the Region to Central US / West US / North Central US / East US and perform all the steps of Task 1 again.
 
-    ![](./media/01/F17.png)
+      ![](./media/01/F17.png)
 
 1. On the **Storage** tab, select **Create new (1)**, enter the name **funcstor<inject key="DeploymentID" enableCopy="false"/> (2)**, and click **OK (3)**. Then select **Review + create (4)**.
 
