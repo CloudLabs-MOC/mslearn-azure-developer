@@ -48,9 +48,6 @@ This lab demonstrates monitoring using Azure Application Insights with autoinstr
 4. Application Insights collects, processes, and visualizes the telemetry.  
 5. Logs and metrics are viewed in Azure Monitor and Application Insights workbooks.
 
-**Key Components in Flow:**  
-Client → Azure Web App → Autoinstrumentation → Application Insights → Azure Monitor Dashboards
-
 ---
 
 ## Explanation of Components
