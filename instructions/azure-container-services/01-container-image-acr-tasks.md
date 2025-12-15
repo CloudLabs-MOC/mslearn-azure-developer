@@ -97,11 +97,11 @@ In this task, you will verify that the image was successfully pushed to your reg
 
 In this task, you will run the container image directly from Azure Container Registry to validate successful execution.
 
-    ```bash
-    az acr run --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --cmd '$Registry/sample/hello-world:v1' /dev/null
-    ```
+```bash
+az acr run --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>  --cmd '$Registry/sample/hello-world:v1' /dev/null
+```
 
-    ![](./media/lab5-12-9.png)
+ ![](./media/lab5-12-9.png)
 
 ---
 
