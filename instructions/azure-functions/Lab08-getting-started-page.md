@@ -79,10 +79,10 @@ Your virtual machine and lab guide are available directly in your browser.
 ### Virtual Machine Access  
 You will see your VM loading on the left side of the screen:
 
-![VM Screenshot](media/01/17-7-25-g1.png)
-
 ### Lab Guide Access  
 The lab guide appears on the right panel and will be your reference throughout the exercises.
+
+![Environment](media/01/GS08.png)
 
 ---
 
