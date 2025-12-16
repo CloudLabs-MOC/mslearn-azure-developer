@@ -5,8 +5,7 @@
 ## Overview
 
 Welcome to **Lab 08: Create an Azure Function with Visual Studio Code**.  
-In this lab, you will create and monitor a C# Azure Function by first building and testing it locally in Visual Studio Code and then deploying it to Azure.  
-You will create Azure resources directly **through the Azure Portal**, deploy your function code from Visual Studio Code, execute the function in the cloud, and validate the complete serverless workflow.
+In this lab, you will create and monitor a C# Azure Function by building and testing it locally in Visual Studio Code and then deploying it to Azure. You will create Azure resources directly through the Azure Portal, deploy your function code from Visual Studio Code, execute the function in the cloud, and validate the complete serverless workflow.
 
 This Getting Started guide provides essential environment setup, navigation instructions, and support information before beginning the hands-on exercises.
 
@@ -18,9 +17,9 @@ By completing this lab, you will learn to:
 
 - Create a local Azure Functions project in Visual Studio Code  
 - Run and debug the function locally using Azure Functions Core Tools  
-- Create Azure resources directly in the Azure Portal 
-- Deploy your Azure Function to the cloud from Visual Studio Code  
-- Execute and validate the function in Azure  
+- Create Azure resources directly in the Azure Portal  
+- Deploy your Azure Function to Azure from Visual Studio Code  
+- Execute and validate the function in the cloud  
 
 ---
 
@@ -38,27 +37,11 @@ Participants should have:
 
 ## Architecture
 
-This lab demonstrates the complete lifecycle of serverless development using Azure Functions and Visual Studio Code.
+![](./media/01/Lab08dig.png)
 
- ![](./media/01/Lab08dig.png)
+**Architecture Flow:**
 
-### Architecture Flow
-
-1. **Local Development (Exercise 1)**  
-   The developer creates a new Azure Function project in Visual Studio Code using the HTTP trigger template.
-
-2. **Local Execution (Exercise 2)**  
-   The function is executed locally using Azure Functions Core Tools to validate functionality before deployment.
-
-3. **Azure Resource Provisioning (Exercise 3)**  
-   An Azure Function App and associated Storage Account are created in Azure using the Consumption plan.
-
-4. **Deployment (Exercise 4)**  
-   The function code is published from Visual Studio Code to the Azure Function App.
-
-5. **Cloud Execution (Exercise 5)**  
-   The deployed function is executed in Azure via an HTTP request, and results are validated through Visual Studio Code and the Azure Portal.
-
+In this lab, a developer creates an HTTP-triggered Azure Function locally using Visual Studio Code and Azure Functions Core Tools. The function is tested locally to validate behavior before deployment. Required Azure resources, including a Function App and Storage Account, are created using the Azure Portal. The function code is then deployed from Visual Studio Code to Azure, where it is executed and validated through HTTP requests using the Azure Portal and development tools.
 
 ---
 
@@ -71,13 +54,13 @@ This lab demonstrates the complete lifecycle of serverless development using Azu
    The development environment used to build, debug, and deploy the Azure Function.
 
 3. **Azure Functions Core Tools**  
-   Enables local debugging, testing, and running of Azure Functions before deploying.
+   Enables local debugging, testing, and running of Azure Functions before deployment.
 
 4. **Azure Portal**  
-   Used to create and configure the Function App, Storage Account, and other required Azure resources.
+   Used to create and configure the Function App, Storage Account, and related Azure resources.
 
 5. **Azure Function App**  
-   The fully managed hosting platform where your deployed serverless functions run.
+   The managed hosting environment where the deployed Azure Function runs.
 
 ---
 
@@ -121,7 +104,7 @@ You can Start, Stop, or Restart your virtual machine at any time via the **Resou
 
 ## Adjusting Zoom
 
-To zoom in/out of the environment view, use the **A↕ 100%** button near the timer:
+To zoom in or out of the environment view, use the **A↕ 100%** button near the timer:
 
 ![Zoom](media/01/ZZ01.png)
 
@@ -135,15 +118,15 @@ Follow these steps to begin working in Azure:
    ![](media/01/G6.png)
 
 2. Enter your credentials:  
-   - **Email/Username:** `<inject key="AzureAdUserEmail"></inject>`  
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>  
      ![](media/01/G7.png)
 
 3. Enter your password:  
-   - **Password:** `<inject key="AzureAdUserPassword"></inject>`  
+   - **Password:** <inject key="AzureAdUserPassword"></inject>  
      ![](media/01/G8.png)
 
 4. If prompted to **Stay signed in**, select **No**.  
-     ![](media/01/G9.png)
+   ![](media/01/G9.png)
 
 ---
 
@@ -157,11 +140,8 @@ CloudLabs provides **24/7 dedicated support**.
 
 If you face login, VM, VS Code, or Azure issues, reach out anytime.
 
----
 
-## Move to the Next Page
-
-Click **Next** at the bottom-right corner to begin **Exercise 1: Create your local Azure Functions project**.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
 ![](media/01/G10.png)
 

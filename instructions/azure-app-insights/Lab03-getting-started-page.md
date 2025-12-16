@@ -5,7 +5,7 @@
 ## Overview
 
 Welcome to **Lab 03: Monitor an Application with Autoinstrumentation**.  
-In this lab, you will configure monitoring for a web application using Application Insights with zero code changes. You will enable autoinstrumentation, deploy a Blazor app, and observe real‑time telemetry including requests, failures, and performance metrics.
+In this lab, you will configure monitoring for a web application using Application Insights with zero code changes. You will enable autoinstrumentation, deploy a Blazor app, and observe real-time telemetry including requests, failures, and performance metrics.
 
 This Getting Started guide provides environment setup, navigation instructions, and support details before you begin the exercises.
 
@@ -53,7 +53,7 @@ This lab demonstrates monitoring using Azure Application Insights with autoinstr
 ## Explanation of Components
 
 1. **Azure Web App**  
-   Hosts the Blazor application and provides built‑in integration with Application Insights.
+   Hosts the Blazor application and provides built-in integration with Application Insights.
 
 2. **Application Insights**  
    Collects telemetry such as requests, dependencies, exceptions, and performance metrics.
@@ -65,7 +65,7 @@ This lab demonstrates monitoring using Azure Application Insights with autoinstr
    The sample web application deployed for observing telemetry during this lab.
 
 5. **Azure Monitor**  
-   Provides dashboards, logs, metrics, and end‑to‑end observability for applications.
+   Provides dashboards, logs, metrics, and end-to-end observability for applications.
 
 ---
 
@@ -91,7 +91,7 @@ Navigate to the **Environment** tab to view credentials and resource details:
 
 ---
 
-## Split‑Window Feature
+## Split-Window Feature
 
 To view the lab guide in a separate window, select **Split Window**:
 
@@ -147,11 +147,8 @@ CloudLabs provides **24/7 support** for all learners.
 - Email: cloudlabs-support@spektrasystems.com  
 - Live Chat: https://cloudlabs.ai/labs-support  
 
----
 
-## Move to the Next Page
-
-Select **Next** at the bottom‑right corner to begin **Exercise 1**.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
 ![](media/G10.png)
 

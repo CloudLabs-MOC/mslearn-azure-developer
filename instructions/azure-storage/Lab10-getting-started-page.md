@@ -1,19 +1,65 @@
-# Lab 10: Create Blob Storage Resources with the .NET Client Library
+# Getting Started with Lab 10: Create Blob Storage Resources with the .NET Client Library
+
+### Estimated Duration: 30 Minutes
+
+## Overview
 
 Welcome to **Lab 10: Create Blob Storage Resources with the .NET Client Library**.  
-This Getting Started page provides everything you need before beginning the exercises, including environment access instructions, navigation tips, and support details.
+In this lab, you will build a .NET console application that interacts with Azure Blob Storage. You will create a storage account, authenticate using DefaultAzureCredential, create containers, upload and download blobs programmatically, and verify the results using the Azure Portal.
 
-## Lab Overview
+This Getting Started page provides essential environment setup, navigation instructions, and support details before beginning the exercises.
 
-In this lab, you will:
+---
+
+## Lab Objectives
+
+By completing this lab, you will learn to:
 
 - Create an Azure Storage account  
 - Build a .NET console application  
-- Add authentication using DefaultAzureCredential  
-- Create a container, upload a blob, list blobs, and download a blob programmatically  
-- Verify results using the Azure portal  
+- Authenticate using DefaultAzureCredential  
+- Create a blob container programmatically  
+- Upload, list, and download blobs using the .NET client library  
+- Verify storage resources in the Azure Portal  
 
-**Estimated Duration:** 30 Minutes
+---
+
+## Pre-requisites
+
+Participants should have:
+
+- **Basic C# / .NET Knowledge:** Ability to build console applications and manage NuGet packages.  
+- **Azure Portal Experience:** Familiarity with navigating Azure Storage resources.  
+- **Storage Concepts:** Understanding of containers, blobs, and object storage.  
+- **Authentication Basics:** Awareness of managed identity and DefaultAzureCredential.  
+- **Browser Access:** A modern browser to work in CloudLabs and Azure Portal.  
+
+---
+
+## Architecture
+
+**Architecture Flow:**
+
+In this lab, a .NET console application authenticates to Azure using DefaultAzureCredential and connects to an Azure Storage account. The application creates a blob container, uploads files as blobs, lists stored blobs, and downloads content programmatically. Azure Blob Storage securely stores the data, which is later validated through the Azure Portal.
+
+---
+
+## Explanation of Components
+
+1. **Azure Blob Storage**  
+   Object storage service used to store unstructured data such as files and media.
+
+2. **Azure Storage Account**  
+   The top-level resource that hosts Blob Storage and other storage services.
+
+3. **Blob Container**  
+   A logical grouping of blobs within a storage account.
+
+4. **Azure.Storage.Blobs (.NET SDK)**  
+   Client library used to interact with Azure Blob Storage programmatically.
+
+5. **DefaultAzureCredential**  
+   Handles authentication securely without hardcoding credentials.
 
 ---
 
@@ -27,7 +73,6 @@ You will see your VM loading on the left side of the screen:
 ![VM Screenshot](media/lab10-vm.png)
 
 ### Lab Guide Access  
-
 The lab guide appears on the right panel and will be your reference throughout the exercises.
 
 ---
@@ -58,7 +103,7 @@ You can Start, Stop, or Restart your virtual machine at any time via the **Resou
 
 ## Adjusting Zoom
 
-To zoom in/out of the environment view, use the **A↕ 100%** button near the timer:
+To zoom in or out of the environment view, use the **A↕ 100%** button near the timer:
 
 ![Zoom](media/zoom.png)
 
@@ -74,12 +119,12 @@ Follow these steps to begin working in Azure:
 
 2. Enter your credentials:  
    
-   - **Email/Username:** `<inject key="AzureAdUserEmail"></inject>`  
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>  
      ![](media/G7.png)
 
 3. Enter your password:  
    
-   - **Password:** `<inject key="AzureAdUserPassword"></inject>`  
+   - **Password:** <inject key="AzureAdUserPassword"></inject>  
      ![](media/G8.png)
 
 4. If prompted to **Stay signed in**, select **No**.  
@@ -91,19 +136,15 @@ Follow these steps to begin working in Azure:
 
 CloudLabs offers **24/7 support** for all learners.
 
-**Learner Support:**  
+**Learner Support Contacts:**  
 - Email: cloudlabs-support@spektrasystems.com  
 - Live Chat: https://cloudlabs.ai/labs-support  
 
 If you face login, VM, or Azure issues, reach out anytime.
 
----
+Now, click on **Next** from the lower right corner to move on to the next page.
 
-## Move to the Next Page
-
-Click **Next** at the bottom-right corner to begin the first exercise.  
-
-![Next](media/G10.png)
+![](media/G10.png)
 
 ---
 

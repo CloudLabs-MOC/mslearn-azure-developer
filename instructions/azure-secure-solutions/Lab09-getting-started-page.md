@@ -5,7 +5,9 @@
 ## Overview
 
 Welcome to **Lab 09: Secure Solutions in Azure**.  
-In this lab, you will secure applications using Azure Key Vault and Azure App Configuration. This Getting Started page provides essential environment setup steps, navigation instructions, and support details.
+In this lab, you will secure applications using Azure Key Vault and Azure App Configuration. You will store and retrieve secrets securely, manage application configuration centrally, and access these values programmatically from a .NET application.
+
+This Getting Started page provides essential environment setup steps, navigation instructions, and support details before beginning the exercises.
 
 ---
 
@@ -13,15 +15,11 @@ In this lab, you will secure applications using Azure Key Vault and Azure App Co
 
 By completing this lab, you will learn to:
 
-### Module 1 — Create and Retrieve Secrets from Azure Key Vault
-- Create an Azure Key Vault  
-- Store and retrieve secrets using Azure CLI  
-- Build a .NET console application that interacts with Key Vault  
-
-### Module 2 — Retrieve Configuration Settings from Azure App Configuration
-- Create an App Configuration resource  
-- Add configuration data  
-- Build a .NET console application to retrieve settings  
+- Create and manage secrets in Azure Key Vault  
+- Retrieve secrets securely using a .NET application  
+- Create and manage Azure App Configuration resources  
+- Store and retrieve application configuration values  
+- Use secure access patterns for secrets and configuration data  
 
 ---
 
@@ -31,25 +29,17 @@ Participants should have:
 
 - **Basic C# / .NET Skills:** Ability to build console applications and install NuGet packages.  
 - **Azure Portal Familiarity:** Ability to navigate Key Vault, App Configuration, and Resource Groups.  
-- **Security Concepts:** Basic understanding of secrets, configuration management, and secure storage.  
-- **CLI Knowledge:** Ability to run Azure CLI commands in Cloud Shell or local terminal.  
+- **Security Concepts:** Understanding of secrets, configuration management, and secure storage.  
+- **CLI Knowledge:** Ability to run Azure CLI commands.  
 - **Browser Access:** A modern browser to interact with CloudLabs and Azure Portal.  
 
 ---
 
 ## Architecture
 
-This lab demonstrates secure application configuration using Azure Key Vault and App Configuration.
-
 **Architecture Flow:**
 
-1. A secret is stored in **Azure Key Vault** and retrieved via the .NET application.  
-2. Application settings are stored in **Azure App Configuration**.  
-3. The .NET application fetches configuration values securely at runtime.  
-4. Azure services provide managed identity access and secure retrieval.  
-
-**Key Components in Flow:**  
-Developer → .NET App → Managed Identity → Key Vault → App Configuration → Secure Output
+In this lab, secrets are securely stored in Azure Key Vault and application configuration values are stored in Azure App Configuration. A .NET console application accesses these services at runtime using secure authentication mechanisms. Azure services manage access control and secure retrieval, allowing the application to read secrets and configuration values without embedding sensitive data in code.
 
 ---
 
@@ -59,17 +49,16 @@ Developer → .NET App → Managed Identity → Key Vault → App Configuration 
    Securely stores secrets, keys, and certificates with controlled access.
 
 2. **Azure App Configuration**  
-   Centralized service for storing app configuration settings and feature flags.
+   Centralized service for storing application configuration settings.
 
 3. **Managed Identity**  
-   Provides secure identity for applications without storing credentials.
+   Provides a secure identity for applications to access Azure resources without credentials.
 
 4. **Azure CLI**  
-   Used to create resources and manage Key Vault secrets and configuration settings.
+   Used to create resources and manage secrets and configuration data.
 
 5. **.NET Console Application**  
-   Demonstrates secure secret and configuration retrieval programmatically.
-
+   Demonstrates secure retrieval of secrets and configuration values programmatically.
 
 ---
 
@@ -78,7 +67,6 @@ Developer → .NET App → Managed Identity → Key Vault → App Configuration 
 Your virtual machine and lab guide are available directly in your browser.
 
 ### Virtual Machine Access  
-
 You will see your VM loading on the left side of the screen:
 
 ![VM Screenshot](media/lab9-vm.png)
@@ -114,7 +102,7 @@ You can Start, Stop, or Restart your virtual machine at any time via the **Resou
 
 ## Adjusting Zoom
 
-To zoom in/out of the environment view, use the **A↕ 100%** button near the timer:
+To zoom in or out of the environment view, use the **A↕ 100%** button near the timer:
 
 ![Zoom](media/zoom.png)
 
@@ -130,13 +118,13 @@ Follow these steps to begin working in Azure:
 
 2. Enter your credentials:
 
-   - **Email/Username:** `<inject key="AzureAdUserEmail"></inject>`
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
      ![](media/G7.png)
 
 3. Enter your password:
 
-   - **Password:** `<inject key="AzureAdUserPassword"></inject>`
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
      ![](media/G8.png)
 
@@ -150,18 +138,16 @@ Follow these steps to begin working in Azure:
 
 CloudLabs offers **24/7 support** for all learners.
 
-**Learner Support:**
+**Learner Support Contacts:**  
 - Email: cloudlabs-support@spektrasystems.com  
 - Live Chat: https://cloudlabs.ai/labs-support  
 
 If you face login, VM, or Azure issues, reach out anytime.
 
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+![](media/G10.png)
+
 ---
-
-## Begin the Lab
-
-Click **Next** at the bottom-right corner to begin **Module 1: Create and Retrieve Secrets from Azure Key Vault**.
-
-   ![](media/G10.png)
 
 ## Happy Learning!

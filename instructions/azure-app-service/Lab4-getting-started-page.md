@@ -1,184 +1,143 @@
-# Getting Started with Lab 04: Deploying and Managing Applications on Azure App Service
+# Getting Started with Lab 04: Azure App Service
 
-### Estimated Total Duration: 45-60 Minutes
+### Overall Estimated Duration: 45-60 Minutes
 
 ## Overview
 
-Welcome to **Lab 04**, which focuses on deploying containerized applications and managing deployment slots in Azure App Service.  
-This Getting Started guide provides environment setup steps, portal access instructions, navigation details, and support information to prepare you for the hands‑on lab.
+This lab is intended for developers and cloud engineers who want to deploy and manage applications using **Azure App Service**. Participants will gain hands-on experience deploying a containerized application, configuring application settings, creating deployment slots, and safely promoting changes to production using slot swaps.
 
-Lab 04 includes **two modules**:
+This Getting Started page prepares you to navigate the lab environment and Azure Portal before beginning the exercises.
 
-### **Module 1: Deploy a Containerized App to Azure App Service**
-You will:
-- Create an Azure App Service resource  
-- Configure container settings  
-- Deploy a containerized application  
-- Verify the running application  
+## Objective 
 
-### **Module 2: Swap Deployment Slots in Azure App Service**
-You will:
-- Deploy a static HTML website  
-- Create a staging deployment slot  
-- Deploy updated code to the staging slot  
-- Perform a slot swap to promote changes to production  
+This lab is designed to equip participants with hands-on experience in deploying and managing applications on Azure App Service. By completing this lab, participants will learn to:
 
----
+- **Deploying Containerized Applications:**  
+  Learn how to deploy a container-based application to Azure App Service and configure container settings required to run the application successfully.
 
-## Lab Objectives
+- **Managing Deployment Slots:**  
+  Understand how to create and manage deployment slots to safely test application updates without impacting production traffic.
 
-By completing this lab, you will learn to:
+- **Performing Slot Swaps:**  
+  Perform a slot swap operation to promote changes from staging to production with zero downtime.
 
-- Deploy containerized applications to Azure App Service  
-- Configure application container settings  
-- Create and manage deployment slots  
-- Perform slot swaps for zero‑downtime deployment  
-- Validate application behavior across staging and production environments  
+- **Validating Application Behavior:**  
+  Verify application behavior across staging and production environments after deployment and swap.
 
----
+## Prerequisites 
 
-## Pre-requisites
+Participants should have:  
+Basic knowledge and understanding of the following:
 
-Participants should have:
-
-- **Basic Web Deployment Knowledge:** Familiarity with web hosting concepts.  
-- **Azure Portal Experience:** Ability to navigate Azure services such as App Service and Resource Groups.  
-- **Containers Understanding:** Basic awareness of containerized applications and images.  
-- **Deployment Concepts:** Knowledge of staging environments, production environments, and promotion workflows.  
-- **Browser Access:** A modern web browser for working within the CloudLabs environment.  
-
----
+- Azure Portal  
+- Azure App Service fundamentals  
+- Web application deployment concepts  
 
 ## Architecture
 
-  ![](media/Lab04-AD1.png)
+This architecture demonstrates how Azure App Service hosts containerized applications and uses deployment slots to support safe application updates and zero-downtime releases.
 
-This lab demonstrates how containerized applications and deployment slots function within Azure App Service.
+## Architecture Diagram: 
 
-**Architecture Flow:**
-
-1. A containerized app image is deployed to Azure App Service.  
-2. App Service runs the container and exposes a public endpoint.  
-3. A staging slot is created to host updated code without affecting production.  
-4. Changes are validated in the staging slot.  
-5. A **slot swap** promotes the staging version to production with zero downtime.
-
----
+![](media/Lab04-AD1.png)
 
 ## Explanation of Components
 
-1. **Azure App Service**  
-   A fully managed platform for hosting web apps, APIs, and containerized applications.
+The architecture for this lab involves the following key components:
 
-2. **App Service Plan**  
-   Defines compute resources such as CPU, RAM, and scaling capabilities for hosted apps.
+- **Azure App Service:**  
+  A fully managed platform used to host web applications and containerized workloads.
 
-3. **Deployment Slots**  
-   Separate runtime environments (e.g., staging, production) used for safe testing and controlled promotion.
+- **App Service Plan:**  
+  Defines the compute resources such as CPU, memory, and scaling options.
 
-4. **Container Settings**  
-   Configuration parameters such as image source, startup commands, and registry credentials.
+- **Container Image:**  
+  The application image deployed to Azure App Service.
 
-5. **Slot Swap**  
-   A deployment mechanism that promotes changes from staging to production with zero downtime.
+- **Deployment Slots:**  
+  Separate runtime environments (staging and production) used to validate changes safely.
 
----
+- **Slot Swap:**  
+  A mechanism that exchanges environments between slots to promote changes with zero downtime.
+
+## Getting Started with the Lab
+
+Welcome to **Lab 04: Deploying and Managing Applications on Azure App Service**.  
+We’ve prepared a guided lab environment where you will deploy applications, configure slots, and perform slot swaps using Azure App Service.
 
 ## Accessing Your Lab Environment
 
-Your CloudLabs environment includes a virtual machine and a built‑in lab guide.
+Once you're ready to begin, your virtual machine and **Guide** will be available directly within your web browser.
 
-### Virtual Machine Access
-   Your VM loads on the left side of the CloudLabs interface:
+![](media/GS4.png)
 
-### Lab Guide Access
-The lab instructions appear on the right-hand panel.
+## Virtual Machine & Lab Guide
 
-   ![VM Screenshot](media/GS4.png)
+Your virtual machine is used to access the Azure Portal and perform all deployment tasks.  
+The lab guide remains visible throughout the lab to guide you step by step.
 
----
+## Exploring Your Lab Resources
 
-## Exploring Lab Resources
+To review your credentials and lab details, navigate to the **Environment** tab.
 
-Navigate to the **Environment** tab to view:
-- Credentials  
-- Resource details  
-- Deployment information  
+![](media/G2.png)
 
-   ![Environment](media/G2.png)
+## Utilizing the Split Window Feature
 
----
+For convenience, you can open the lab guide in a separate window using the **Split Window** option.
 
-## Split-Window Feature
-
-To open the lab guide in a separate browser window for better visibility, use the **Split Window** option:
-
-   ![Split Window](media/G3.png)
-
----
+![](media/G3.png)
 
 ## Managing Your Virtual Machine
 
-You can start, stop, and restart your VM anytime from the **Resources** tab:
+You can **Start, Stop, or Restart** your virtual machine at any time from the **Resources** tab.
 
-   ![VM Manage](media/G4.png)
+![](media/G4.png)
 
----
+## Lab Guide Zoom In/Zoom Out
 
-## Adjusting Zoom
+To adjust the zoom level of the lab environment, use the **A↕ : 100%** icon located next to the timer.
 
-Control the zoom level of the lab environment using the **A↕ 100%** button located near the session timer:
+![](media/ZZ01.png)
 
-   ![Zoom](media/ZZ01.png)
+## Lab Validation
 
----
+After completing each exercise, select the **Validate** button under the Validation tab.  
+If validation fails, review the error message and retry the steps as instructed.
 
-## Accessing Azure Portal
+![](media/develop-ai-overview-6.png)
 
-Follow these steps to begin working with Azure resources:
+## Let's Get Started with Azure Portal
 
-1. Select the **Azure Portal** icon from the VM desktop:
+1. On your virtual machine, click on the **Azure Portal** icon:
 
    ![](media/G6.png)
 
-1. You will see the **Sign in to the Microsoft Azure** tab. Here, enter your credentials:
- 
-   - **Email/Username:**<inject key="AzureAdUserEmail"></inject>
- 
-       ![Enter Your Username](./media/G7.png)
- 
-1. Next, provide your password:
- 
-   - **Password:**<inject key="AzureAdUserPassword"></inject>
+1. On the **Sign into Microsoft Azure** page, enter:
+
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+     ![](media/G7.png)
+
+1. Enter your password:
+
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
      ![](media/G8.png)
 
-4. When asked **Stay signed in?**, choose **No**.  
+1. When prompted with **Stay signed in?**, select **No**.
 
    ![](media/G9.png)
 
----
-
 ## Support
 
-CloudLabs offers dedicated **24/7 learner support** for any issues encountered, including:
-- VM not loading  
-- Azure access issues  
-- CLI authentication problems  
-- Deployment failures  
+The CloudLabs support team is available **24/7**.
 
-**Contact Information:**  
-- Email: cloudlabs-support@spektrasystems.com  
-- Live Chat: https://cloudlabs.ai/labs-support  
+- **Email:** cloudlabs-support@spektrasystems.com  
+- **Live Chat:** https://cloudlabs.ai/labs-support  
 
----
+Now, click on **Next** from the lower right corner to move on to the next page.
 
-## Move to the Next Page
+![](media/G10.png)
 
-After completing your environment setup, click **Next** at the bottom-right corner to begin the lab exercises.
-
-   ![](media/G10.png)
-
----
-
-## Happy Learning!
+### Happy Learning!!

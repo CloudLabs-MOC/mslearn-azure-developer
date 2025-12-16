@@ -60,6 +60,85 @@ In this section you download the sample app, set variables to simplify commands,
 
     > After the deployment completes, follow the steps below to access your web app:
 
+<details>
+<summary>Troubleshooting Steps for Deploy to App Service Using az webapp up Error</summary>
+
+# Troubleshooting Steps for Deployment Error
+
+**Note:** If you face an error in **Task 3: Deploy to App Service Using `az webapp up`**, please follow the steps below and then run the deployment code again.
+
+## **Step 1: Identify the Error**
+
+If you receive the following message:
+
+```
+A Cloud Shell credential problem occurred.
+Audience https://appservice.azure.com is not a supported MSI token audience.
+```
+
+## **Step 2: Log out of Azure CLI**
+
+Run:
+
+```bash
+az logout
+```
+
+## **Step 3: Log in again using the correct scope**
+
+Run:
+
+```bash
+az login --scope "https://appservice.azure.com/.default"
+```
+
+This will display a device login link and a code.
+
+![](./media/02/C16.png)
+
+## **Step 4: Authenticate using Device Login**
+
+1. Open **https://microsoft.com/devicelogin**
+2. Enter the code provided in Cloud Shell.
+3. Select **Next**.
+
+![](./media/02/C15.png)
+
+## **Step 5: Select Your ODL_User Account**
+
+Select the displayed **ODL_User** account.
+
+![](./media/02/C14.png)
+
+## **Step 6: Approve Azure CLI Sign-in**
+
+Click **Continue** to allow Azure CLI access.
+
+![](./media/02/C013.png)
+
+## **Step 7: Select Subscription**
+
+When prompted:
+
+```
+Select a subscription and tenant:
+```
+
+Enter:
+
+```
+1
+```
+## **Step 8: Re-run the Command**
+
+Run:
+
+    ```bash
+    cd html-docs-hello-world
+    az webapp up -g $resourceGroup -n $appName --sku P0V3 --html
+    ```
+
+</details>
 
 2. Search for your **mywebapp** by entering its name in the Azure portal search bar.  
 
@@ -136,7 +215,7 @@ In this section you download the sample app, set variables to simplify commands,
 
 7. The web app URL will appear similar to the example shown below:  
 
-    ![](./media/02/D012.png)
+    ![](./media/02/D11.png)
 
 ---
 
