@@ -36,21 +36,15 @@ Participants should have:
 
 ## Architecture
 
+This architecture flow demonstrates monitoring an application using Azure Application Insights with autoinstrumentation. A Blazor application is deployed to an Azure Web App, where autoinstrumentation is enabled at the App Service level without any code changes. The application automatically emits telemetry such as requests, failures, and traces. Application Insights collects and processes this data, allowing you to analyze logs and metrics through Azure Monitor and Application Insights dashboards.
+
 ![](media/Lab03-dig01.png)
-
-**Architecture Flow:**
-
-This lab demonstrates monitoring using Azure Application Insights with autoinstrumentation.
-
-1. A Blazor application is deployed to an Azure Web App.  
-2. Autoinstrumentation is enabled at the App Service level with no code modifications.  
-3. The Web App automatically emits telemetry (requests, failures, traces).  
-4. Application Insights collects, processes, and visualizes the telemetry.  
-5. Logs and metrics are viewed in Azure Monitor and Application Insights workbooks.
 
 ---
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 1. **Azure Web App**  
    Hosts the Blazor application and provides built-in integration with Application Insights.

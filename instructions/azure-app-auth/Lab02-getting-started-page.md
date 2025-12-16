@@ -37,15 +37,15 @@ Participants should have:
 
 ## Architecture
 
+This architecture demonstrates how a .NET console application uses MSAL.NET to authenticate a user interactively against Microsoft Entra ID. Upon successful authentication, MSAL acquires a delegated access token with Microsoft Graph permissions. The application then uses the Microsoft Graph SDK to call Microsoft Graph and retrieve user profile information, which is displayed and validated by the user.
+
 ![](media/Lab02-AD.png)
-
-**Architecture Flow:**
-
-In this lab, a .NET console application uses MSAL.NET to authenticate a user interactively against Microsoft Entra ID. Upon successful authentication, MSAL acquires a delegated access token with Microsoft Graph permissions. The application then uses the Microsoft Graph SDK to call Microsoft Graph and retrieve user profile information, which is displayed and validated by the user.
 
 ---
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 1. **MSAL.NET (Microsoft Authentication Library)**  
    Handles interactive authentication and token acquisition.

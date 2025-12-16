@@ -12,8 +12,7 @@ In this lab, you will perform:
 - Create a .NET console app to store and retrieve secrets
 - Sign into Azure and run the app to create a new secret
 
-## Estimated Timing: 30 Minutes
-
+## Exercise 1: Implement Secure Secret Management with Azure Key Vault and .NET
 ## Task 1: Create Azure Key Vault resources and add a secret
 
 In this task you will create a Key Vault to store secrets in Azure using Azure CLI.

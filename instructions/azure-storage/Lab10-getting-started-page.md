@@ -1,6 +1,6 @@
 # Getting Started with Lab 10: Create Blob Storage Resources with the .NET Client Library
 
-### Estimated Duration: 30 Minutes
+### Estimated Duration: 40 Minutes
 
 ## Overview
 
@@ -38,13 +38,15 @@ Participants should have:
 
 ## Architecture
 
-**Architecture Flow:**
+This architecture demonstrates how a .NET console application authenticates to Azure using DefaultAzureCredential and connects to an Azure Storage account. The application creates a blob container, uploads files as blobs, lists stored blobs, and downloads content programmatically. Azure Blob Storage securely stores the data, which is later validated through the Azure Portal.
 
-In this lab, a .NET console application authenticates to Azure using DefaultAzureCredential and connects to an Azure Storage account. The application creates a blob container, uploads files as blobs, lists stored blobs, and downloads content programmatically. Azure Blob Storage securely stores the data, which is later validated through the Azure Portal.
+![](media/Lab10-AD.png)
 
 ---
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 1. **Azure Blob Storage**  
    Object storage service used to store unstructured data such as files and media.
@@ -120,14 +122,17 @@ Follow these steps to begin working in Azure:
 2. Enter your credentials:  
    
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>  
+
      ![](media/G7.png)
 
 3. Enter your password:  
    
    - **Password:** <inject key="AzureAdUserPassword"></inject>  
+
      ![](media/G8.png)
 
 4. If prompted to **Stay signed in**, select **No**.  
+
    ![](media/G9.png)
 
 ---

@@ -37,15 +37,15 @@ Participants should have:
 
 ## Architecture
 
+This architecture demonstrates how a developer creates an HTTP-triggered Azure Function locally using Visual Studio Code and Azure Functions Core Tools. The function is tested locally to validate behavior before deployment. Required Azure resources, including a Function App and Storage Account, are created using the Azure Portal. The function code is then deployed from Visual Studio Code to Azure, where it is executed and validated through HTTP requests using the Azure Portal and development tools.
+
 ![](./media/01/Lab08dig.png)
-
-**Architecture Flow:**
-
-In this lab, a developer creates an HTTP-triggered Azure Function locally using Visual Studio Code and Azure Functions Core Tools. The function is tested locally to validate behavior before deployment. Required Azure resources, including a Function App and Storage Account, are created using the Azure Portal. The function code is then deployed from Visual Studio Code to Azure, where it is executed and validated through HTTP requests using the Azure Portal and development tools.
 
 ---
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 1. **Azure Functions**  
    A serverless compute service that runs event-driven code without provisioning servers.

@@ -37,13 +37,15 @@ Participants should have:
 
 ## Architecture
 
-**Architecture Flow:**
+This architecture demonstrates how secrets are securely stored in Azure Key Vault and application configuration values are stored in Azure App Configuration. A .NET console application accesses these services at runtime using secure authentication mechanisms. Azure services manage access control and secure retrieval, allowing the application to read secrets and configuration values without embedding sensitive data in code.
 
-In this lab, secrets are securely stored in Azure Key Vault and application configuration values are stored in Azure App Configuration. A .NET console application accesses these services at runtime using secure authentication mechanisms. Azure services manage access control and secure retrieval, allowing the application to read secrets and configuration values without embedding sensitive data in code.
+![](media/Lab09-AD.png)
 
 ---
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 1. **Azure Key Vault**  
    Securely stores secrets, keys, and certificates with controlled access.

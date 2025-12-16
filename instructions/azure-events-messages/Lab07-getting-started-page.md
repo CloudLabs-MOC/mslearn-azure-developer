@@ -37,15 +37,13 @@ Participants should have:
 
 ## Architecture
 
+This architecture flow demonstrates how applications communicate using Azure messaging and eventing services. .NET applications publish events and messages to Azure Event Grid, Event Hubs, Service Bus, and Azure Queue Storage based on different messaging patterns. These services route, store, and deliver messages reliably for asynchronous and event-driven processing. Consumers receive and process messages independently, enabling loose coupling and scalability. The architecture supports resilient, scalable, and real-time application communication in Azure.
+
 ![](media/Lab07-AD.png)
 
-**Architecture Flow:**
-
-In this lab, applications publish events and messages to Azure messaging services such as Event Grid, Event Hubs, Service Bus, and Azure Queue Storage. These services route, store, and deliver messages to consumers for processing. The user validates message flow and processing through .NET applications and Azure Portal monitoring tools.
-
----
-
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 1. **Azure Event Grid**  
    Enables event-based communication using publishers, topics, and subscribers.

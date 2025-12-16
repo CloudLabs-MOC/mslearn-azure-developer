@@ -7,6 +7,7 @@ In this exercise, you create an Azure Storage account and build a .NET console a
 ## Lab Objectives
 In this lab, you will perform:
 
+## Exercise 1: Provision Azure Storage and Perform Blob Operations Using .NET
 * Task 1: Create an Azure Storage account
 * Task 2: Assign a role to your Microsoft Entra user name
 * Task 3: Create a .NET console app to create containers and items
@@ -14,23 +15,10 @@ In this lab, you will perform:
 * Task 5: Add code to complete the project
 * Task 6: Sign into Azure and run the app
 
-## Estimated Timing: 30 Minutes
-
+## Exercise 1: Provision Azure Storage and Perform Blob Operations Using .NET
 ### Task 1: Create an Azure Storage account
 
 In this task, you will create an Azure Storage account using Azure CLI by defining required variables and deploying the storage resource with a unique account name.
-
-1. In the lab VM, click on the **Azure Portal icon** as shown below:
-
-    ![](./media/lab2-12-0.png)
-
-    - On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter your credentials:
-      
-        * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-    
-    - Next, provide your password:
-
-        * **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
 1. On the Azure portal homepage, click the **\[>\_] Cloud Shell (1)** button located to the right of the **Copilot** tab at the top. This opens a new Cloud Shell session. In the **Welcome to Azure Cloud Shell** window, choose **Bash**.
 

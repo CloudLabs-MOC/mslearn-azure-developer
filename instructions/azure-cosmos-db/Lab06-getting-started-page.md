@@ -37,15 +37,15 @@ Participants should have:
 
 ## Architecture
 
+This architecture flow demonstrates how a .NET application initializes a Cosmos DB client using the account endpoint and access key. The application creates a database and container if they do not already exist and then inserts JSON items programmatically. Azure Cosmos DB automatically stores and indexes the data, which is later verified by the user through the Azure Portal.
+
 ![](media/Lab06-AS.png)
-
-**Architecture Flow:**
-
-In this lab, a .NET application initializes a Cosmos DB client using the account endpoint and access key. The application creates a database and container if they do not already exist and then inserts JSON items programmatically. Azure Cosmos DB automatically stores and indexes the data, which is later verified by the user through the Azure Portal.
 
 ---
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 1. **Azure Cosmos DB for NoSQL**  
    A globally distributed, high-performance NoSQL database service optimized for JSON data.

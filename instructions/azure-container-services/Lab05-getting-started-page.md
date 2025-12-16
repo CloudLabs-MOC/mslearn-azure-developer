@@ -36,15 +36,15 @@ Participants should have:
 
 ## Architecture
 
+This architecture flow demonstrates how a container image is built and pushed to Azure Container Registry (ACR). The same image is then deployed to Azure Container Instances (ACI) for quick execution and validation. After verification, the container image is deployed to Azure Container Apps to run as a scalable application. Each deployment exposes an endpoint that allows you to test and validate application behavior across Azure container services.
+
 ![](media/Lab05-AD.png)
-
-**Architecture Flow:**
-
-In this lab, a container image is built and pushed to Azure Container Registry (ACR). The same image is then deployed to Azure Container Instances (ACI) for quick execution and validation. After verification, the container image is deployed to Azure Container Apps to run as a scalable application. Each deployment exposes an endpoint that allows you to test and validate application behavior across Azure container services.
 
 ---
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 1. **Azure Container Registry (ACR)**  
    A private registry used to store and manage container images.

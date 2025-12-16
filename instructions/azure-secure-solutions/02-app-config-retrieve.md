@@ -12,8 +12,7 @@ In this lab, you will perform:
 - Create a .NET console app to retrieve configuration information
 - Sign into Azure and run the app  
 
-## Estimated Timing: 15 Minutes
-
+# Exercise 2: Application Configuration Management with Azure App Configuration
 ## Task: 1 Create an Azure App Configuration resource and add configuration information
 
 In this task, you will create an Azure App Configuration resource using the Azure CLI and add the initial configuration settings needed for your application.
