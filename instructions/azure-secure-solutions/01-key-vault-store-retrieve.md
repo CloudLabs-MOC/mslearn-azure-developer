@@ -38,7 +38,7 @@ In this task you will create a Key Vault to store secrets in Azure using Azure C
     ```
     resourceGroup=ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>
     location=<inject key="Region" enableCopy="false"/>
-    keyVaultName=mykeyvaultname<inject key="DeploymentID" enableCopy="false"/>
+    keyVaultName=mykeyvault<inject key="DeploymentID" enableCopy="false"/>
  
     ```
 
