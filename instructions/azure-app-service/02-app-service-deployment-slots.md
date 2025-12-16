@@ -57,8 +57,7 @@ In this section you download the sample app, set variables to simplify commands,
     cd html-docs-hello-world
     az webapp up -g $resourceGroup -n $appName --sku P0V3 --html
     ```
-
-    > After the deployment completes, follow the steps below to access your web app:
+> Note:If the above command gives an error follow the Troubleshooting steps and run the command again as shown below :
 
 <details>
 <summary>Troubleshooting Steps for Deploy to App Service Using az webapp up Error</summary>
@@ -139,6 +138,10 @@ Run:
     ```
 
 </details>
+
+---
+
+> After the deployment completes, follow the steps below to access your web app:
 
 2. Search for your **mywebapp** by entering its name in the Azure portal search bar.  
 
