@@ -58,6 +58,7 @@ In this task, you will create the required Azure Event Grid resources, including
 
     ![](./media/lab7-12-2.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="e6e94df0-6484-4c30-a392-ea0be9f4c4a4" />
 
 ### Task 2: Create a message endpoint
@@ -87,6 +88,7 @@ In this task, you will deploy a message endpoint using a prebuilt web app that w
 
     > **Tip:** Leave the browser running, it is used to show updates.
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="0ea1c9e6-969d-474a-9ca9-f23e538e88e1" />
 
 ### Task 3: Subscribe to the topic

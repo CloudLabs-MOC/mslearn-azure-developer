@@ -55,6 +55,7 @@ In this task you will create a Key Vault to store secrets in Azure using Azure C
 
     >**Note:** Note down the name of Key Vault you created. You need it later in the exercise.
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="f9c5f427-4ea7-4d62-91b7-7cc85096f2a3" />
 
 ## Task 2: Assign a role to your Microsoft Entra user name

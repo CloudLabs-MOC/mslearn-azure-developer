@@ -58,6 +58,7 @@ In this task, you will create an Azure App Configuration resource using the Azur
 
     >**NOTE:** If there is an issue creating the AppConfig Resource due to quota restrictions using the **Free** SKU value, please use **Developer** instead.
     
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="a8e4aaff-e268-4b39-9026-1f5e043dbed5" />
 
 ## Task: 2 Assign a role to your Microsoft Entra user name

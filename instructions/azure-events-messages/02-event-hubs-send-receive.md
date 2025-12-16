@@ -69,6 +69,7 @@ In this task, you create an Event Hubs namespace as the container for your messa
 
     ![](./media/lab7-e2-2.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="b16fc420-8882-4ba2-8cbb-ab3a31718604" />
 
 ### Task 3: Assign a role to your Microsoft Entra user name

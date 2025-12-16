@@ -83,6 +83,7 @@ In this task, you will create the Service Bus messaging environment by deploying
 
      ![](./media/lab7-e3-3.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="931b1a90-573b-479e-b0c6-50e28037cc43" />
 
 ### Task 3: Assign a role to your Microsoft Entra user name

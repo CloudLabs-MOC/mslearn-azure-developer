@@ -68,6 +68,7 @@ In this task, you will create the Azure storage resources required for Azure Que
 
      ![](./media/lab7-e3-16.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="f0afc17f-041b-4887-a059-a53be0144fb1" />
 
 ### Task 2: Assign a role to your Microsoft Entra user name
