@@ -42,7 +42,7 @@ In this section you download the sample app, set variables to simplify commands,
 1. Run the following commands to set the required variables for your resource group and web app, and copy the generated app name into Notepad as it will be needed in later tasks.
 
     ```bash
-    resourceGroup=rg-mywebapp
+    resourceGroup=ManagedPlatform-<inject key="DeploymentID" enableCopy="false"/>
     appName=mywebapp$RANDOM
     echo $appName
     ```
