@@ -1,4 +1,4 @@
-## Exercise 2: Send and retrieve events from Azure Event Hubs
+## Lab 07: Module 2: Send and retrieve events from Azure Event Hubs
 
 ## Lab Scenario
 
@@ -7,6 +7,7 @@ In this exercise, you create Azure Event Hubs resources and build a .NET console
 ## Lab Objectives
 In this lab, you will perform:
 
+## Exercise 2: Provision Azure Event Hubs and Send Events Using .NET
 * Task 1: Create Azure Event Hubs resources
 * Task 2: Create an Azure Event Hubs namespace and event hub
 * Task 3: Assign a role to your Microsoft Entra user name
@@ -15,8 +16,7 @@ In this lab, you will perform:
 * Task 6: Add code to complete the application
 * Task 7: Sign into Azure and run the app
 
-## Estimated Timing: 30 Minutes
-
+## Exercise 2: Provision Azure Event Hubs and Send Events Using .NET
 ### Task 1: Create Azure Event Hubs resources
 
 In this task, you initialize your Cloud Shell environment and define variables that will be used to create Azure Event Hubs resources throughout the lab.

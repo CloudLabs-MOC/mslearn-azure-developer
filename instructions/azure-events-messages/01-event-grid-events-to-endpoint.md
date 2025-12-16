@@ -1,4 +1,4 @@
-# Lab 7: Azure events and messaging
+# Lab 07: Module 1 :Azure events and messaging
 
 ## Lab Scenario
 
@@ -7,6 +7,7 @@ In this exercise, you create an Azure Event Grid topic and a web app endpoint, t
 ## Lab Objectives
 In this lab, you will perform:
 
+## Exercise 1: Route events to a custom endpoint with Azure Event Grid
 * Task 1: Create Azure Event Grid resources
 * Task 2: Create a message endpoint
 * Task 3: Subscribe to the topic
@@ -15,25 +16,10 @@ In this lab, you will perform:
 * Task 6: Add the code for the project
 * Task 7: Sign into Azure and run the app
 
-## Estimated Timing: 30 Minutes
-
 ## Exercise 1: Route events to a custom endpoint with Azure Event Grid
-
 ### Task 1: Create Azure Event Grid resources
 
 In this task, you will create the required Azure Event Grid resources, including a custom topic, using the Azure CLI.
-
-1. In the lab VM, click on the **Azure Portal icon** as shown below:
-
-    ![](./media/lab2-12-0.png)
-
-    - On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter your credentials:
-      
-        * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-    
-    - Next, provide your password:
-
-        * **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
 1. On the Azure portal homepage, click the **\[>\_] Cloud Shell (1)** button located to the right of the **Copilot** tab at the top. This opens a new Cloud Shell session. In the **Welcome to Azure Cloud Shell** window, choose **Bash**.
 

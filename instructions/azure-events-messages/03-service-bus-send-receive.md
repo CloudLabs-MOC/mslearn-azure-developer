@@ -1,4 +1,4 @@
-## Exercise 3: Send and receive messages from Azure Service Bus
+## Lab 07: Module 3: Send and receive messages from Azure Service Bus
 
 ## Lab Scenario
 
@@ -7,6 +7,7 @@ In this exercise, you create and configure Azure Service Bus resources, then bui
 ## Lab Objectives
 In this lab, you will perform:
 
+## Exercise 3: Implement Messaging with Azure Event Hubs and Azure Service Bus Using .NET
 * Task 1: Create Azure Event Hubs resources
 * Task 2: Create an Azure Service Bus namespace and queue
 * Task 3: Assign a role to your Microsoft Entra user name
@@ -16,8 +17,7 @@ In this lab, you will perform:
 * Task 7: Add code to process messages in the queue
 * Task 8: Sign into Azure and run the app
 
-## Estimated Timing: 30 Minutes
-
+## Exercise 3: Implement Messaging with Azure Event Hubs and Azure Service Bus Using .NET
 ### Task 1: Create Azure Event Hubs resources
 
 In this task, you will set up the initial Azure resources required for the Service Bus solution by configuring Cloud Shell and creating the variables that will be used throughout the exercise.

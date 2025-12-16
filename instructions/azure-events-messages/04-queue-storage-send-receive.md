@@ -1,4 +1,4 @@
-## Exercise 4: Send and receive messages from Azure Queue storage
+## Lab 07: Module 4: Send and receive messages from Azure Queue storage
 
 ## Lab Scenario
 
@@ -7,6 +7,7 @@ In this exercise, you create and configure Azure Queue Storage resources, then b
 ## Lab Objectives
 In this lab, you will perform:
 
+## Exercise 4: Azure Queue Storage Operations with .NET
 * Task 1: Create Azure Queue storage resources
 * Task 2: Assign a role to your Microsoft Entra user name
 * Task 3: Create a .NET console app to send and receive messages
@@ -17,8 +18,7 @@ In this lab, you will perform:
 * Task 8: Add code to delete messages and the queue
 * Task 9: Sign into Azure and run the app
 
-## Estimated Timing: 30 Minutes
-
+## Exercise 4: Azure Queue Storage Operations with .NET
 ### Task 1: Create Azure Queue storage resources
 
 In this task, you will create the Azure storage resources required for Azure Queue Storage by provisioning a new storage account using the Azure CLI.

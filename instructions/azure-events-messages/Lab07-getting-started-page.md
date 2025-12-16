@@ -60,8 +60,6 @@ The architecture for this lab involves the following key components:
 5. **.NET Console Applications**  
    Used to publish events and send/receive messages across Azure services.
 
----
-
 ## Accessing Your Lab Environment
 
 Your virtual machine and lab guide are available directly in your browser.
@@ -72,9 +70,7 @@ You will see your VM loading on the left side of the screen:
 ### Lab Guide Access  
 The lab guide appears on the right panel and will be your reference throughout the exercises.
 
-![VM Screenshot](media/.png)
-
----
+![VM Screenshot](media/Lab7-GS.png)
 
 ## Exploring Lab Resources
 
@@ -82,15 +78,11 @@ Navigate to the **Environment** tab to view credentials and resource details:
 
 ![Environment](media/G2.png)
 
----
-
 ## Split-Window Feature
 
 To open the lab guide in a separate window, click **Split Window**:
 
 ![Split View](media/G3.png)
-
----
 
 ## Managing Your Virtual Machine
 
@@ -98,15 +90,12 @@ You can Start, Stop, or Restart your virtual machine at any time via the **Resou
 
 ![VM Manage](media/G4.png)
 
----
-
 ## Adjusting Zoom
 
 To zoom in or out of the environment view, use the **A↕ 100%** button near the timer:
 
 ![Zoom](media/ZZ01.png)
 
----
 
 ## Accessing Azure Portal
 
@@ -132,8 +121,6 @@ Follow these steps to begin working in Azure:
 
    ![](media/G9.png)
 
----
-
 ## Support
 
 CloudLabs offers **24/7 support** for all learners.
@@ -147,7 +134,5 @@ If you face login, VM, or Azure issues, reach out anytime.
 Now, click on **Next** from the lower right corner to move on to the next page.
 
 ![](media/G10.png)
-
----
 
 ## Happy Learning!
