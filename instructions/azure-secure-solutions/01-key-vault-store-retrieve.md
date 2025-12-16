@@ -42,7 +42,7 @@ In this task you will create a Key Vault to store secrets in Azure using Azure C
  
     ```
 
-    ![](./media/lab9-12-1.png)
+    ![](./media/lab9-12-100.png)
 
 1. Run the following command to create an Azure Key Vault resource. This can take a few minutes to run.
 
