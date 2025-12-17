@@ -1,4 +1,4 @@
-## Lab 05 - Module 3: Deploy a container to Azure Container Apps with the Azure CLI
+# Lab 05 - Module 3: Deploy a container to Azure Container Apps with the Azure CLI
 
 ## Lab Scenario
 
