@@ -1,4 +1,4 @@
-## Lab 07: Module 3: Send and receive messages from Azure Service Bus
+# Lab 07: Module 3: Send and receive messages from Azure Service Bus
 
 ## Lab Scenario
 
