@@ -1,4 +1,4 @@
-## Lab 07: Module 2: Send and retrieve events from Azure Event Hubs
+# Lab 07: Module 2: Send and retrieve events from Azure Event Hubs
 
 ## Lab Scenario
 
