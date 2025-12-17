@@ -1,4 +1,4 @@
-## Lab 07: Module 4: Send and receive messages from Azure Queue storage
+# Lab 07: Module 4: Send and receive messages from Azure Queue storage
 
 ## Lab Scenario
 
