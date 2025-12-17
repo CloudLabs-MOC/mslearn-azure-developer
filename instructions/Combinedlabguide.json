@@ -5,7 +5,7 @@
         "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-azure-developer/tree/prod/instructions",
         "Files": [
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-api-mgmt/Lab01-getting-started-page.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-api-mgmt/combined-getting-startedpage-az-204.md",
                 "Order": 1
             },
             {
