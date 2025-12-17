@@ -1,1 +1,85 @@
-..
+[
+    {
+        "Name": "Combined Labguide-AZ-204 Azure Developer",
+        "Language": "English",
+        "BaseURL": "https://github.com/CloudLabs-MOC/mslearn-azure-developer/tree/prod/instructions",
+        "Files": [
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-api-mgmt/Lab01-getting-started-page.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-api-mgmt/01-api-mgmt-import-api.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-app-auth/01-msal-interactive-auth.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-app-auth/02-graph-user-profile.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-app-insights/01-app-insights-auto-instrument.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-app-service/01-app-service-deploy-container.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-app-service/02-app-service-deployment-slots.md",
+                "Order": 7
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-container-services/01-container-image-acr-tasks.md",
+                "Order": 8
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-container-services/02-run-container-aci.md",
+                "Order": 9
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-container-services/03-deploy-to-container-apps.md",
+                "Order": 10
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-cosmos-db/01-comosdb-create-resources-sdk.md",
+                "Order": 11
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-events-messages/01-event-grid-events-to-endpoint.md",
+                "Order": 12
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-events-messages/02-event-hubs-send-receive.md",
+                "Order": 13
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-events-messages/03-service-bus-send-receive.md",
+                "Order": 14
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-events-messages/04-queue-storage-send-receive.md",
+                "Order": 15
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-functions/01-functions-create-vscode-http.md",
+                "Order": 16
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-secure-solutions/01-key-vault-store-retrieve.md",
+                "Order": 17
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-secure-solutions/02-app-config-retrieve.md",
+                "Order": 18
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-azure-developer/refs/heads/prod/instructions/azure-storage/01-blob-storage-resources-dotnet.md",
+                "Order": 19
+            }
+        ]
+    }
+]
