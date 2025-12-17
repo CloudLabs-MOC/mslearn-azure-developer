@@ -1,4 +1,4 @@
-## Lab 05 - Module 2: Deploy a container to Azure Container Instances using Azure CLI commands
+# Lab 05 - Module 2: Deploy a container to Azure Container Instances using Azure CLI commands
 
 ## Lab Scenario
 
