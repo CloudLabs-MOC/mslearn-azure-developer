@@ -84,7 +84,7 @@ In this section of the exercise, you create a resource group and an Azure Storag
 
     ![](./media/az204s2.png)
 
-1. Search for, and select the **Find Pets by status.(2)** operation.
+1. Search for, and select the **Finds Pets by status.(2)** operation.
 
 1. In the **Template parameters** section, enter `available`(3) as the value in the **status** field.
 
