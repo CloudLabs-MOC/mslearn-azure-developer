@@ -82,11 +82,11 @@ In this section of the exercise, you create a resource group and an Azure Storag
 
 1. Select **Test (1)** in the menu bar. This will display all of the operations available in the API.
 
-    ![](./media/az204s2.png)
-
 1. Search for, and select the **Finds Pets by status.(2)** operation.
 
 1. In the **Template parameters** section, enter `available`(3) as the value in the **status** field.
+
+    ![](./media/az204s2.png)
 
 1. Select **Send (4)**. You may need to scroll down on the page to view the HTTP response.
 
