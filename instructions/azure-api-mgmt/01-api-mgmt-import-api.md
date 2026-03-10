@@ -67,7 +67,7 @@ In this section of the exercise, you create a resource group and an Azure Storag
 
 1. Select **OpenAPI (3)** in the **Create from definition** section, and set the **Basic/Full** toggle to **Full (1)** in the pop-up that appears.
 
-    Use the values from the following table to fill out the form. You can leave any fields not mentioned to their default value.
+1. Use the values from the following table to fill out the form. You can leave any fields not mentioned to their default value.
 
     | Setting | Value | Description |
     |--|--|--|
