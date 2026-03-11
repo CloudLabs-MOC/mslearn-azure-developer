@@ -28,12 +28,12 @@ In this task, you will register a new application in Microsoft Entra ID and reco
     | Field | Value |
     |--|--|
     | **Name** | Enter `myGraphApplication` **(1)** |
-    | **Supported account types** | Select **Accounts in this organizational directory only (2)** |
+    | **Supported account types** | Select **Single tenant only - xxxx (2)** |
     | **Redirect URI (optional)** | Select **Public client/native (mobile & desktop) (3)** and enter `http://localhost` **(4)** in the box to the right. |
 
 1. Select **Register (5)**. Microsoft Entra ID assigns a unique application (client) ID to your app, and you're taken to your application's **Overview** page. 
 
-     ![](./media/lab2-e2-1.png)
+     ![](./media/az204s5.png)
 
 1. In the **Essentials** section of the **Overview** page record the **Application (client) ID (1)** and the **Directory (tenant) ID (2)**. The information is needed for the application.
 
@@ -64,7 +64,7 @@ In this task, you will set up the .NET console project and prepare the developme
 
 1. In Visual Studio Code, on the top menu, select **View (1) > Terminal (2)** to open a new terminal window.
 
-     ![](./media/lab2-12-10.png)
+     ![](./media/az204s6.png)
 
 1. Run the following command in the VS Code terminal to create the .NET console application.
 
