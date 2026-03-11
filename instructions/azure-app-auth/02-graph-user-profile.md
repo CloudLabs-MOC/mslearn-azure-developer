@@ -62,6 +62,8 @@ In this task, you will set up the .NET console project and prepare the developme
 
      ![](./media/lab2-e2-4.png)
 
+     > **Note:** When prompted with a security message asking **"Do you trust the authors of the files in this folder?"**, select **Yes, I trust the authors** to allow Visual Studio Code to fully load the project.
+     
 1. In Visual Studio Code, on the top menu, select **View (1) > Terminal (2)** to open a new terminal window.
 
      ![](./media/az204s6.png)
