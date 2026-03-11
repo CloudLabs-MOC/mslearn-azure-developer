@@ -31,12 +31,12 @@ In this task, you will create a new app registration in Microsoft Entra ID and r
     | Field | Value |
     |--|--|
     | **Name** | Enter `myMsalApplication` **(1)** |
-    | **Supported account types** | Select **Accounts in this organizational directory only (2)** |
+    | **Supported account types** | Select **Single tenant only - xxxxx (2)** |
     | **Redirect URI (optional)** | Select **Public client/native (mobile & desktop) (3)** and enter `http://localhost` **(4)** in the box to the right. |
 
      ![](./media/lab2-12-2.png)
 
-     ![](./media/lab2-12-3.png)
+     ![](./media/az204s4.png)
 
 1. Select **Register (5)**. Microsoft Entra ID assigns a unique application (client) ID to your app, and you're taken to your application's **Overview** page. 
 
@@ -188,7 +188,7 @@ In this task, you will add the starter code to the console application and prepa
 
 In this task, you will run the console application to authenticate interactively and verify that the access token is retrieved successfully.
 
-1. Start the application by running the following command:
+1. Start the application by running the following command in the terminal.
 
     ```
     dotnet run
@@ -227,6 +227,6 @@ In this lab, you:
 
 - Ran the application and completed an interactive authentication flow
 
-## You have successfully completed the lab. Click on Next >>
+### You have successfully completed the lab. Click on Next >>
 
 ![](./media/next.png)
