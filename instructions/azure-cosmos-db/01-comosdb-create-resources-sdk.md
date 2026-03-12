@@ -14,8 +14,6 @@ In this lab, you will perform:
 
 ## Estimated Timing: 30 Minutes
 
----
-
 ## Exercise 1: Create resources in Azure Cosmos DB for NoSQL using .NET
 
 ### Task 1: Create an Azure Cosmos DB account
@@ -51,14 +49,10 @@ In this lab, you will perform:
 
 6. Retrieve the **primary access key** for the Azure Cosmos DB account, as it will be used in the upcoming steps.
 
-
     ```bash
     az cosmosdb keys list --name $accountName --resource-group $resourceGroup   --query "primaryMasterKey" --output tsv
-    ```
-
+    ```    
     ![](./media/E2.png)
-
----
 
 ## Exercise 2: Build a .NET console application to interact with Cosmos DB
 
@@ -84,9 +78,6 @@ In this lab, you will perform:
     dotnet add package Newtonsoft.Json --version 13.*
     dotnet add package dotenv.net
     ```
-
----
-
 ### Task 2: Configure environment variables and application code
 
 1. Create and open a `.env` file.
@@ -231,9 +222,6 @@ The code provides the overall structure of the app. Review the comments in the c
    Console.WriteLine($"Created item with ID: {createResponse.Resource.id}");
    Console.WriteLine($"Request charge: {createResponse.RequestCharge} RUs");
    ```
-
----
-
 ### Task 4 Verify the complete Program.cs code
 
 - Save the file using **Ctrl + S**, then exit the editor using **Ctrl + Q**.
@@ -320,8 +308,6 @@ The code provides the overall structure of the app. Review the comments in the c
 
     ![](./media/E8.png)
 
----
-
 ## Exercise 3: Run the application and verify results
 
 ### Task 1 : Run the application and verify results
@@ -341,8 +327,6 @@ The code provides the overall structure of the app. Review the comments in the c
 1. Sample output:
 
     ![](./media/E5.png)
-
----
 
 ### Task 2 Verify the item in Azure Cosmos DB
 
@@ -366,8 +350,6 @@ The code provides the overall structure of the app. Review the comments in the c
 
 > **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="6035a827-10fe-4abe-9c5f-af88966b9ba3" />
-
----
 
 ## Summary
 
