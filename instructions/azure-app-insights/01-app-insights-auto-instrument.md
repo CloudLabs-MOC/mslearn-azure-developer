@@ -15,11 +15,11 @@ In this lab, you will perform:
 
 ### Task 1: Create a Web App with Application Insights enabled
 
-1. Select **+ Create a resource** located under the **Azure Services** heading on the homepage.
+1. In the portal, select **+ Create a resource** located under the **Azure Services** heading on the homepage.
 
    ![](./media/C1.png)
 
-2. In the **Search the Marketplace** bar, enter **web app (1)** and press **Enter**.
+2. In the **Search services and Marketplace** search bar, enter **web app (1)** and press **Enter**.
 3. In the Web App tile, select the **Create (2)** dropdown and then select **Web App (3)**.
 
    ![](./media/C2.png)
@@ -28,41 +28,62 @@ In this lab, you will perform:
 
    | Setting | Action |
    |--|--|
-   | **Subscription** | Retain the default value. |
-   | **Resource group** | Choose an existing resource group (**MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>**).  |
-   | **Name** | **webapp-<inject key="DeploymentID" enableCopy="false"/>**.|
-   | Slider under **Name** | Turn it off (if visible). |
-   | **Publish** | Select **Code**. |
-   | **Runtime stack** | Select **.NET 8 (LTS)**. |
-   | **Operating system** | Select **Windows**. |
-   | **Region** | Retain the default selection or choose a region near you. |
+   | **Subscription** | Retain the default value **(1)** |
+   | **Resource group** | Choose an existing resource group **MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/> (2)**  |
+   | **Name** | **webapp-<inject key="DeploymentID" enableCopy="false"/> (3)**|
+   | Slider under **Name** | Turn it off (if visible) **(4)** |
+   | **Publish** | Select **Code (5)** |
+   | **Runtime stack** | Select **.NET 8 (LTS) (6)** |
+   | **Operating system** | Select **Windows (7)**. |
+   | **Region** | Select **South Central US (8)** |
    | **Windows Plan** | Retain the default selection. |
-   | **Pricing plan** | Select **F1**. |
+   | **Pricing plan** | Select **F1 (9)**. |
 
-     ![](./media/C3.png)
+     ![](./media/lab3-03-2.png)
 
-6. Navigate to the **Monitor + secure** tab and configure and click on **OK (5)**:
+6. Navigate to the **Monitor + secure (8)** tab and configure the following:
 
    | Setting | Action |
    |--|--|
-   | **Enable Application Insights** | Select **Yes**. |
-   | **Application Insights** | Select **Create new**, enter **autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/> (1)**. |
-   | **Workspace** | Select **create new (2)** Enter **Workspace-<inject key="DeploymentID" enableCopy="false"/> (3)** and click on **OK (4)**. |
+   | **Enable Application Insights** | Select **Yes (1)**. |
+   | **Application Insights** | Select **Create new (2)**. |
 
-    ![](./media/C17.png)
+   ![](./media/C17.png)
 
-    ![](./media/C19.png)
+   >**Note:** If the **Enable Application Insights** option is disabled and cannot be selected, follow these steps:
 
-   > **Note:** If the **Enable Application Insights** is disabled use diffent regions 
-      like West US, North Europe, East US, Southeast Asia.
+   1. Navigate back to the **Basics** tab
 
-7. Select **Review + create** → Review your configuration → Select **Create**.
+      ![](./media/lab3-03-8.png)
 
-      ![](./media/C20.png)
+   2. Change the **Region** temporarily to West US.
+
+   3. Change the Region back to **South Central US (1)** and Ensure the Pricing plan is set to **F1 (2)**.
+
+      ![](./media/lab3-03-9.png)
+
+   4. Navigate again to the **Monitor + secure** tab and You should now be able to select **Enable Application Insights → Yes**.
+
+7. In the **Create new Application Insights** pane, configure the following and click **OK (5)**:
+
+   | Setting | Action |
+   |--|--|
+   | **Name** | Enter **autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/> (1)**. |
+   | **Workspace** | Select **Create new (2)**, enter **Workspace-<inject key="DeploymentID" enableCopy="false"/> (3)**, and then select **OK (4)**. |
+
+   ![](./media/C19.png)
+
+8. After configuring the **Monitor + secure** settings, select **Review + create**.
+
+    ![](./media/lab3-03-3.png)
+
+9. On the **Review + create** tab, review the configuration settings, and then select **Create**.
+
+   ![](./media/lab3-03-4.png)
 
 8. After deployment completes, select **Go to resource**.
 
-    ![](./media/C4.png)
+    ![](./media/lab3-03-5.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="7f755203-93a5-4792-b097-4e6048291dd8" />
@@ -71,20 +92,21 @@ In this lab, you will perform:
 
 ### Task 1: Enable autoinstrumentation for the web app
 
-1. In the left navigation menu, expand **Monitoring (1)** and select **Application Insights (2)**.
+1. On the **autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/>** page, in the left navigation menu, expand **Monitoring (1)** and select **Application Insights (2)**.
+
 2. Locate the **Instrument your application** section and select **.NET Core (3)**.
+
 3. Under **Collection level**, select **Recommended (4)**.
+
 4. Select **Apply (5)** and confirm the changes.
+
+   ![](./media/C22.png)
 
    - If a popup appears prompting **Apply Monitoring Settings**, select **Yes**.
 
       ![](./media/C5.png)
 
 5. In the left navigation menu, select **Overview**.
-
-   ![](./media/C22.png)
-
----
 
 # Exercise 3: Create and deploy a Blazor app
 
@@ -102,7 +124,7 @@ In this lab, you will perform:
 
    ![](./media/A03.png)
 
-   > **Note**: If Cloud Shell is currently set to **PowerShell**, switch to **Bash**.
+   > **Note:** If Cloud Shell is currently set to **PowerShell**, switch to **Bash**.
 
       ![](./media/C23.png)
 
@@ -126,6 +148,7 @@ In this lab, you will perform:
 ### Task 2: Publish and package the application
 
 1. Publish the application into a **publish** directory:
+   
    ```
    dotnet publish -c Release -o ./publish
    ```
@@ -156,10 +179,9 @@ In this lab, you will perform:
 
 2. Once the deployment is complete, open the application from the **Overview (1)** page copy the **Default domain (2)** link and open it in new tab .
 
+    ![](./media/C25.png)
 
-   ![](./media/C25.png)
-
-   ![](./media/C06.png)
+    ![](./media/C06.png)
 
 ---
 
@@ -250,16 +272,22 @@ Run:
 
 # Exercise 4: View metrics in Application Insights
 
-1. Return to the **Application Insights resource**.
-2. Review charts on the **Overview** tab:
+1. Return to the Azure portal and navigate to the resource group **MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>**. From the list of resources, select the **Application Insights** resource **autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/>**.
+
+   ![](./media/lab3-03-6.png)
+
+2. In the **Application Insights** resource, select **Overview** from the left navigation menu to view the basic monitoring charts.
+
    - Failed requests  
    - Server response time  
    - Server requests  
-   - Availability  
+   - Availability 
+
+   ![](./media/lab3-03-6.png)
 
 ### Generate telemetry:
 
-1. Navigate through **Home**, **Counter**, and **Weather** pages in the application.
+1. Navigate through **Home**, **+ Counter**, and **Weather** navigation options in the menu of the web app.
 
    ![](./media/C12.png)
 
@@ -268,6 +296,7 @@ Run:
    ![](./media/C10.png)
 
 2. Refresh the web page multiple times to generate request and response data.
+
 3. To generate errors, append `/failures` to the application URL.  
    (This route does not exist and will create failures.)  
    Refresh several times.
