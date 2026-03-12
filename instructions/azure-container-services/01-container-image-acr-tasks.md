@@ -116,10 +116,9 @@ In this task, you will run the container image directly from Azure Container Reg
 
 1. Run the sample/hello-world:v1 container image from your container registry with the az acr run command. The following example uses $Registry to specify the registry where you run the command.
 
-  ```bash
-  az acr run --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>  --cmd '$Registry/sample/hello-world:v1' /dev/null
-  ```
-
+   ```bash
+   az acr run --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>  --cmd '$Registry/sample/hello-world:v1' /dev/null
+   ```
    ![](./media/lab5-12-9.png)
 
 ## Summary
