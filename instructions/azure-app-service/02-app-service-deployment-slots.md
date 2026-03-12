@@ -5,6 +5,7 @@
 In this exercise, you deploy a static HTML website to Azure App Service, create a staging deployment slot, make changes to the code and deploy them to the staging slot, and then swap the staging and production slots to promote the changes to production. You learn how to use deployment slots for safe application updates and blue-green deployments.
 
 ## Lab Objectives
+
 In this lab, you will perform:
 
 - Download and deploy the sample app to Azure App Service.
@@ -12,24 +13,25 @@ In this lab, you will perform:
 - Make a change to the sample app and deploy it to the staging slot.
 - Swap the staging and default production slots to move the changes to the production slot.
 
-
 # Exercise 1: Download and deploy the sample app
 
 In this section you download the sample app, set variables to simplify commands, create an Azure App Service resource, and deploy a static HTML website using Azure CLI.
 
 ## Task 1: Prepare Cloud Shell and Clone Repository
 
-1. Open **Cloud Shell**, choose **Bash**, select **No storage account required (1)**, choose the available **Subscription (2)**, and then click **Apply (3)** to continue.
+1. Open Cloud Shell using the **[\>_]** button at the top of the Azure portal, and choose a **Bash** environment.  
 
-    ![](./media/02/A001.png)
+     ![](./media/02/A001.png)
 
-    ![](./media/02/A02.png)
+     ![](./media/02/A02.png)
 
-    ![](./media/02/A03.png)
+1. If prompted to choose storage, select **No storage account required (2)**, choose your **Subscription (2)**, and select **Apply (3)**.
+
+     ![](./media/02/A03.png)
 
 1. In the Cloud Shell toolbar, open the **Settings (1)** menu and choose **Go to Classic version (2)** from the drop-down.
 
-    ![](./media/02/lab4-03-3.1.png)
+     ![](./media/02/lab4-03-3.1.png)
 
 1. Run the following command to clone the sample app:
 
@@ -100,7 +102,12 @@ In this section you download the sample app, set variables to simplify commands,
 
    ![](./media/02/D100.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+ 
 <validation step="00206e92-d4d2-4fef-a336-68f6f444ab9a" />
 
 # Exercise 2: Deploy Updated Code to a Deployment Slot
@@ -177,21 +184,17 @@ In this section you download the sample app, set variables to simplify commands,
 
     ![](./media/02/D07.png)
 
-2. Set **Source** to **staging (1)**.  
-
-3. Set **Target** to **production (2)**.  
+2. Review the settings in the **swap panel**. The Source should show the **mywebappxxxx-staging (1)** slot, and the Target should show the **mywebappxxxx (2)** production slot.
 
 4. Select **Start Swap (3)** to begin the process.  
 
-5. Monitor the swap progress in the **Notifications** panel.  
-
     ![](./media/02/D08.png)
+
+5. You can track completion in the **Notifications** panel that you can open by selecting the bell icon at the top of the portal.  
 
 6. Open the production site and verify that the updated heading appears (refresh the page if needed).
 
     ![](./media/02/D100.png)
-
----
 
 # Summary
 

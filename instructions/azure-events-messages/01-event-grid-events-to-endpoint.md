@@ -31,7 +31,7 @@ In this task, you will create the required Azure Event Grid resources, including
    
     ![](./media/lab7-12---3.png)
 
-1. In the cloud shell toolbar, in the **Settings** menu, select **Go to Classic version** (this is required to use the code editor).
+1. In the cloud shell toolbar, in the **Settings (1)** menu, select **Go to Classic version (2)** (this is required to use the code editor).
 
      ![](./media/lab7-12-1.1.png)
 
@@ -58,7 +58,12 @@ In this task, you will create the required Azure Event Grid resources, including
 
     ![](./media/lab7-12-2.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+ 
 <validation step="e6e94df0-6484-4c30-a392-ea0be9f4c4a4" />
 
 ### Task 2: Create a message endpoint
@@ -88,7 +93,12 @@ In this task, you will deploy a message endpoint using a prebuilt web app that w
 
     > **Tip:** Leave the browser running, it is used to show updates.
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+ 
 <validation step="0ea1c9e6-969d-474a-9ca9-f23e538e88e1" />
 
 ### Task 3: Subscribe to the topic
@@ -248,8 +258,6 @@ In this task, you will authenticate with Azure in Cloud Shell and run the consol
     az login
     ```
 
-    **<font color="red">You must sign into Azure - even though the cloud shell session is already authenticated.</font>**
-
 1. After running the az login command, select the **authentication link (1)** shown in the Cloud Shell output and **copy the displayed code (2)**.
 
      ![](./media/lab7-12-13.png)
@@ -268,7 +276,7 @@ In this task, you will authenticate with Azure in Cloud Shell and run the consol
 
 1. When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
 
-    ![](./media/02/lab4-03-4.1.png)
+    ![](./media/lab4-03-4.1.png)
 
 1. In the Cloud Shell console, when the subscription selection appears, type **1** and press **Enter** to continue.
 

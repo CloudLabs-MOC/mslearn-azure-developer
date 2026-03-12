@@ -60,6 +60,9 @@ In this lab, you will perform:
 
     ![](./media/01/lab4-03-2.png)
 
+    > **Note:** If the deployment fails due to quota issue use diffent regions 
+      like West US / North Europe / East US / Southeast Asia.
+
 2. Wait until deployment completes and select **Go to resource**.
 
     ![](./media/01/dep01.png)
@@ -75,10 +78,13 @@ In this lab, you will perform:
     ![](./media/01/lab4-03-3.png)
 
     > **Note:** It may take a few minutes for the container to fully load.
-    > **Note:** If the deployment fails due to quota issue use diffent regions 
-      like West US / North Europe / East US / Southeast Asia.
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+ 
 <validation step="74d7f8c8-43e6-4abf-a577-cbb980fe9ab2" />
 
 # Summary

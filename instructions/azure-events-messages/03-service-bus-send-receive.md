@@ -75,7 +75,12 @@ In this task, you will create the Service Bus messaging environment by deploying
 
      ![](./media/lab7-e3-3.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 <validation step="931b1a90-573b-479e-b0c6-50e28037cc43" />
 
 ### Task 3: Assign a role to your Microsoft Entra user name
@@ -323,10 +328,6 @@ In this task, you will sign into Azure and run the console application to send a
     az login
     ```
 
-    **<font color="red">You must sign into Azure - even though the cloud shell session is already authenticated.</font>**
-
-    > **Note**: In most scenarios, just using *az login* will be sufficient. However, if you have subscriptions in multiple tenants, you may need to specify the tenant by using the *--tenant* parameter. See [Sign into Azure interactively using Azure CLI](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively) for details.
-
 1. After running the az login command, select the **authentication link** shown in the Cloud Shell output and **copy the displayed code**.
 
 1. On the **Enter code to allow access** page, paste the copied code into the field and select **Next** to complete authentication.
@@ -343,7 +344,7 @@ In this task, you will sign into Azure and run the console application to send a
 
 1. When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
 
-    ![](./media/02/lab4-03-4.1.png)
+    ![](./media/lab4-03-4.1.png)
 
 1. In the Cloud Shell console, when the subscription selection appears, type **1** and press **Enter** to continue.
 

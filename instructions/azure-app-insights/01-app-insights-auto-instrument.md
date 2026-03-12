@@ -15,11 +15,12 @@ In this lab, you will perform:
 
 ### Task 1: Create a Web App with Application Insights enabled
 
-1. In the portal, select **+ Create a resource** located under the **Azure Services** heading on the homepage.
+1. In the Azure portal, select **+ Create a resource** located under the **Azure Services** heading on the homepage.
 
    ![](./media/C1.png)
 
 2. In the **Search services and Marketplace** search bar, enter **web app (1)** and press **Enter**.
+
 3. In the Web App tile, select the **Create (2)** dropdown and then select **Web App (3)**.
 
    ![](./media/C2.png)
@@ -85,7 +86,12 @@ In this lab, you will perform:
 
     ![](./media/lab3-03-5.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 <validation step="7f755203-93a5-4792-b097-4e6048291dd8" />
 
 # Exercise 2: Configure instrumentation settings
