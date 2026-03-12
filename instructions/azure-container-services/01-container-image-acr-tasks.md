@@ -22,12 +22,11 @@ In this task, you will create an Azure Container Registry instance that will sto
 
    ![](./media/lab2-12-0.png)
 
-   - On the **Sign in to Microsoft Azure** tab, enter your credentials:
+1.  On the **Sign in to Microsoft Azure** tab, enter your credentials:
      - **Email/Username:** <inject key="AzureAdUserEmail"></inject>  
      - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>  
 
-1. On the Azure portal homepage, select **[>_] Cloud Shell (1)** next to the **Copilot** tab.  
-   In the **Welcome to Azure Cloud Shell** window, choose **Bash (2)**.
+1. On the Azure portal homepage, select **[>_] Cloud Shell (1)** next to the **Copilot** tab. In the **Welcome to Azure Cloud Shell** window, choose **Bash (2)**.
 
    ![](./media/lab5-12-1.png)
    ![](./media/lab5-12-2.png)
@@ -36,7 +35,30 @@ In this task, you will create an Azure Container Registry instance that will sto
 
    ![](./media/lab5-12-3.png)
 
-1. Create an Azure Container Registry:
+1. In the **Cloud Shell** terminal, run the following command:
+
+   ```bash
+   az login
+   ```
+
+   ![](./media/az204s7.png)
+   
+1. After running the command, you will see a message similar to the following:
+
+   ```
+   To sign in, use a web browser to open the page https://login.microsoftonline.com/device and enter the code XXXXXXXX to authenticate.
+   ```
+1. Open a new browser tab and navigate to the following URL:
+
+    ```
+    https://login.microsoftonline.com/device
+    ```
+
+1. Enter the device code displayed in the Cloud Shell terminal.
+
+1. After successful authentication, return to the Cloud Shell terminal.
+
+1. Run the following command to create a basic container registry in the pre created resource group.
 
     ```bash
     az acr create --resource-group ConfidentialStack-<inject key="DeploymentID" enableCopy="false"/>   --name mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --sku Basic
@@ -49,19 +71,17 @@ In this task, you will create an Azure Container Registry instance that will sto
 > **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="dd962eb8-d886-4bb8-a640-e9bf11f0668a" />
 
----
-
 ### Task 2: Build and push an image from a Dockerfile
 
 In this task, you will build a container image from a Dockerfile and push it to your Azure Container Registry using ACR Tasks.
 
-1. Create a Dockerfile:
+1. Run the following command to create the Dockerfile. The Dockerfile contains a single line that references the hello-world image hosted at the Microsoft Container Registry.
 
     ```bash
     echo FROM mcr.microsoft.com/hello-world > Dockerfile
     ```
 
-1. Build and push the image:
+1. Run the following az acr build command, which builds the image and, after the image is successfully built, pushes it to your registry.
 
     ```bash
     az acr build --image sample/hello-world:v1   --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --file Dockerfile .
@@ -70,13 +90,11 @@ In this task, you will build a container image from a Dockerfile and push it to 
     ![](./media/lab5-12-5.png)
     ![](./media/lab5-12-6.png)
 
----
-
 ### Task 3: Verify the results
 
 In this task, you will verify that the image was successfully pushed to your registry.
 
-1. List repositories in the registry:
+1. Run the following command to list the repositories in your registry. 
 
     ```bash
     az acr repository list --name mycontainerregistry<inject key="DeploymentID" enableCopy="false"/> --output table
@@ -84,7 +102,7 @@ In this task, you will verify that the image was successfully pushed to your reg
 
     ![](./media/lab5-12-7.png)
 
-1. List tags for the repository:
+1. Run the following command to list the tags on the sample/hello-world repository.
 
     ```bash
     az acr repository show-tags --name mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>   --repository sample/hello-world --output table
@@ -92,19 +110,17 @@ In this task, you will verify that the image was successfully pushed to your reg
 
     ![](./media/lab5-12-8.png)
 
----
-
 ### Task 4: Run the image in Azure Container Registry
 
 In this task, you will run the container image directly from Azure Container Registry to validate successful execution.
 
-```bash
-az acr run --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>  --cmd '$Registry/sample/hello-world:v1' /dev/null
-```
+1. Run the sample/hello-world:v1 container image from your container registry with the az acr run command. The following example uses $Registry to specify the registry where you run the command.
 
- ![](./media/lab5-12-9.png)
+  ```bash
+  az acr run --registry mycontainerregistry<inject key="DeploymentID" enableCopy="false"/>  --cmd '$Registry/sample/hello-world:v1' /dev/null
+  ```
 
----
+   ![](./media/lab5-12-9.png)
 
 ## Summary
 
