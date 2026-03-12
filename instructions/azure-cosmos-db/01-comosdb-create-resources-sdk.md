@@ -52,6 +52,7 @@ In this lab, you will perform:
     ```bash
     az cosmosdb keys list --name $accountName --resource-group $resourceGroup   --query "primaryMasterKey" --output tsv
     ```    
+    
     ![](./media/E2.png)
 
 ## Exercise 2: Build a .NET console application to interact with Cosmos DB
