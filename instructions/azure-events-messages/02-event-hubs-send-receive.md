@@ -23,21 +23,13 @@ In this task, you initialize your Cloud Shell environment and define variables t
 
 1. In your browser navigate to the Azure portal 
 
-1. On the Azure portal homepage, click the **\[>\_] Cloud Shell (1)** button located to the right of the **Copilot** tab at the top. This opens a new Cloud Shell session. In the **Welcome to Azure Cloud Shell** window, choose **Bash (2)**.
+1. In the **Azure portal**, select the **Cloud Shell** icon in the top navigation bar to open a new Cloud Shell session.
 
     ![](./media/lab7-12---1.png)
 
-    ![](./media/lab7-12---2.png)
+1. In the Cloud Shell toolbar, open the **Settings (1)** menu and choose **Go to Classic version (2)** from the drop-down.
 
-1. In the **Getting started** window, ensure **No storage account required (1)** is selected. From the **Subscription** drop-down, choose **Default subscription (2)**, then click **Apply (3)**.
-   
-    ![](./media/lab7-12---3.png)
-
-    >**Note:** If your Cloud Shell environment is already configured, you can skip this step and proceed to the next.
-
-1. In the cloud shell toolbar, in the **Settings** menu, select **Go to Classic version** (this is required to use the code editor).
-
-     ![](./media/lab7-12-1.1.png)
+    ![](./media/lab7-12-1.1.png)
 
 1. Many of the commands require unique names and use the same parameters. Creating some variables will reduce the changes needed to the commands that create resources. Run the following commands to create the needed variables. 
     
@@ -46,6 +38,9 @@ In this task, you initialize your Cloud Shell environment and define variables t
     location=<inject key="Region" enableCopy="false"/>
     namespaceName=eventhubsns<inject key="DeploymentID" enableCopy="false"/>
     ```
+
+    ![](./media/lab7-03-2.png)
+
     >**Note:** Copy the namespaceName: **eventhubsns<inject key="DeploymentID" enableCopy="false"/>** value into a Notepad file. You will use it in a later task.
 
 ### Task 2: Create an Azure Event Hubs namespace and event hub
@@ -284,10 +279,6 @@ In this task, you authenticate with Azure and execute your .NET console applicat
     az login
     ```
 
-    **<font color="red">You must sign into Azure - even though the cloud shell session is already authenticated.</font>**
-
-    > **Note**: In most scenarios, just using *az login* will be sufficient. However, if you have subscriptions in multiple tenants, you may need to specify the tenant by using the *--tenant* parameter. See [Sign into Azure interactively using Azure CLI](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively) for details.
-
 1. After running the az login command, select the **authentication link** shown in the Cloud Shell output and **copy the displayed code**.
 
 1. On the **Enter code to allow access** page, paste the copied code into the field and select **Next** to complete authentication.
@@ -302,11 +293,15 @@ In this task, you authenticate with Azure and execute your .NET console applicat
 
      ![](./media/lab7-12-16.png)
 
-1. Back in Cloud Shell, when the subscription selection appears, type **1** and press **Enter** to continue.
+1. When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
+
+    ![](./media/02/lab4-03-4.1.png)
+
+1. In the Cloud Shell console, when the subscription selection appears, type **1** and press **Enter** to continue.
 
      ![](./media/lab7-12-17.png)
 
-1. Start the application by running the following command, when prompted, press Enter to retrieve and print the events
+1. Start the application by running the following command, when prompted, press **Enter** to retrieve and print the events
 
     ```
     dotnet run
@@ -329,20 +324,19 @@ In this task, you authenticate with Azure and execute your .NET console applicat
 
      ![](./media/lab7-e2-8.png)
 
+1. The application always sends three events to the hub, but it retrieves all events in the hub. If you run the application multiple times an increasing number of events are retrieved. The random numbers used for event creation help you identify different events.
+
+1. In the Cloud Shell window, select the **Close (X)** icon to exit Cloud Shell before proceeding to the next lab.
+
 ## Summary
 
 In this lab, you:
 
 - Created Azure Event Hubs resources using the Azure CLI
-
 - Provisioned an Event Hubs namespace and event hub
-
 - Assigned yourself the Azure Event Hubs Data Owner role for RBAC-based access
-
 - Built a .NET console application to send and receive events
-
 - Added starter code and completed the producer/consumer logic
-
 - Signed in to Azure and successfully ran the application to publish and read events
 
-## You have successfully completed the lab.
+## You have successfully completed the lab. Click on Next >>

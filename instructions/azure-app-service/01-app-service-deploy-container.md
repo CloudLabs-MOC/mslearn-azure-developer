@@ -15,30 +15,31 @@ In this lab, you will perform:
 
 ## Task 1: Create the Web App
 
-1. Select the **+ Create a resource** located in the **Azure Services** heading near the top of the homepage. 
+1. In the Azure portal, select the **+ Create a resource** located in the **Azure Services** heading near the top of the homepage. 
 
     ![](./media/01/C1.png)
 
-3. In the **Search the Marketplace** search bar, enter **web app (1)** and press **Enter** to start searching.
-4. In the Web App tile, select the **Create (2)** drop-down and then select **Web App (3)**.
+1. In the **Search the Marketplace** search bar, enter **web app (1)** and press **Enter** to start searching.
+
+1. In the Web App tile, select the **Create (2)** drop-down and then select **Web App (3)**.
 
     ![Screenshot of the Web App tile.](./media/01/C2.png)
 
-5. Fill out the **Basics** tab with the information in the following table and navigate to the **Database page (6)** :
+1. Fill out the **Basics** tab with the information in the following table and navigate to the **Database page (9)**:
 
     | Setting | Action |
     |--------|--------|
-    | **Subscription** | Retain the default value. |
-    | **Resource group** |  **ManagedPlatform-<inject key="DeploymentID" enableCopy="false"/>** |
-    | **Name** | **containerwebapp-<inject key="DeploymentID" enableCopy="false"/> (1)** |
-    | **Slider under Name** | Select the slider to turn it off (if visible) **(2)**. |
-    | **Publish** | Select **Container (3)**. |
-    | **Operating System** | Ensure **Linux (4)** is selected. |
-    | **Region** | **<inject key="Region" enableCopy="false"/> (5)** |
+    | **Subscription** | Retain the default value **(1)**. |
+    | **Resource group** | Select **ManagedPlatform-<inject key="DeploymentID" enableCopy="false"/> (2)** |
+    | **Name** | **containerwebapp-<inject key="DeploymentID" enableCopy="false"/> (3)** |
+    | **Slider under Name** | Select the slider to turn it off **(4)**. |
+    | **Publish** | Select **Container (5)**. |
+    | **Operating System** | Ensure **Linux (6)** is selected. |
+    | **Region** | **South Central US (7)** |
     | **Linux Plan** | Retain the default value. |
-    | **Pricing plan** | Select the drop-down and choose **Free F1 (6)**. |
+    | **Pricing plan** | Select the drop-down and choose **Free F1 (8)**. |
 
-    ![](./media/01/D1.png)
+    ![](./media/01/lab4-03-1.png)
 
 6. In **Database page** leave it as default and navigate to **Container page** 
 
@@ -46,18 +47,18 @@ In this lab, you will perform:
 
     | Setting | Action |
     |--------|--------|
-    | **Sidecar support** | Off (1)|
-    | **Image Source** | Other container registries (2)|
-    | **Access Type** | Public (3)|
-    | **Registry server URL** | `mcr.microsoft.com/k8se` (4)|
-    | **Image and Tag** | `quickstart:latest` (5) |
+    | **Sidecar support** | Off **(1)**|
+    | **Image Source** | Other container registries **(2)**|
+    | **Access Type** | Public **(3)**|
+    | **Registry server URL** | `mcr.microsoft.com/k8se` **(4)**|
+    | **Image and Tag** | `quickstart:latest` **(5)** |
     | **Startup Command** | Leave blank |
 
     ![](./media/01/D2.png)
 
 1. Verify your selections, and then select **Create** to deploy the web app.
 
-    ![](./media/01/D3.png)
+    ![](./media/01/lab4-03-2.png)
 
 2. Wait until deployment completes and select **Go to resource**.
 
@@ -67,11 +68,11 @@ In this lab, you will perform:
 
 1. In the App Service overview page, select the link next to **Default domain**.  
 
-    ![](./media/01/D09.png)
+    ![](./media/01/lab4-03-11.png)
 
 2. A new browser tab will open showing your deployed containerized app.
 
-    ![](./media/01/D100.png)
+    ![](./media/01/lab4-03-3.png)
 
     > **Note:** It may take a few minutes for the container to fully load.
     > **Note:** If the deployment fails due to quota issue use diffent regions 

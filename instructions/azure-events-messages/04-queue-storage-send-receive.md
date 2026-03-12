@@ -25,21 +25,13 @@ In this task, you will create the Azure storage resources required for Azure Que
 
 1. In your browser navigate to the Azure portal 
 
-1. On the Azure portal homepage, click the **\[>\_] Cloud Shell (1)** button located to the right of the **Copilot** tab at the top. This opens a new Cloud Shell session. In the **Welcome to Azure Cloud Shell** window, choose **Bash (2)**.
+1. In the **Azure portal**, select the **Cloud Shell** icon in the top navigation bar to open a new Cloud Shell session.
 
     ![](./media/lab7-12---1.png)
 
-    ![](./media/lab7-12---2.png)
+1. In the Cloud Shell toolbar, open the **Settings (1)** menu and choose **Go to Classic version (2)** from the drop-down.
 
-1. In the **Getting started** window, ensure **No storage account required (1)** is selected. From the **Subscription** drop-down, choose **Default subscription (2)**, then click **Apply (3)**.
-   
-    ![](./media/lab7-12---3.png)
-
-    >**Note:** If your Cloud Shell environment is already configured, you can skip this step and proceed to the next.
-
-1. In the cloud shell toolbar, in the **Settings** menu, select **Go to Classic version** (this is required to use the code editor).
-
-     ![](./media/lab7-12-1.1.png)
+    ![](./media/lab7-12-1.1.png)
 
 1. Many of the commands require unique names and use the same parameters. Creating some variables will reduce the changes needed to the commands that create resources. Run the following commands to create the needed variables. 
 
@@ -138,7 +130,7 @@ In this task, you will open the project in the Cloud Shell editor and add the st
     code Program.cs
     ```
 
-1. Replace any existing contents with the following code. Be sure to review the comments in the code, and replace **<YOUR-STORAGE-ACCT-NAME>** with the storage account name you recorded earlier.
+1. Replace any existing contents with the following code. Be sure to review the comments in the code, and replace **YOUR-STORAGE-ACCT-NAME** with the storage account name you recorded earlier.
 
     ```csharp
     using Azure;
@@ -169,6 +161,8 @@ In this task, you will open the project in the Cloud Shell editor and add the st
     
     
     ```
+
+    ![](./media/lab7-03-3.png)
 
 1. Press **ctrl+s** to save your changes.
 
@@ -323,7 +317,11 @@ In this task, you authenticate with Azure and run the console application, allow
 
      ![](./media/lab7-12-16.png)
 
-1. Back in Cloud Shell, when the subscription selection appears, type **1** and press **Enter** to continue.
+1. When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
+
+    ![](./media/02/lab4-03-4.1.png)
+
+1. In the Cloud Shell console, when the subscription selection appears, type **1** and press **Enter** to continue.
 
      ![](./media/lab7-12-17.png)
 
@@ -349,20 +347,17 @@ In this task, you authenticate with Azure and run the console application, allow
 
      ![](./media/lab7-e3-27.png)
 
+1. Return to the Cloud Shell window, press Enter to continue running the application and switch back to the Azure portal, open the queue again, and observe the updated message content.
+
 ## Summary
 
 In this lab, you:
 
 - Created the required Azure Queue Storage resources using the Azure CLI
-
 - Assigned yourself the Storage Queue Data Contributor role to enable queue operations
-
 - Built and configured a .NET console application to interact with Azure Queue Storage
-
 - Sent and listed messages using the Azure.Storage.Queues SDK
-
 - Updated an existing message and verified the changes
-
 - Deleted messages and removed the queue to clean up your environment
 
 ## You have successfully completed the lab.

@@ -27,11 +27,11 @@ In this section you download the sample app, set variables to simplify commands,
 
     ![](./media/02/A03.png)
 
-2. Switch to **Classic version** in Cloud Shell.  
+1. In the Cloud Shell toolbar, open the **Settings (1)** menu and choose **Go to Classic version (2)** from the drop-down.
 
-    ![](./media/02/E9.png)
+    ![](./media/02/lab4-03-3.1.png)
 
-5. Run the following command to clone the sample app:
+1. Run the following command to clone the sample app:
 
     ```bash
     git clone https://github.com/Azure-Samples/html-docs-hello-world.git
@@ -51,97 +51,42 @@ In this section you download the sample app, set variables to simplify commands,
 
 ## Task 3: Deploy to App Service Using `az webapp up`
 
+1. In the cloud shell command-line pane, enter the following command to sign into Azure. Click on the **Link (1)** and copy the **code (2)** provided.
+
+    ```
+    az login
+    ```
+    
+    ![](./media/02/lab4-03-4.png)
+
+1. In the new browser tab, when the **Enter code to allow access** window appears, paste the copied code and select **Next**.
+
+    ![](./media/02/C15.png)
+
+1. In the **Pick an account** dialog box, choose **ODL_User<inject key="DeploymentID"></inject>**. 
+
+    ![](./media/02/C14.png)
+
+1. In the **Are you trying to sign in to Microsoft Azure CLI?** dialog box, click **Continue**.
+
+    ![](./media/02/C013.png)
+
+1. When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
+
+    ![](./media/02/lab4-03-4.1.png)
+
+1. In the Cloud Shell console, press **Enter** to select the only available subscription.
+
+    ![](./media/02/lab4-03-5.png)
+
 1. Run the following commands to navigate into the project directory and deploy the web app to Azure.
 
     ```bash
     cd html-docs-hello-world
     az webapp up -g $resourceGroup -n $appName --sku P0V3 --html
     ```
-> Note:If the above command gives an error follow the Troubleshooting steps and run the command again as shown below :
 
-<details>
-<summary>Troubleshooting Steps for Deploy to App Service Using az webapp up Error</summary>
-
-# Troubleshooting Steps for Deployment Error
-
-**Note:** If you face an error in **Task 3: Deploy to App Service Using `az webapp up`**, please follow the steps below and then run the deployment code again.
-
-## **Step 1: Identify the Error**
-
-If you receive the following message:
-
-```
-A Cloud Shell credential problem occurred.
-Audience https://appservice.azure.com is not a supported MSI token audience.
-```
-
-## **Step 2: Log out of Azure CLI**
-
-Run:
-
-```bash
-az logout
-```
-
-## **Step 3: Log in again using the correct scope**
-
-Run:
-
-```bash
-az login --scope "https://appservice.azure.com/.default"
-```
-
-This will display a device login link and a code.
-
-![](./media/02/C16.png)
-
-## **Step 4: Authenticate using Device Login**
-
-1. Open **https://microsoft.com/devicelogin**
-2. Enter the code provided in Cloud Shell.
-3. Select **Next**.
-
-![](./media/02/C15.png)
-
-## **Step 5: Select Your ODL_User Account**
-
-Select the displayed **ODL_User** account.
-
-![](./media/02/C14.png)
-
-## **Step 6: Approve Azure CLI Sign-in**
-
-Click **Continue** to allow Azure CLI access.
-
-![](./media/02/C013.png)
-
-## **Step 7: Select Subscription**
-
-When prompted:
-
-```
-Select a subscription and tenant:
-```
-
-Enter:
-
-```
-1
-```
-## **Step 8: Re-run the Command**
-
-Run:
-
-    ```bash
-    cd html-docs-hello-world
-    az webapp up -g $resourceGroup -n $appName --sku P0V3 --html
-    ```
-
-</details>
-
----
-
-> After the deployment completes, follow the steps below to access your web app:
+    >**Note:** After the deployment completes, follow the steps below to access your web app:
 
 2. Search for your **mywebapp** by entering its name in the Azure portal search bar.  
 
@@ -162,6 +107,8 @@ Run:
 
 ## Task 1: Create the Staging Slot
 
+1. Return to the tab with the Azure portal and cloud shell.
+
 1. Run the following command to create a **staging** deployment slot for your web app:
 
     ```bash
@@ -172,7 +119,7 @@ Run:
 
     - In the Azure portal, open your **Web App**, then on the Overview page select the **Deployment (1)** dropdown and choose **Deployment slots (2)** to view the newly created **staging slot (3)**.
 
-        ![](./media/02/D70.png)
+        ![](./media/02/lab4-03-6.png)
 
 ## Task 2: Modify Code and Deploy to Staging
 
@@ -181,6 +128,8 @@ Run:
     ```bash
     code index.html
     ```
+
+    ![](./media/02/lab4-03-7.png)
 
 2. Update the heading text:
 
@@ -195,6 +144,8 @@ Run:
     ```
     Azure App Service Staging Slot
     ```
+
+    ![](./media/02/lab4-03-8.png)
 
 3. Save your changes (**Ctrl + S**) and exit the editor (**Ctrl + Q**).
 
@@ -212,15 +163,13 @@ Run:
 
 6. Open the staging slot:
 
-- In the Azure portal, select **Deployment slots**, choose **staging**, and open the **Default domain** link to view the updated application.
+    - In the Azure portal, select **Deployment slots**, choose **staging**, and open the **Default domain** link to view the updated application.
 
-    ![](./media/02/D011.png)
+      ![](./media/02/D011.png)
 
 7. The web app URL will appear similar to the example shown below:  
 
     ![](./media/02/D11.png)
-
----
 
 # Exercise 3: Swap the Staging and Production Slots
 
@@ -229,8 +178,11 @@ Run:
     ![](./media/02/D07.png)
 
 2. Set **Source** to **staging (1)**.  
+
 3. Set **Target** to **production (2)**.  
+
 4. Select **Start Swap (3)** to begin the process.  
+
 5. Monitor the swap progress in the **Notifications** panel.  
 
     ![](./media/02/D08.png)

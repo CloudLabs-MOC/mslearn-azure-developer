@@ -266,7 +266,11 @@ In this task, you will authenticate with Azure in Cloud Shell and run the consol
 
      ![](./media/lab7-12-16.png)
 
-1. Back in Cloud Shell, when the subscription selection appears, type **1** and press **Enter** to continue.
+1. When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
+
+    ![](./media/02/lab4-03-4.1.png)
+
+1. In the Cloud Shell console, when the subscription selection appears, type **1** and press **Enter** to continue.
 
      ![](./media/lab7-12-17.png)
 
@@ -280,3 +284,20 @@ In this task, you will authenticate with Azure in Cloud Shell and run the consol
 
 1. View your web app to see the event you just sent. Select the eye icon to expand the event data.
 
+    ![](./media/lab7-03-1.png)
+
+1. In the Cloud Shell window, select the **Close (X)** icon to exit Cloud Shell before proceeding to the next lab.
+
+## Summary
+
+In this lab, you:
+
+* Created Azure Event Grid resources
+* Created a message endpoint
+* Subscribed to the topic
+* Sent an event with a .NET console application
+* Configured the console application
+* Added the code for the project
+* Signed into Azure and ran the application
+
+## You have successfully completed the lab. Click on Next >>

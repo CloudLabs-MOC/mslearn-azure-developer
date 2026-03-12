@@ -17,9 +17,15 @@ In this lab, you will perform:
 ## Task 1: Create a new Function App project
 
 1. Open **Visual Studio Code**.  
-2. Install **C# Dev Kit** and **Azure Functions** extensions in the Visual Studio Code as show below.
 
-    ![](./media/01/F1.png)
+
+1. In **Visual Studio Code**, select the **Extensions (1)** icon, search for **C# Dev Kit (2)**, and then select **Install (3)**.
+
+    ![](./media/01/lab8-03-2.png)
+
+2. Install **Azure Functions** extensions in the Visual Studio Code as show below.
+
+    ![](./media/01/lab8-03-2.png)
    
     ![](./media/01/F2.png)
 
@@ -38,7 +44,7 @@ In this lab, you will perform:
 
 6. When pop-up comes to select folder navigate to **This PC (1)** and select Local Disk(C) Create an empty folder and name it as Lab-08-<inject key="DeploymentID" enableCopy="false"/> under C:\ as show below .
 
-    ![](./media/01/F2.png)
+    ![](./media/01/F4.png)
 
 7. Provide the following values during setup:
 
