@@ -41,7 +41,7 @@ In this lab, you will perform:
 
      ![](./media/lab3-03-2.png)
 
-6. Navigate to the **Monitor + secure (8)** tab and configure the following:
+6. Navigate to the **Monitor + secure (10)** tab and configure the following:
 
    | Setting | Action |
    |--|--|
@@ -56,7 +56,7 @@ In this lab, you will perform:
 
       ![](./media/lab3-03-8.png)
 
-   2. Change the **Region** temporarily to West US.
+   2. Change the **Region** temporarily to West US or East US.
 
    3. Change the Region back to **South Central US (1)** and Ensure the Pricing plan is set to **F1 (2)**.
 
@@ -92,7 +92,7 @@ In this lab, you will perform:
 
 ### Task 1: Enable autoinstrumentation for the web app
 
-1. On the **autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/>** page, in the left navigation menu, expand **Monitoring (1)** and select **Application Insights (2)**.
+1. On the **webapp-<inject key="DeploymentID" enableCopy="false"/>** page, in the left navigation menu, expand **Monitoring (1)** and select **Application Insights (2)**.
 
 2. Locate the **Instrument your application** section and select **.NET Core (3)**.
 
@@ -283,7 +283,7 @@ Run:
    - Server requests  
    - Availability 
 
-   ![](./media/lab3-03-6.png)
+     ![](./media/lab3-03-6.png)
 
 ### Generate telemetry:
 
