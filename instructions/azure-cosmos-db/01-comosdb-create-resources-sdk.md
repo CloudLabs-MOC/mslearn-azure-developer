@@ -18,6 +18,8 @@ In this lab, you will perform:
 
 ### Task 1: Create an Azure Cosmos DB account
 
+In this task, you will use Azure Cloud Shell to create an Azure Cosmos DB account and retrieve the account endpoint and primary key required for application authentication
+
 1. Open Cloud Shell using the **[\>_]** button at the top of the Azure portal, and choose a **Bash** environment.  
 
      ![](./media/A01.png)
@@ -65,6 +67,8 @@ In this lab, you will perform:
 
 ### Task 1: Create the .NET console application
 
+In this task, you will create a new .NET console project and install the required SDK packages to enable interaction with Azure Cosmos DB.
+
 1. Create a project folder and navigate into it.
 
     ```bash
@@ -85,7 +89,10 @@ In this lab, you will perform:
     dotnet add package Newtonsoft.Json --version 13.*
     dotnet add package dotenv.net
     ```
+
 ### Task 2: Configure environment variables and application code
+
+In this task, you will configure environment variables for the Cosmos DB endpoint and key, and prepare the application code structure for database operations.
 
 1. Run the following command to create the `.env` file to hold the secrets, and then open it in the code editor.
 
@@ -106,6 +113,8 @@ In this lab, you will perform:
 3. Press **ctrl+s** to save the file, then **ctrl+q** to exit the editor.
 
 ### Task 3 Add required implementation code
+
+In this task, you will implement the required code to create a Cosmos DB client, database, container, and insert a sample item into the container.
 
 > **Tip:** As you add code, be sure to maintain the correct indentation. Use the comment indentation levels as a guide.
 
@@ -241,6 +250,8 @@ In this lab, you will perform:
 
 ### Task 4 Verify the complete Program.cs code
 
+In this task, you review the completed Program.cs file to ensure all required code for connecting to Azure Cosmos DB, creating resources, and inserting an item is correctly implemented.
+
 1. Now that the code is complete. Verify it with below code, save your progress use **ctrl + s** to save the file, and **ctrl + q** to exit the editor.
 
     ```
@@ -327,6 +338,8 @@ In this lab, you will perform:
 
 ### Task 1 : Run the application and verify results
 
+In this task, you will build and run the .NET console application to execute the code and create the database, container, and sample item in Azure Cosmos DB.
+
 1. Run the following command in the cloud shell to test for any errors in the project. If you do see errors, open the *Program.cs* file in the editor and check for missing code or pasting errors.
 
    ```bash
@@ -335,7 +348,7 @@ In this lab, you will perform:
 
     ![](./media/lab6-03-10.png)
 
-1. Run the `dotnet run` command in the cloud shell. The output should be something similar to the following example.
+1. Run the following command in the cloud shell and view the response.
 
    ```bash
    dotnet run
@@ -344,6 +357,8 @@ In this lab, you will perform:
     ![](./media/E5.png)
 
 ### Task 2 Verify the item in Azure Cosmos DB
+
+In this task, you use the Azure portal Data Explorer to confirm that the item created by the .NET application exists in the Cosmos DB container.
 
 1. In the **Azure portal**, select **Resource groups**, and then open the **CosmosDB-<inject key="DeploymentID" enableCopy="false"/>** resource group.
 
