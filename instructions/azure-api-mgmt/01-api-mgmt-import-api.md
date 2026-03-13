@@ -49,8 +49,12 @@ In this section of the exercise, you create a resource group and an Azure Storag
 
     > **Note:** The operation should complete within approximately five minutes.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
 <validation step="025b0fde-7447-43a3-ba91-95512da20179" />
 
 # Exercise 2: Import a Backend API
