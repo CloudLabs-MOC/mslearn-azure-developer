@@ -244,7 +244,7 @@ In this task, you will replace the default Program.cs code with logic that sends
     }
     ```
 
-     ![](./media/lab7-12-01.png)
+     ![](./media/lab7-03--001.png)
 
 1. Press **ctrl+s** to save the file, then **ctrl+q** to exit the editor.
 
