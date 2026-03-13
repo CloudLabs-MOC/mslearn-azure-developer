@@ -6,11 +6,11 @@ In this exercise, you create an Azure App Configuration resource, store configur
 ## Lab Objectives
 In this lab, you will perform:
 
-- Create an Azure App Configuration resource and add configuration information  
-- Assign a role to your Microsoft Entra user name  
-- Add configuration information with Azure CLI 
-- Create a .NET console app to retrieve configuration information
-- Sign into Azure and run the app  
+- Task 1: Create an Azure App Configuration resource and add configuration information  
+- Task 2: Assign a role to your Microsoft Entra user name  
+- Task 3: Add configuration information with Azure CLI 
+- Task 4: Create a .NET console app to retrieve configuration information
+- Task 5: Sign into Azure and run the app  
 
 # Exercise 2: Application Configuration Management with Azure App Configuration
 ## Task: 1 Create an Azure App Configuration resource and add configuration information
