@@ -15,6 +15,8 @@ In this lab, you will perform:
 
 ## Task 1: Create the Web App
 
+In this task, you willcreate an Azure App Service web app configured for container deployment.
+
 1. In the Azure portal, select the **+ Create a resource** located in the **Azure Services** heading near the top of the homepage. 
 
     ![](./media/01/C1.png)
@@ -68,6 +70,8 @@ In this lab, you will perform:
     ![](./media/01/dep01.png)
 
 ## Task 2: View the Web App
+
+In this task, you will verify the deployed web app by opening the default domain in a browser.
 
 1. In the App Service overview page, select the link next to **Default domain**.  
 
