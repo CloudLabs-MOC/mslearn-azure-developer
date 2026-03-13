@@ -15,6 +15,8 @@ In this lab, you will perform:
 
 ### Task 1: Create a Web App with Application Insights enabled
 
+In this task, you will create an Azure App Service web app and enable Application Insights to monitor the application without modifying the application code.
+
 1. In the Azure portal, select **+ Create a resource** located under the **Azure Services** heading on the homepage.
 
    ![](./media/C1.png)
@@ -98,6 +100,8 @@ In this lab, you will perform:
 
 ### Task 1: Enable autoinstrumentation for the web app
 
+In this task, you will configure Application Insights autoinstrumentation to automatically collect telemetry and monitoring data for the web app.
+
 1. On the **webapp-<inject key="DeploymentID" enableCopy="false"/>** page, in the left navigation menu, expand **Monitoring (1)** and select **Application Insights (2)**.
 
 2. Locate the **Instrument your application** section and select **.NET Core (3)**.
@@ -119,6 +123,8 @@ In this lab, you will perform:
 > All steps in this exercise are performed in the Azure Cloud Shell.
 
 ### Task 1: Create the Blazor application
+
+In this task, you will create and build a Blazor web application using the .NET CLI in Azure Cloud Shell.
 
 1. Open Cloud Shell using the **[\>_]** button at the top of the Azure portal, and choose a **Bash** environment.  
 
@@ -150,29 +156,32 @@ In this lab, you will perform:
    ```
    dotnet build
    ```
----
+
 ### Task 2: Publish and package the application
 
-1. Publish the application into a **publish** directory:
+In this task, you will publish the Blazor application and package the build output into a ZIP file for deployment.
+
+1. Run the following command to publish the app into a **publish** directory:
    
    ```
    dotnet publish -c Release -o ./publish
    ```
 
-2. Create a `.zip` file of the published output:
+2. Run the following commands to create a .zip file of the published app. The .zip file will be located in the root directory of the application.
    ```
    cd publish
    zip -r ../app.zip .
    cd ..
    ```
    ![](./media/C24.png)
----
 
 ### Task 3: Deploy the application to App Service
 
+In this task, you will deploy the packaged Blazor application to the Azure App Service web app using Azure CLI.
+
 1. Run the following command to deploy the application, using the correct App Service name and resource group:
 
-   - Replace the placeholders with the names shown below:  
+   - Verify the placeholders with the names shown below:  
 
       - **Web App Name:** webapp-<inject key="DeploymentID" enableCopy="false"/>
        - **Resource Group Name:** MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>
@@ -188,8 +197,6 @@ In this lab, you will perform:
     ![](./media/C25.png)
 
     ![](./media/C06.png)
-
----
 
 <details>
 <summary>Troubleshooting Steps for Deploy the application to App Service Error</summary>
@@ -274,9 +281,10 @@ Run:
          --src-path ./app.zip
       ```
 </details>
----
 
 # Exercise 4: View metrics in Application Insights
+
+In this task, you generate application activity and view telemetry, requests, and failure metrics in Application Insights.
 
 1. Return to the Azure portal and navigate to the resource group **MonitoredAssets-<inject key="DeploymentID" enableCopy="false"/>**. From the list of resources, select the **Application Insights** resource **autoinstrument-insights-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -314,8 +322,6 @@ Run:
 5. In the left navigation menu, open **Investigate → Failures** to view detailed breakdowns.
 
    ![](./media/C7.png)
-
----
 
 # Summary
 In this lab, you:
