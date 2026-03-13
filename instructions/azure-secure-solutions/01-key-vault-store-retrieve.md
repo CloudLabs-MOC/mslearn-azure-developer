@@ -6,11 +6,11 @@ In this exercise, you create an Azure Key Vault, store secrets using the Azure C
 ## Lab Objectives
 In this lab, you will perform:
 
-- Create Azure Key Vault resources and add a secret
-- Assign a role to your Microsoft Entra user name
-- Add and retrieve a secret with Azure CLI
-- Create a .NET console app to store and retrieve secrets
-- Sign into Azure and run the app to create a new secret
+- Task 1: Create Azure Key Vault resources and add a secret
+- Task 2: Assign a role to your Microsoft Entra user name
+- Task 3: Add and retrieve a secret with Azure CLI
+- Task 4: Create a .NET console app to store and retrieve secrets
+- Task 5: Sign into Azure and run the app to create a new secret
 
 ## Exercise 1: Implement Secure Secret Management with Azure Key Vault and .NET
 ## Task 1: Create Azure Key Vault resources and add a secret
