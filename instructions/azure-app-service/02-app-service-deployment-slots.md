@@ -8,10 +8,9 @@ In this exercise, you deploy a static HTML website to Azure App Service, create 
 
 In this lab, you will perform:
 
-- Download and deploy the sample app to Azure App Service.
-- Create a staging deployment slot.
-- Make a change to the sample app and deploy it to the staging slot.
-- Swap the staging and default production slots to move the changes to the production slot.
+- Exercise 1: Download and deploy the sample app
+- Exercise 2: Deploy Updated Code to a Deployment Slot
+- Exercise 3: Swap the Staging and Production Slots
 
 # Exercise 1: Download and deploy the sample app
 
