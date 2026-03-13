@@ -126,6 +126,7 @@ Follow these steps to begin working in Azure:
 3. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
+
      ![](media/G8.png)
 
 4. If prompted to **Stay signed in**, choose **No**.  
@@ -145,7 +146,5 @@ CloudLabs provides **24/7 support** for all learners.
 Now, click on **Next** from the lower right corner to move on to the next page.
 
 ![](media/G10.png)
-
----
 
 ## Happy Learning!
