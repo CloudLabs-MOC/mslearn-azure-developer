@@ -55,11 +55,19 @@ In this task, you will create an Azure Storage account using Azure CLI by defini
     echo $accountName
     ```
 
-    >**Note:**  Note down the name of Storage Account you created. You need it later in the exercise.
+    >**Note:**  Note down the name of **Storage Account** you created. You need it later in the exercise.
 
     ![](./media/lab10-12-2.png)
 
     ![](./media/lab10-12-2.1.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+ 
+<validation step="e6b76468-1b68-4233-abfb-22c72aa7c81a" />
 
 ### Task 2: Assign a role to your Microsoft Entra user name
 
@@ -130,13 +138,13 @@ Now it's time to add the code for the project.
 
 In this task, you will add the starter code to your .NET console application, setting up the structure for creating containers, uploading and downloading blobs, and listing items in Azure Storage.
 
-1. Run the following command in the cloud shell to begin editing the application.
+1. Run the following command in the cloud shell to begin editing the application **(1)**.
 
     ```
     code Program.cs
     ```
 
-1. Replace any existing contents with the following code. Be sure to review the comments in the code.
+1. Replace any existing contents with the following code. Be sure to review the comments in the code **(2)**.
 
     ```csharp
     using Azure.Storage.Blobs;
@@ -194,6 +202,8 @@ In this task, you will add the starter code to your .NET console application, se
 ### Task 5: Add code to complete the project
 
 In this task, you will complete the .NET app by adding code in specified areas to create the full application. 
+
+> **Tip:** As you add code, be sure to maintain the correct indentation. Use the comment indentation levels as a guide.
 
 1. Locate the **// CREATE A BLOB STORAGE CLIENT** comment, then add the following code directly beneath the comment. The **BlobServiceClient** acts as the primary entry point for managing containers and blobs in a storage account. The client uses the *DefaultAzureCredential* for authentication. Be sure to replace **YOUR_ACCOUNT_NAME** with the name you recorded earlier.
 
@@ -363,7 +373,11 @@ In this task, you will sign into Azure from Cloud Shell, run the console app to 
 
      ![](./media/lab7-12-16.png)
 
-1. Back in Cloud Shell, when the subscription selection appears, type **1** and press **Enter** to continue.
+1. When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
+
+    ![](./media/lab4-03-4.1.png)
+
+1. In the Cloud Shell console, when the subscription selection appears, type **1** and press **Enter** to continue.
 
      ![](./media/lab7-12-17.png)
 
@@ -396,20 +410,23 @@ In this task, you will sign into Azure from Cloud Shell, run the console app to 
 
      ![](./media/lab10-12-17.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+ 
+<validation step="a9fbbaf2-211f-4e60-a811-ff55cc036485" />
+
 ## Summary
 
 In this lab, you:
 
 - Created a Storage account using Azure CLI and defined variables for deployment.
-
 - Assigned the Storage Blob Data Owner role to manage containers and blobs.
-
 - Set up a console application in Cloud Shell with required packages and project structure.
-
 - Added the initial code structure to handle blob operations in the app.
-
 - Implemented code to create a container, upload and list blobs, and download files locally.
-
 - Authenticated with Azure CLI, ran the console app, and verified the blobs in the Azure Storage account.
 
 ## You have successfully completed the lab.
