@@ -12,8 +12,6 @@ In this lab, you will perform:
 - **Exercise 2:** Build a .NET console application to interact with Cosmos DB  
 - **Exercise 3:** Run the application and verify results  
 
-## Estimated Timing: 30 Minutes
-
 ## Exercise 1: Create resources in Azure Cosmos DB for NoSQL using .NET
 
 ### Task 1: Create an Azure Cosmos DB account
