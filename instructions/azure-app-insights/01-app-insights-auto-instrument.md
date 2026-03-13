@@ -59,7 +59,7 @@ In this task, you will create an Azure App Service web app and enable Applicatio
 
       ![](./media/lab3-03-8.png)
 
-   2. Change the **Region** temporarily to West US or East US.
+   2. Change the **Region** temporarily to **West US or East US**.
 
    3. Change the Region back to **South Central US (1)** and Ensure the Pricing plan is set to **F1 (2)**.
 
