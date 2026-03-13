@@ -37,10 +37,13 @@ In this exercise, you will create and deploy a container instance in Azure Conta
     > The **$DNS_NAME_LABEL** variable specifies the DNS name for your container.  
     > The image **mcr.microsoft.com/azuredocs/aci-helloworld** runs a basic Node.js web application.
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
-<validation step="2b5eee32-b290-4c07-ae35-fccf6d8d65c8" />
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
----
+<validation step="2b5eee32-b290-4c07-ae35-fccf6d8d65c8" />
 
 ## Exercise 2: Verify the container is running
 
@@ -68,8 +71,6 @@ In this exercise, you verify that the container is running by checking its provi
 1. From a browser, navigate to the container’s FQDN to verify the application is running.
 
     ![](./media/lab5-e2-3.png)
-
----
 
 ## Summary
 
