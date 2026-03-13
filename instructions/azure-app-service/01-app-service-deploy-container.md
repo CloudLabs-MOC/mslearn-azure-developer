@@ -8,8 +8,8 @@ In this exercise, you create an Azure App Service web app configured to run a co
 
 In this lab, you will perform:
 
-- Create an Azure App Service resource and deploy a containerized app
-- View the results
+- Task 1: Create the Web App
+- Task 2: View the Web App
 
 # Exercise 1: Create a web app resource
 
