@@ -44,7 +44,12 @@ In this task, you will create a new app registration in Microsoft Entra ID and r
 
     ![](./media/lab2-12-4.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 <validation step="0b912b02-c883-4643-9b6f-c7f200323136" />
  
 ### Task 2: Create a .NET console app to acquire a token
