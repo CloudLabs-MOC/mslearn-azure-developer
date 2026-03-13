@@ -75,7 +75,7 @@ In this task, you will run and test the Azure Function locally using Azure Funct
 
 1. Make sure the terminal is open in Visual Studio Code. You can open the terminal by selecting the **... (1)** menu, expand **Terminal (2)**, and then select **New Terminal (3)**.
 
-    ![](./media/01/lab8-03-4.png)
+    ![](./media/01/lab8-03-08.png)
 
 1. Press **F5** to start the function app project in the debugger. If you are prompted to choose a storage account select **Skip for now**.
 
@@ -84,8 +84,6 @@ In this task, you will run and test the Azure Function locally using Azure Funct
 1. Output from Core Tools is displayed in the **Terminal** panel. You can see the URL endpoint of your HTTP-triggered function running locally.
 
     ![](./media/01/lab8-03-10.png)
-
-1. With Core Tools running, open the **Azure** extension. In the **Workspace** section of the extension, expand **Local Project** > **Functions**. Right-click the **HttpExample** function and select **Execute Function Now...**.
 
 1. With Core Tools running, select the **Azure (1)** extension, expand **Local Project (2)** and **Functions (3)** under **Workspace**, right-click **HttpExample (4)**, and then select **Execute Function Now... (5)**.
 
@@ -153,7 +151,7 @@ In this task, you will create an Azure Function App, select the necessary config
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
-<validaation step="7870d4b0-9860-425e-9838-1a9025c8e736" />
+<validation step="7870d4b0-9860-425e-9838-1a9025c8e736" />
 
 # Exercise 4: Deploy the function to Azure
 
