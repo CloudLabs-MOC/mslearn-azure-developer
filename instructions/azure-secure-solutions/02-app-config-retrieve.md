@@ -17,19 +17,11 @@ In this lab, you will perform:
 
 In this task, you will create an Azure App Configuration resource using the Azure CLI and add the initial configuration settings needed for your application.
 
-1. Use the **[>_] (1)** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a **Bash (2)** environment.
+1. In the **Azure portal**, select the **Cloud Shell** icon in the top navigation bar to open a new Cloud Shell session.
 
-     ![](./media/A01.png)
+    ![](./media/A01.png)
 
-     ![](./media/A02.png)
-
-2.  If you are prompted to select a storage account to persist your files, select **No storage account required (1)**, select the default **subscription (2)**, and then select **Apply (3)**.
-
-    ![](./media/A03.png)
-
-    > **Note:** If you have previously created a cloud shell that uses a *PowerShell* environment, switch it to ***Bash***.
-
-1. In the cloud shell toolbar, in the **Settings (1)** menu, select **Go to Classic version (2)** (this is required to use the code editor).
+1. In the Cloud Shell toolbar, open the **Settings (1)** menu and choose **Go to Classic version (2)** from the drop-down.
 
     ![](./media/classicver.png)
 
@@ -41,7 +33,7 @@ In this task, you will create an Azure App Configuration resource using the Azur
     appConfigName=appconfigname<inject key="DeploymentID" enableCopy="false"/>
     ```
 
-     ![](./media/lab9-12-2.png)
+     ![](./media/lab9-03-2.png)
 
      >**Note:** Note down the App configuration name you have created. You need it later in the exercise. 
 
@@ -58,7 +50,12 @@ In this task, you will create an Azure App Configuration resource using the Azur
 
     >**NOTE:** If there is an issue creating the AppConfig Resource due to quota restrictions using the **Free** SKU value, please use **Developer** instead.
     
-> **Congratulations** on completing the task! Now, it's time to validate it.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 <validation step="a8e4aaff-e268-4b39-9026-1f5e043dbed5" />
 
 ## Task: 2 Assign a role to your Microsoft Entra user name
@@ -150,15 +147,15 @@ In this task, you will create a .NET console application in Cloud Shell that wil
 
     ![](./media/azid.png)
 
-### Add the code for the project
+### Task 4.1: Add the code for the project
 
-1. Run the following command in the cloud shell to begin editing the application.
+1. Run the following command in the cloud shell to begin editing the application **(1)**.
 
     ```
     code Program.cs
     ```
 
-1. Replace any existing contents with the following code. Be sure to replace **YOUR_APP_CONFIGURATION_NAME** with the name you recorded earlier, and read through the comments in the code.
+1. Replace any existing contents with the following code. Be sure to replace **YOUR_APP_CONFIGURATION_NAME (2)** with the name you recorded earlier, and read through the comments in the code.
 
     ```csharp
     using Microsoft.Extensions.Configuration;
@@ -217,8 +214,6 @@ In this task, you will sign into Azure from Cloud Shell and authenticate your se
     az login
     ```
 
-    **<font color="red">You must sign into Azure - even though the cloud shell session is already authenticated.</font>**
-
 1. After running the az login command, select the **authentication link (1)** shown in the Cloud Shell output and **copy the displayed code (2)**.
 
     ![](./media/link.png)
@@ -235,7 +230,11 @@ In this task, you will sign into Azure from Cloud Shell and authenticate your se
 
      ![](./media/clisign.png)
 
-1. Back in Cloud Shell, when the subscription selection appears, type **1** and press **Enter** to continue.
+1. When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
+
+    ![](./media/lab4-03-4.1.png)
+
+1. In the Cloud Shell console, when the subscription selection appears, type **1** and press **Enter** to continue.
 
      ![](./media/lab9-12-4.png)
 
@@ -254,13 +253,9 @@ In this task, you will sign into Azure from Cloud Shell and authenticate your se
 In this lab, you:
 
 - Created an App Configuration resource and added initial configuration settings.
-
 - Assigned the App Configuration Data Reader role so your user can access configuration data.
-
 - Stored a namespaced configuration key using Azure CLI.
-
 - Built a console application that connects to Azure App Configuration to read configuration values.
-
 - Authenticated with Azure CLI and successfully ran the app to retrieve configuration data.
 
 ## You have successfully completed the lab.

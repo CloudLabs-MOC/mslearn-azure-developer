@@ -17,13 +17,13 @@ In this lab, you will perform:
 
 In this task you will create a Key Vault to store secrets in Azure using Azure CLI.
 
-1. Use the **[>_] (1)** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a **Bash (2)** environment.
+1. On the Azure portal homepage, click the **\[>\_] Cloud Shell (1)** button located to the right of the **Copilot** tab at the top. This opens a new Cloud Shell session. In the **Welcome to Azure Cloud Shell** window, choose **Bash**.
 
      ![](./media/A01.png)
 
      ![](./media/A02.png)
 
-2.  If you are prompted to select a storage account to persist your files, select **No storage account required (1)**, select the default **subscription (2)**, and then select **Apply (3)**.
+1. In the **Getting started** window, ensure **No storage account required (1)** is selected. From the **Subscription** drop-down, choose **Default subscription (2)**, then click **Apply (3)**.
 
     ![](./media/A03.png)
 
@@ -55,7 +55,12 @@ In this task you will create a Key Vault to store secrets in Azure using Azure C
 
     >**Note:** Note down the name of Key Vault you created. You need it later in the exercise.
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 <validation step="f9c5f427-4ea7-4d62-91b7-7cc85096f2a3" />
 
 ## Task 2: Assign a role to your Microsoft Entra user name
@@ -112,7 +117,7 @@ In this task, you will create a new secret in your Key Vault using Azure CLI and
     "value": "My secret value"
     ```
 
-    ![](./media/retsec.png)
+    ![](./media/lab9-03-1.png)
 
 ## Task 4: Create a .NET console app to store and retrieve secrets
 
@@ -148,15 +153,15 @@ Now that the needed resources are deployed to Azure the next step is to set up t
 
     ![](./media/idpkg.png)
 
-### Add the starter code for the project
+### Task 4.1 Add the starter code for the project
 
-1. Run the following command in the cloud shell to begin editing the application.
+1. Run the following command in the cloud shell to begin editing the application **(1)**.
 
     ```
     code Program.cs
     ```
 
-1. Replace any existing contents with the following code. Be sure to replace **YOUR-KEYVAULT-NAME**  with your actual key vault name you created in Exercise 1.
+1. Replace any existing contents with the following code. Be sure to replace **YOUR-KEYVAULT-NAME (2)** with your actual key vault name you created in Exercise 1.
 
     ```csharp
     using Azure.Identity;
@@ -187,7 +192,7 @@ Now that the needed resources are deployed to Azure the next step is to set up t
 
 1. Press **ctrl+s** to save your changes.
 
-### Add code to complete the application
+### Task 4.2: Add code to complete the application
 
 Now it's time to add code to complete the application.
 
@@ -373,8 +378,6 @@ In this task, you will sign into Azure from Cloud Shell and authenticate your se
     az login
     ```
 
-    **Note: <font color="red">You must sign into Azure - even though the cloud shell session is already authenticated.</font>**
-
 1. After running the az login command, select the **authentication link (1)** shown in the Cloud Shell output and **copy the displayed code (2)**.
 
     ![](./media/link.png)
@@ -391,7 +394,11 @@ In this task, you will sign into Azure from Cloud Shell and authenticate your se
 
      ![](./media/clisign.png)
 
-1. Back in Cloud Shell, when the subscription selection appears, type **1** and press **Enter** to continue.
+1. When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
+
+    ![](./media/lab4-03-4.1.png)
+
+1. In the Cloud Shell console, when the subscription selection appears, type **1** and press **Enter** to continue.
 
      ![](./media/1enter.png)
 
@@ -419,20 +426,18 @@ In this task, you will sign into Azure from Cloud Shell and authenticate your se
 
     ![](./media/listfinal.png)
 
-1. Enter **quit** when you are finished with the application and close the cloud shell.
+1. Enter **quit** when you are finished with the application.
+
+1. In the Cloud Shell window, select the **Close (X)** icon to exit Cloud Shell before proceeding to the next lab.
 
 ## Summary
 
 In this lab, you:
 
 - Created a Key Vault and added a secret using Azure CLI.
-
 - Assigned the Key Vault Secrets Officer role to enable secret management.
-
 - Verified access by retrieving the stored secret.
-
 - You built a console application using DefaultAzureCredential to programmatically create and list secrets.
-
 - You authenticated using Azure CLI and successfully tested secret creation and retrieval through the app’s interactive menu.
 
 ## You have successfully completed the lab. Click on Next >>
