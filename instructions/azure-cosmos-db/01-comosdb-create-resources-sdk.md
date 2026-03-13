@@ -18,15 +18,19 @@ In this lab, you will perform:
 
 ### Task 1: Create an Azure Cosmos DB account
 
-1. Open **Cloud Shell**, choose **Bash**, select **No storage account required (1)**, choose the available **Subscription (2)**, and select **Apply (3)**.
+1. Open Cloud Shell using the **[\>_]** button at the top of the Azure portal, and choose a **Bash** environment.  
 
-   ![](./media/A01.png)
-   ![](./media/A02.png)
-   ![](./media/A03.png)
+     ![](./media/A01.png)
 
-2. Switch to **Classic version** in Cloud Shell.
+     ![](./media/A02.png)
 
-   ![](./media/E9.png)
+1. If prompted to choose storage, select **No storage account required (2)**, choose your **Subscription (2)**, and select **Apply (3)**.
+
+     ![](./media/A03.png)
+
+1. In the Cloud Shell toolbar, open the **Settings (1)** menu and choose **Go to Classic version (2)** from the drop-down.
+
+   ![](./media/lab6-03-1.png)
 
 3. Create variables to store the resource group name and a unique Cosmos DB account name.
 
@@ -41,7 +45,9 @@ In this lab, you will perform:
     az cosmosdb create --name $accountName --resource-group $resourceGroup
     ```
 
-5. Copy the **Azure Cosmos DB account endpoint** displayed in the output and paste it into a text editor (such as Notepad), as it will be required in the upcoming steps.
+    ![](./media/lab6-03-2.png)
+
+5. Run the following command to retrieve the documentEndpoint for the Azure Cosmos DB account and copy the **Azure Cosmos DB account endpoint** displayed in the output and paste it into a text editor (such as Notepad), as it will be required in the upcoming steps.
 
     ```bash
     az cosmosdb show --name $accountName --resource-group $resourceGroup   --query "documentEndpoint" --output tsv
@@ -53,7 +59,7 @@ In this lab, you will perform:
     az cosmosdb keys list --name $accountName --resource-group $resourceGroup   --query "primaryMasterKey" --output tsv
     ```    
     
-    ![](./media/E2.png)
+    ![](./media/lab6-03-3.png)
 
 ## Exercise 2: Build a .NET console application to interact with Cosmos DB
 
@@ -72,7 +78,7 @@ In this lab, you will perform:
     dotnet new console
     ```
 
-3. Add the required NuGet packages.
+3. Run the following commands to add the **Microsoft.Azure.Cosmos, Newtonsoft.Json**, and **dotenv.net** packages to the project.
 
     ```bash
     dotnet add package Microsoft.Azure.Cosmos --version 3.*
@@ -81,28 +87,35 @@ In this lab, you will perform:
     ```
 ### Task 2: Configure environment variables and application code
 
-1. Create and open a `.env` file.
+1. Run the following command to create the `.env` file to hold the secrets, and then open it in the code editor.
 
     ```bash
     touch .env
     code .env
     ```
 
-2. Add the **Azure Cosmos DB account endpoint** and **account key** that were copied in the previous tasks to the application configuration.
+2. Add the following code to the **.env** file and Add the **Azure Cosmos DB account endpoint** and **account key** that were copied in the previous tasks to the application configuration.
 
     ```text
     DOCUMENT_ENDPOINT="YOUR_DOCUMENT_ENDPOINT"
     ACCOUNT_KEY="YOUR_ACCOUNT_KEY"
     ```
-
-3. Replace the contents of **Program.cs** with the provided template and add the required implementation code.
-
+    
     ![](./media/E4.png)
+
+3. Press **ctrl+s** to save the file, then **ctrl+q** to exit the editor.
 
 ### Task 3 Add required implementation code
 
-1. Insert the following code blocks into **Program.cs** at the appropriate locations.
-The code provides the overall structure of the app. Review the comments in the code to get an understanding of how it works. To complete the application, you add code in specified areas later in the exercise. 
+> **Tip:** As you add code, be sure to maintain the correct indentation. Use the comment indentation levels as a guide.
+
+1. Run the following command in the cloud shell to begin editing the application.
+
+    ```bash
+    code Program.cs
+    ```
+
+1. Replace any existing code with the following code snippet. The code provides the overall structure of the app. Review the comments in the code to get an understanding of how it works. To complete the application, you add code in specified areas later in the exercise. 
 
     ```csharp
     using Microsoft.Azure.Cosmos;
@@ -163,11 +176,11 @@ The code provides the overall structure of the app. Review the comments in the c
     }
     ```
 
-- Next, you add code in specified areas of the projects to create the: client, database, container, and add a sample item to the container.
+    ![](./media/lab6-03-4.png)
 
-1.  Create the Cosmos DB client
+    - Next, you add code in specified areas of the projects to create the: client, database, container, and add a sample item to the container.
 
-- In this step, you create a Cosmos DB client using the account endpoint and access key.
+1. Add the following code in the space after the **// CREATE THE COSMOS DB CLIENT USING THE ACCOUNT URL AND KEY** comment. This code defines the client used to connect to your Azure Cosmos DB account.
 
    ```csharp
    CosmosClient client = new(
@@ -176,18 +189,18 @@ The code provides the overall structure of the app. Review the comments in the c
    );
    ```
 
-2. Create database
+   ![](./media/lab6-03-5.png)
 
-- In this step, you create a database in Azure Cosmos DB that will be used to store containers and items for the application.
+1. Add the following code in the space after the **// CREATE A DATABASE IF IT DOESN'T ALREADY EXIST** comment.
 
    ```csharp
    Database database = await client.CreateDatabaseIfNotExistsAsync(databaseName);
    Console.WriteLine($"Created or retrieved database: {database.Id}");
    ```
 
-3. Create container
+   ![](./media/lab6-03-6.png)
 
-- In this step, you create a container within the database to store application items using a specified partition key.
+1. Add the following code in the space after the **// CREATE A CONTAINER WITH A SPECIFIED PARTITION KEY** comment.
 
    ```csharp
    Container container = await database.CreateContainerIfNotExistsAsync(
@@ -197,22 +210,22 @@ The code provides the overall structure of the app. Review the comments in the c
    Console.WriteLine($"Created or retrieved container: {container.Id}");
    ```
 
-4. Define product item
+   ![](./media/lab6-03-7.png)
 
-- In this step, you define a sample item that will be inserted into the Cosmos DB container.
+1. Add the following code in the space after the **// DEFINE A TYPED ITEM (PRODUCT) TO ADD TO THE CONTAINER** comment. This defines the item that's added to the container.
 
    ```csharp
    Product newItem = new Product
-   {
-      id = Guid.NewGuid().ToString(),
-      name = "Sample Item",
-      description = "This is a sample item in my Azure Cosmos DB exercise."
-   };
+    {
+        id = Guid.NewGuid().ToString(), // Generate a unique ID for the product
+        name = "Sample Item",
+        description = "This is a sample item in my Azure Cosmos DB exercise."
+    };
    ```
 
-5. Add item to container
+   ![](./media/lab6-03-8.png)
 
-- In this step, you add the sample item to the Cosmos DB container and review the request charge.
+1. Add the following code in the space after the **// ADD THE ITEM TO THE CONTAINER** comment.
 
    ```csharp
    ItemResponse<Product> createResponse = await container.CreateItemAsync(
@@ -223,11 +236,12 @@ The code provides the overall structure of the app. Review the comments in the c
    Console.WriteLine($"Created item with ID: {createResponse.Resource.id}");
    Console.WriteLine($"Request charge: {createResponse.RequestCharge} RUs");
    ```
+
+    ![](./media/lab6-03-9.png)
+
 ### Task 4 Verify the complete Program.cs code
 
-- Save the file using **Ctrl + S**, then exit the editor using **Ctrl + Q**.
-
-- Now that the code is complete. Verify it with below code, save your progress use **ctrl + s** to save the file, and **ctrl + q** to exit the editor.
+1. Now that the code is complete. Verify it with below code, save your progress use **ctrl + s** to save the file, and **ctrl + q** to exit the editor.
 
     ```
     using Microsoft.Azure.Cosmos;
@@ -313,43 +327,48 @@ The code provides the overall structure of the app. Review the comments in the c
 
 ### Task 1 : Run the application and verify results
 
-1. Build the application.
+1. Run the following command in the cloud shell to test for any errors in the project. If you do see errors, open the *Program.cs* file in the editor and check for missing code or pasting errors.
 
    ```bash
    dotnet build
    ```
 
-2. Run the application.
+    ![](./media/lab6-03-10.png)
+
+1. Run the `dotnet run` command in the cloud shell. The output should be something similar to the following example.
 
    ```bash
    dotnet run
    ```
 
-1. Sample output:
-
     ![](./media/E5.png)
 
 ### Task 2 Verify the item in Azure Cosmos DB
 
-1. Open the **Azure Portal** and navigate to the resource group  
-   **CosmosDB-<inject key="DeploymentID" enableCopy="false"/> (1)**.
+1. In the **Azure portal**, select **Resource groups**, and then open the **CosmosDB-<inject key="DeploymentID" enableCopy="false"/>** resource group.
 
-   ![](./media/E10.png)
+   ![](./media/lab6-03-11.png)
 
-2. Select the **Azure Cosmos DB account (2)**.
+1. In the **CosmosDB-<inject key="DeploymentID" enableCopy="false"/>** resource group, select the **cosmosexercisexxxxx** Azure Cosmos DB account.
 
-   ![](./media/E11.png)
+   ![](./media/lab6-03-12.png)
 
-3. Open **Data Explorer (3)**.
+1. On the **Overview** page of the **cosmosexercisexxxxx** Azure Cosmos DB account, select **Data Explorer**.
 
-   ![](./media/E12.png)
+   ![](./media/lab6-03-13.png)
 
-4. Expand **myDatabase (4)** → select **myContainer (5)** → open **Items (6)**  
-   to view the created item **(7)**.
+1. In **Data Explorer**, expand **myContainer (1)**, select **Items (2)**, and then view the created item.
 
-   ![](./media/E13.png)
+   ![](./media/lab6-03-14.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it.
+   > **Note:** If a **Welcome** pop-up appears in **Data Explorer**, close it to continue.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+>
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 <validation step="6035a827-10fe-4abe-9c5f-af88966b9ba3" />
 
 ## Summary
