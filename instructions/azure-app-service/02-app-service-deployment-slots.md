@@ -19,6 +19,8 @@ In this section you download the sample app, set variables to simplify commands,
 
 ## Task 1: Prepare Cloud Shell and Clone Repository
 
+In this task, you will initialize the Cloud Shell environment and clone the sample HTML application repository.
+
 1. Open Cloud Shell using the **[\>_]** button at the top of the Azure portal, and choose a **Bash** environment.  
 
      ![](./media/02/A001.png)
@@ -41,6 +43,8 @@ In this section you download the sample app, set variables to simplify commands,
 
 ## Task 2: Set Variables
 
+In this task, you will define variables for the resource group and web app name to simplify Azure CLI commands.
+
 1. Run the following commands to set the required variables for your resource group and web app, and copy the generated app name into Notepad as it will be needed in later tasks.
 
     ```bash
@@ -52,6 +56,8 @@ In this section you download the sample app, set variables to simplify commands,
     ![](./media/02/D5.png)
 
 ## Task 3: Deploy to App Service Using `az webapp up`
+
+In this task, you will deploy the sample HTML application to Azure App Service using the Azure CLI.
 
 1. In the cloud shell command-line pane, enter the following command to sign into Azure. Click on the **Link (1)** and copy the **code (2)** provided.
 
@@ -114,6 +120,8 @@ In this section you download the sample app, set variables to simplify commands,
 
 ## Task 1: Create the Staging Slot
 
+In this task, you will create a staging deployment slot for the web app to support safe updates.
+
 1. Return to the tab with the Azure portal and cloud shell.
 
 1. Run the following command to create a **staging** deployment slot for your web app:
@@ -129,6 +137,8 @@ In this section you download the sample app, set variables to simplify commands,
         ![](./media/02/lab4-03-6.png)
 
 ## Task 2: Modify Code and Deploy to Staging
+
+In this task, you will modify the application code and deploy the updated version to the staging slot.
 
 1. Navigate back to Cloud Shell and open the HTML file by running:
 
@@ -179,6 +189,8 @@ In this section you download the sample app, set variables to simplify commands,
     ![](./media/02/D11.png)
 
 # Exercise 3: Swap the Staging and Production Slots
+
+In this task, you will swap the staging and production slots to promote the updated application to production.
 
 1. Select your **Web App**, then in the left panel open the **Deployment (1)** dropdown, go to **Deployment slots (2)**, and select **Swap (3)**. 
 
